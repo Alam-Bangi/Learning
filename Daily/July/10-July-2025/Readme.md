@@ -13,8 +13,8 @@
 
 ## Second Half
 
-DSA 
-JAVA- Section 3- Introduction to Java Programming using JShell - 
+- DSA 
+- JAVA- Section 3- Introduction to Java Programming using JShell - 
 
 ### Videos
 
