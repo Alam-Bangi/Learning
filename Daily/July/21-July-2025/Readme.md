@@ -22,17 +22,15 @@
 - https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/9565472#overview
 
 ## Second Half
-
-- DSA  
+ 
+- JAVA
 
 ### Videos
 
-- COURSE DSA - Functions ✅
 
 ### Assignment
 
-- Learn Git.
-- Do tasks assigned.
+- Revising all Java Commands.
 
 ### Doubts
 
