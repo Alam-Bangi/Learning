@@ -1,6 +1,6 @@
 class Main {
     public static void main(String[] args) {
-        int printSquareUptoLimit;
+        int printCubeUptoLimit;
         int limit = 90;
         
         int i = 1;
