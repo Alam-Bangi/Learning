@@ -6,10 +6,5 @@ class Main {
             System.out.println("Digits of number is: " +lastDigit);
             number=number/10;
         }
-        // while(number!= 0) {
-        //     int lastDigit = number%10;
-        //     System.out.println("Digits of number is: " +lastDigit);
-        //     number=number/10;
-        // }
     }
 }
