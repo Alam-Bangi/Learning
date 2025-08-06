@@ -6,4 +6,5 @@
 4. Numeric Hollow Half Pyramid
 5. Numeric Inverted Hollow Half Pyramid
 6. Numeric Palimdrome Equilateral Pyramid
-7. 
+7. Half Pyramid -Full, Hollow Star,Hollow Numeric & Hollow Alphabetical 
+8. 
