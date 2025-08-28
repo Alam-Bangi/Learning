@@ -4,7 +4,7 @@
 
 ## First Half
 
-- Solve doubuts for the myself
+- Solve doubts for myself
 
 ### Videos
 
@@ -28,7 +28,7 @@
 
 ## Second Half
 
-- Solve doubuts for the myself
+- Solve doubuts for myself
 
 ### Videos
 
