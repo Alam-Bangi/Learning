@@ -11,7 +11,7 @@ public class Task1 {
         return numbers;
     }
     public void setNumbers() {
-        System.out.println("Enter the numbers you want: ");
+        System.out.println("Enter the array size: ");
         Scanner scanner = new Scanner(System.in);
         int inputFromUser= scanner.nextInt();
         System.out.println(inputFromUser);
@@ -24,8 +24,6 @@ public class Task1 {
             this.numbers[i] = arrayElements;
         }
     }
-
-
 
     public static void main(String[] args) {
         Task1 task = new Task1();
