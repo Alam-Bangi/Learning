@@ -10,89 +10,85 @@ class PersonRunner {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.next();
         data.SchoolData();
-        person.CollegeData();
+        person.JuniorCollegeData();
         person.EmploymentData();
     }
 }
 interface  Data {
     abstract void SchoolData();
-    abstract void CollegeData();
+    abstract void JuniorCollegeData();
+    abstract void SeniorCollegeData();
     abstract void EmploymentData();
 }
 // class Person extends Data{
 class Person implements Data{
     public void SchoolData() {
-        // System.out.println("Enter your name: ");
-        // Scanner scanner = new Scanner(System.in);
-        // String name = scanner.next();
-        System.out.println("Enter your school name: ");
-        Scanner scanner = new Scanner(System.in);
-        String SchoolName = scanner.next();
-        System.out.println("Enter your 10th percentage: ");
-        Scanner scanner1 = new Scanner(System.in);
-        Float percentage = scanner1.nextFloat();     
-        // super.SchoolData();   
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter your school name: ");
+        String schoolName = scanner.next();
+        System.out.print("Enter your 10th percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("School: " + schoolName + "\n 10th %: " + percentage);    
     }
-    public void CollegeData() {
-        // System.out.println("Enter your name: ");
-        // Scanner scanner = new Scanner(System.in);
-        // String name = scanner.next();
-        System.out.println("Enter your college name: ");
+    public void JuniorCollegeData() {
         Scanner scanner = new Scanner(System.in);
-        String SchoolName = scanner.next();
-        System.out.println("Enter your 12th/Diploma percentage: ");
-        Scanner scanner1 = new Scanner(System.in);
-        Float percentage = scanner1.nextFloat(); 
-        // super.CollegeData();
+        System.out.print("Enter your junior college name: ");
+        String collegeName = scanner.next();
+        System.out.print("Enter your 12th/Diploma percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("College: " + collegeName + "\n 12th/Diploma %: " + percentage); 
+    }
+    public void SeniorCollegeData() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your senior college name: ");
+        String collegeName = scanner.next();
+        System.out.print("Enter your Graduation percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("College: " + collegeName + "\n Graduation %: " + percentage); 
     }
     public void EmploymentData() {
-        // System.out.println("Enter your name: ");
-        // Scanner scanner = new Scanner(System.in);
-        // String name = scanner.next();
-        System.out.println("Enter your company name: ");
         Scanner scanner = new Scanner(System.in);
-        String SchoolName = scanner.next();
-        System.out.println("Enter your position: ");
-        Scanner scanner1 = new Scanner(System.in);
-        String position = scanner1.next();
-        // super.EmploymentData();
+        System.out.print("Enter your company name: ");
+        String companyName = scanner.next();
+        System.out.print("Enter your position: ");
+        String position = scanner.next();
+        System.out.println("Company: " + companyName + "\n Position: " + position);
     }
 }
 class Game implements Data {
+    public void printName() {
+        System.out.println("Name");
+    }
     public void SchoolData() {
-        // System.out.println("Enter your name: ");
-        // Scanner scanner = new Scanner(System.in);
-        // String name = scanner.next();
-        System.out.println("Enter your school name: ");
-        Scanner scanner = new Scanner(System.in);
-        String SchoolName = scanner.next();
-        System.out.println("Enter your 10th percentage: ");
-        Scanner scanner1 = new Scanner(System.in);
-        Float percentage = scanner1.nextFloat();     
-        // super.SchoolData();   
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter your school name: ");
+        String schoolName = scanner.next();
+        System.out.print("Enter your 10th percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("School: " + schoolName + "\n 10th %: " + percentage);    
     }
-    public void CollegeData() {
-        // System.out.println("Enter your name: ");
-        // Scanner scanner = new Scanner(System.in);
-        // String name = scanner.next();
-        System.out.println("Enter your college name: ");
+    public void JuniorCollegeData() {
         Scanner scanner = new Scanner(System.in);
-        String SchoolName = scanner.next();
-        System.out.println("Enter your 12th/Diploma percentage: ");
-        Scanner scanner1 = new Scanner(System.in);
-        Float percentage = scanner1.nextFloat(); 
-        // super.CollegeData();
+        System.out.print("Enter your junior college name: ");
+        String collegeName = scanner.next();
+        System.out.print("Enter your 12th/Diploma percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("College: " + collegeName + "\n 12th/Diploma %: " + percentage); 
     }
-    // public void EmploymentData() {
-    //     // System.out.println("Enter your name: ");
-    //     // Scanner scanner = new Scanner(System.in);
-    //     // String name = scanner.next();
-    //     System.out.println("Enter your company name: ");
-    //     Scanner scanner = new Scanner(System.in);
-    //     String SchoolName = scanner.next();
-    //     System.out.println("Enter your position: ");
-    //     Scanner scanner1 = new Scanner(System.in);
-    //     String position = scanner1.next();
-    //     // super.EmploymentData();
-    // }
+    public void SeniorCollegeData() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your senior college name: ");
+        String collegeName = scanner.next();
+        System.out.print("Enter your Graduation percentage: ");
+        float percentage = scanner.nextFloat();
+        System.out.println("College: " + collegeName + "\n Graduation %: " + percentage); 
+    }
+    public void EmploymentData() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your company name: ");
+        String companyName = scanner.next();
+        System.out.print("Enter your position: ");
+        String position = scanner.next();
+        System.out.println("Company: " + companyName + "\n Position: " + position);
+    }
 }
