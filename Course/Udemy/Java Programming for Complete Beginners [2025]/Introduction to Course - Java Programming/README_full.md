@@ -327,10 +327,10 @@ Not Assignment  : 🚫
 | 314 | Step 07 - List and ArrayList - Iterating around elements | 02:59 | ✅ | ✅ |
 | 315 | Step 08 - List and ArrayList - Choosing iteration approach for printing and dele | 06:56 | ✅ | 😕 |
 | 316 | Step 09 - List and ArrayList - Puzzles - Type Safety and Removing Integers | 07:24 | ✅ | ✅ |
-| 317 | Step 10 - List and ArrayList - Sorting - Introduction to Collections sort static | 08:57 | ☐ | ☐ |
-| 318 | Step 11 - List and ArrayList - Sorting - Implementing Comparable Inteface in Stu | 03:26 | ☐ | ☐ |
-| 319 | Step 12 - List and ArrayList - Sorting - Providing Flexibility by implementing C | 06:07 | ☐ | ☐ |
-| 320 | Step 13 - List and ArrayList - A Summary | 02:23 | ☐ | ☐ |
+| 317 | Step 10 - List and ArrayList - Sorting - Introduction to Collections sort static | 08:57 | ✅ | ✅ |
+| 318 | Step 11 - List and ArrayList - Sorting - Implementing Comparable Inteface in Stu | 03:26 | ✅ | ✅ |
+| 319 | Step 12 - List and ArrayList - Sorting - Providing Flexibility by implementing C | 06:07 | ✅ | 😕 |
+| 320 | Step 13 - List and ArrayList - A Summary | 02:23 | ✅ | 🚫 |
 | 321 | Step 14 - Set Interface - Introduction - No Duplication | 04:17 | ☐ | ☐ |
 | 322 | Step 15 - Understanding Data Structures - Array, LinkedList and Hashing | 06:17 | ☐ | ☐ |
 | 323 | Step 16 - Understanding Data Structures - Tree - Sorted Order | 03:26 | ☐ | ☐ |

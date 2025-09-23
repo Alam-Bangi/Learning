@@ -4,7 +4,7 @@
 - Java - Section 22- Collections in Java Programming 🔄
 
 ### Videos
-- Java - Section 22 
+- Java - Section 22 (258-267)
 
 ### Assignment
 - Practice Coding.
