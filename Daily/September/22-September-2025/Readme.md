@@ -1,10 +1,10 @@
-# 28-August-2025
+# 22-September-2025
 
 ## First Half
 - Java - Section 22- Collections in Java Programming 🔄
 
 ### Videos
-- Java - Section 20 
+- Java - Section 22 
 
 ### Assignment
 - Practice Coding.
