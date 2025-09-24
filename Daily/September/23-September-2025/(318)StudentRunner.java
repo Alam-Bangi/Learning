@@ -9,6 +9,9 @@ class StudentRunner {
         System.out.println(studentsAl);
         Collections.sort(studentsAl);
         System.out.println(studentsAl);
+        Student student1 = new Student("Jack", 5);
+        Student student2 = new Student("Jill", 1);
+        System.out.println(student1.compareTo(student2));
     }
 }
 class Student implements Comparable<Student> {
@@ -37,6 +40,6 @@ class Student implements Comparable<Student> {
         return sb.toString();
     }
     public int compareTo(Student that) {
-        return Integer.compare(that.id,this.id);
+        return Integer.compare(this.id,that.id);
     }
 }

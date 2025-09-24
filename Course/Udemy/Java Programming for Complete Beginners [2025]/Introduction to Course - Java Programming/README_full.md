@@ -332,13 +332,13 @@ Not Assignment  : 🚫
 | 319 | Step 12 - List and ArrayList - Sorting - Providing Flexibility by implementing C | 06:07 | ✅ | 😕 |
 | 320 | Step 13 - List and ArrayList - A Summary | 02:23 | ✅ | 🚫 |
 | 321 | Step 14 - Set Interface - Introduction - No Duplication | 04:17 | ✅ | 😕 |
-| 322 | Step 15 - Understanding Data Structures - Array, LinkedList and Hashing | 06:17 | ☐ | ☐ |
-| 323 | Step 16 - Understanding Data Structures - Tree - Sorted Order | 03:26 | ☐ | ☐ |
-| 324 | Step 17 - Set Interface - Hands on - HashSet, LinkedHashSet and TreeSet | 04:58 | ☐ | ☐ |
-| 325 | Step 18 - Set Interface - Exercise - Find Unique Characters in a List | 04:34 | ☐ | ☐ |
-| 326 | Step 19 - TreeSet - Methods from NavigableSet - floor,lower,upper, subSet, head | 05:29 | ☐ | ☐ |
-| 327 | Step 20 - Queue Interface - Process Elements in Order | 01:39 | ☐ | ☐ |
-| 328 | Step 21 - Introduction to PriorityQueue - Basic Methods and Customized Priority | 06:32 | ☐ | ☐ |
+| 322 | Step 15 - Understanding Data Structures - Array, LinkedList and Hashing | 06:17 | ✅ | 🚫 |
+| 323 | Step 16 - Understanding Data Structures - Tree - Sorted Order | 03:26 | ✅ | 🚫 |
+| 324 | Step 17 - Set Interface - Hands on - HashSet, LinkedHashSet and TreeSet | 04:58 | ✅ | ✅ |
+| 325 | Step 18 - Set Interface - Exercise - Find Unique Characters in a List | 04:34 | ✅ | ✅ |
+| 326 | Step 19 - TreeSet - Methods from NavigableSet - floor,lower,upper, subSet, head | 05:29 | ✅ | ✅ |
+| 327 | Step 20 - Queue Interface - Process Elements in Order | 01:39 | ✅ | 🚫 |
+| 328 | Step 21 - Introduction to PriorityQueue - Basic Methods and Customized Priority | 06:32 | ✅ | ✅ |
 | 329 | Step 22 - Map Interface - An Introduction - Key and Value | 02:50 | ☐ | ☐ |
 | 330 | Step 23 - Map Interface - Implementations - HashMap, HashTable, LinkedHashMap an | 02:49 | ☐ | ☐ |
 | 331 | Step 24 - Map Interface - Basic Operations | 05:00 | ☐ | ☐ |

@@ -14,11 +14,18 @@ class StudentRunner {
         System.out.println("AscendingStudentComparator " + studentsAl);
         studentsAl.sort(new AscendingStudentComparator());
         System.out.println("AscendingStudentComparator " + studentsAl);
+        studentsAl.sort(new AscendingStudentNameComparator());
+        System.out.println("AscendingStudentNameComparator " + studentsAl);        
     }
 }
 class AscendingStudentComparator implements Comparator<Student> {
     public int compare(Student student1, Student student2) {
         return Integer.compare(student1.getId(), student2.getId());
+    }
+}
+class AscendingStudentNameComparator implements Comparator<Student> {
+    public int compare(Student student1, Student student2) {
+        return student1.getName().compareTo(student2.getName());
     }
 }
 class Student implements Comparable<Student> {

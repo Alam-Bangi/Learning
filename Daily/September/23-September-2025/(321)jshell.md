@@ -1,3 +1,4 @@
+```
 jshell> Set<String> set = Set.of("Apple","Bat","Cat");
 set ==> [Bat, Cat, Apple]
 
@@ -20,3 +21,4 @@ jshell> hashset.add(2,"Apple")
 |    found:    int,java.lang.String
 |    reason: actual and formal argument lists differ in length
 |  hashset.add(2,"Apple")
+```
