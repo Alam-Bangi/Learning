@@ -1,3 +1,4 @@
+```
 jshell> List value = List.of("A",'A',1,1.0)
 value ==> [A, A, 1, 1.0]
 
@@ -39,3 +40,4 @@ $8 ==> true
 
 jshell> numbersAl
 numbersAl ==> [102, 103, 104, 105]
+```
