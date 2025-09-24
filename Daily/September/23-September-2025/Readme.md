@@ -17,7 +17,7 @@
 ## Second Half
 - Java - Section 22- Collections in Java Programming 🔄
 ### Videos
-- Java - Section 22 (266-271)
+- Java - Section 22 (267-271) (317-321)
 ### Assignment
 
 ### Doubts
