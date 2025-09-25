@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 class SetRunner {
     public static void main(String[] args) {
-        List<Character> characters = List.of('A','Z','A','B','Z','F');
+        List<Character> characters = List.of('$',' ','A','Z','A','B','Z','F','a','1','@','😕');
         
         Set<Character> treeSet = new TreeSet<>(characters);
         System.out.println("Tree Set- " + treeSet);
