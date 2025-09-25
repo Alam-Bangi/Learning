@@ -339,10 +339,10 @@ Not Assignment  : 🚫
 | 326 | Step 19 - TreeSet - Methods from NavigableSet - floor,lower,upper, subSet, head | 05:29 | ✅ | ✅ |
 | 327 | Step 20 - Queue Interface - Process Elements in Order | 01:39 | ✅ | 🚫 |
 | 328 | Step 21 - Introduction to PriorityQueue - Basic Methods and Customized Priority | 06:32 | ✅ | ✅ |
-| 329 | Step 22 - Map Interface - An Introduction - Key and Value | 02:50 | ☐ | ☐ |
-| 330 | Step 23 - Map Interface - Implementations - HashMap, HashTable, LinkedHashMap an | 02:49 | ☐ | ☐ |
-| 331 | Step 24 - Map Interface - Basic Operations | 05:00 | ☐ | ☐ |
-| 332 | Step 25 - Map Interface - Comparison - HashMap vs LinkedHashMap vs TreeMap | 04:20 | ☐ | ☐ |
+| 329 | Step 22 - Map Interface - An Introduction - Key and Value | 02:50 | ✅ | 🚫 |
+| 330 | Step 23 - Map Interface - Implementations - HashMap, HashTable, LinkedHashMap an | 02:49 | ✅ | 🚫 |
+| 331 | Step 24 - Map Interface - Basic Operations | 05:00 | ✅ | 😕 |
+| 332 | Step 25 - Map Interface - Comparison - HashMap vs LinkedHashMap vs TreeMap | 04:20 | ✅ | ✅ |
 | 333 | Step 26 - Map Interface - Exercise - Count occurances of characters and words in | 08:43 | ☐ | ☐ |
 | 334 | Step 27 - TreeMap - Methods from NavigableMap - floorKey, higherKey, firstEntry, | 04:26 | ☐ | ☐ |
 | 335 | Step 28 - Java Collections - Conclusion with Three Tips | 03:01 | ☐ | ☐ |
