@@ -343,7 +343,7 @@ Not Assignment  : 🚫
 | 330 | Step 23 - Map Interface - Implementations - HashMap, HashTable, LinkedHashMap an | 02:49 | ✅ | 🚫 |
 | 331 | Step 24 - Map Interface - Basic Operations | 05:00 | ✅ | 😕 |
 | 332 | Step 25 - Map Interface - Comparison - HashMap vs LinkedHashMap vs TreeMap | 04:20 | ✅ | ✅ |
-| 333 | Step 26 - Map Interface - Exercise - Count occurances of characters and words in | 08:43 | ☐ | ☐ |
+| 333 | Step 26 - Map Interface - Exercise - Count occurances of characters and words in | 08:43 | ✅ | ✅ |
 | 334 | Step 27 - TreeMap - Methods from NavigableMap - floorKey, higherKey, firstEntry, | 04:26 | ☐ | ☐ |
 | 335 | Step 28 - Java Collections - Conclusion with Three Tips | 03:01 | ☐ | ☐ |
 | 336 | DO NOT SKIP - FLASH CARDS | 00:20 | ☐ | ☐ |
