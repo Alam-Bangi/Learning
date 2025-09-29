@@ -1,3 +1,14 @@
+/**
+ * Assignment 2
+ *
+Write a Python program to store marks scored in subject “Fundamental of Data Structure” by
+N students in the class. Write functions to compute following:
+a) The average score of class
+b) Highest score and lowest score of class
+c) Count of students who were absent for the test
+d) Display mark with highest frequency
+ */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -7,7 +18,6 @@ class Assignment2 {
 
     boolean isSeStudentsInput = false;
     boolean isFdsMarksInput = false;
-    boolean isAbsent = false;
 
     public Assignment2() {
         this.seStudents = new String[]{"a","b","c","d","e","f"};
