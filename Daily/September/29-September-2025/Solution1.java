@@ -18,6 +18,9 @@ public class Solution1 {
         // String[] substrings = new String[s.length()-(k-1)];
         smallest= s.substring(0, k);
         largest = s.substring(0, k);
+        if(k > s.length()) {
+            System.out.println("k is larger than the length of the string");
+        }
         for (int i=0; i<s.length()-(k-1); i++) {
             String substringcontent = s.substring(i, k+i);
             // System.out.println(substringcontent);

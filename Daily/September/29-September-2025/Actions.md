@@ -3,5 +3,5 @@
     - Ask student name and then add marks respectively.
     - Fix fdsMarks by adding -1 to students absent. 
 2. Complete Assignment of List, Set and Map.
-3. Fix solution1 of 29-SEptember-2025.
+3. Fix solution1 of 29-September-2025.
 
