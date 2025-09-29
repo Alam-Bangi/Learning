@@ -379,16 +379,5 @@
                     default:
                         System.out.println("Invalid Input.");
                 }
-                // System.out.println("Do you want to continue?\n1. Continue \n2. Exit");
-                // Scanner scanner1 = new Scanner(System.in);
-                // int Y = scanner1.nextInt();
-                // if(Y==1) {
-                    
-                // } else if(Y==2) {
-                //     System.out.println("Exiting the program");
-                //     scanner1.close();
-                //     return ;
-                // }
-            } 
         }
     }
