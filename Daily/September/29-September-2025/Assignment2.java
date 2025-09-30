@@ -80,10 +80,15 @@ class Assignment2 {
     }
     public void AverageFDSMarks() {
         int sum = 0;
+        int studentcount = 0;
         for (int mark : fdsMarks) {
-            sum = sum + mark;
+            if(mark >=0) {
+                sum = sum + mark;
+                studentcount++;
+            }
+            
         }
-        System.out.println("Average of FDS Marks is " + sum / fdsMarks.length);
+        System.out.println("Average of FDS Marks is " + sum / studentcount);
     }
     public void highestFDSMarks() {
         int highest = fdsMarks[0];
@@ -97,6 +102,9 @@ class Assignment2 {
     public void lowestFDSMarks() {
         int lowest = fdsMarks[0];
         for (int mark : fdsMarks) {
+            if(mark == -1) {
+                continue;
+            }
             if (mark < lowest) {
                 lowest = mark;
             }
@@ -106,12 +114,12 @@ class Assignment2 {
     public void absentStudents() {
         int absentCount = 0;
         for (int i = 0; i < fdsMarks.length; i++) {
-        if (fdsMarks[i] == -1) {
-            absentCount++;
-            System.out.println(seStudents[i] + " is absent");
+            if (fdsMarks[i] == -1) {
+                absentCount++;
+                System.out.println(seStudents[i] + " is absent");
+            }
         }
-    }
-    System.out.println("Count of Absent Students is " + absentCount);
+        System.out.println("Count of Absent Students is " + absentCount);
     }   
     public static void main(String[] args) {
         Assignment2 assignment2 = new Assignment2();

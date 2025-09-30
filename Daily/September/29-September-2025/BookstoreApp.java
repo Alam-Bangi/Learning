@@ -1,4 +1,10 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.TreeSet;
+
 
 public class BookstoreApp {
     public static void main(String[] args) {
@@ -10,14 +16,12 @@ public class BookstoreApp {
         for (Product p : inventory.values()) {
             System.out.println(p);
         }
-        // System.out.println("Product details for Effective Java:");
-        // System.out.println(inventory.get("976"));
         System.out.println();
 
+        // Valid use case of linkedhash map
         LinkedHashMap<String, List<String>> recentViews = new LinkedHashMap<>();
         recentViews.put("user101", new ArrayList<>(List.of("977")));
         recentViews.put("user102", new ArrayList<>(List.of("978")));
-
         recentViews.get("user101").add("976");
 
         System.out.println("Recent views for user101: " + recentViews.get("user101"));

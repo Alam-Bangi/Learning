@@ -48,9 +48,8 @@ class Assignment2 {
         System.out.println("FDS Marks are: " + Arrays.toString(fdsMarks));
     }
     public int[] AddFdsMarks() {
-        System.out.println("Enter the number of students: ");
         Scanner scanner = new Scanner(System.in);
-        int noOfStudents = scanner.nextInt();
+        int noOfStudents = seStudents.length;
         if(noOfStudents > seStudents.length) {
             System.out.println("Number of students cannot be more than "+seStudents.length);
             return fdsMarks;

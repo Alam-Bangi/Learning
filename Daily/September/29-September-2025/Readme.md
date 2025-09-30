@@ -1,7 +1,9 @@
 # 29-September-2025
 
 ## First Half
-- Solved HackerRank questions.
+- Solved HackerRank questions of substring problems.
+1. Get SubString of string.
+2. Get 
 - Practised functions of Map Interface.
 
 ### Videos
