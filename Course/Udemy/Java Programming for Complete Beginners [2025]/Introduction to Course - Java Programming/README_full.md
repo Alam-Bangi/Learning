@@ -11,29 +11,29 @@ Not Assignment  : 🚫
 
 | Sr. | Name | Time | Completed Video | Completed Tryout |
 |----:|------|:----:|:---------------:|:----------------:|
-| 1 | [NEW ADDITION] World's Best Java Interview Guide | 00:25 | ☐ | ☐ |
-| 2 | Step 01 - Course Overview - Java Programming For Absolute Beginners | 04:21 | ☐ | ☐ |
-| 3 | Course Downloads - Course Guide and Presentation | 00:09 | ☐ | ☐ |
-| 4 | DO NOT SKIP - in28minutes Learning Community | 00:24 | ☐ | ☐ |
-| 5 | Recommended Java Version - Java 21 or HIGHER | 00:20 | ☐ | ☐ |
-| 6 | Step 00 - Installing Java - Overview | 00:52 | ☐ | ☐ |
-| 7 | Step 01 - Installing Java - Windows | 06:47 | ☐ | ☐ |
-| 8 | Step 02 - Installing Java - Mac | 03:28 | ☐ | ☐ |
-| 9 | Step 03 - Installing Java - Linux | 02:50 | ☐ | ☐ |
-| 10 | Step 04 - Troubleshooting Java Installation | 03:20 | ☐ | ☐ |
-| 11 | Step 00 - Step By Step Problem Solving with Programming | 02:14 | ☐ | ☐ |
-| 12 | Step 01 - Introduction to Multiplication Table challenge | 01:29 | ☐ | ☐ |
-| 13 | Step 02 - Getting Started with JShell | 04:19 | ☐ | ☐ |
-| 14 | Step 03 - Break Down Multiplication Table Challenge | 01:55 | ☐ | ☐ |
-| 15 | Step 04 - Java Expression - An Introduction | 07:42 | ☐ | ☐ |
-| 16 | Step 05 - Java Expression - Exercises | 01:39 | ☐ | ☐ |
-| 17 | Step 06 - Java Expression - Puzzles | 08:28 | ☐ | ☐ |
-| 18 | Section Quiz 1 | 10 questions | ☐ | ☐ |
-| 19 | Code Snippets For Next Step - Printing Output To Console | 00:14 | ☐ | ☐ |
-| 20 | Step 07 - Printing output to console with Java | 11:35 | ☐ | ☐ |
-| 21 | Step 08 - Printing output to console with Java - Exercise Statements | 01:40 | ☐ | ☐ |
-| 22 | Do You Want to Help Us? | 00:16 | ☐ | ☐ |
-| 23 | Step 09 - Printing output to console with Java - Exercise Solutions | 03:58 | ☐ | ☐ |
+| 1 | [NEW ADDITION] World's Best Java Interview Guide | 00:25 | ✅ | 🚫 |
+| 2 | Step 01 - Course Overview - Java Programming For Absolute Beginners | 04:21 | ✅ | 🚫 |
+| 3 | Course Downloads - Course Guide and Presentation | 00:09 | ✅ | 🚫 |
+| 4 | DO NOT SKIP - in28minutes Learning Community | 00:24 | ✅ | 🚫 |
+| 5 | Recommended Java Version - Java 21 or HIGHER | 00:20 | ✅ | 🚫 |
+| 6 | Step 00 - Installing Java - Overview | 00:52 | ✅ | 🚫 |
+| 7 | Step 01 - Installing Java - Windows | 06:47 | ✅ | 🚫 |
+| 8 | Step 02 - Installing Java - Mac | 03:28 | ✅ | 🚫 |
+| 9 | Step 03 - Installing Java - Linux | 02:50 | ✅ | 🚫 |
+| 10 | Step 04 - Troubleshooting Java Installation | 03:20 | ✅ | 🚫 |
+| 11 | Step 00 - Step By Step Problem Solving with Programming | 02:14 | ✅ | 🚫 |
+| 12 | Step 01 - Introduction to Multiplication Table challenge | 01:29 | ✅ | 🚫 |
+| 13 | Step 02 - Getting Started with JShell | 04:19 | ✅ | 🚫 |
+| 14 | Step 03 - Break Down Multiplication Table Challenge | 01:55 | ✅ | 🚫 |
+| 15 | Step 04 - Java Expression - An Introduction | 07:42 | ✅ | ✅ |
+| 16 | Step 05 - Java Expression - Exercises | 01:39 | ✅ | 🚫 |
+| 17 | Step 06 - Java Expression - Puzzles | 08:28 | ✅ | ✅ |
+| 18 | Section Quiz 1 | 10 questions | ✅ | ✅ |
+| 19 | Code Snippets For Next Step - Printing Output To Console | 00:14 | ✅ | 🚫 |
+| 20 | Step 07 - Printing output to console with Java | 11:35 | ✅ | ✅ |
+| 21 | Step 08 - Printing output to console with Java - Exercise Statements | 01:40 | ✅ | 🚫 |
+| 22 | Do You Want to Help Us? | 00:16 | ✅ | 🚫 |
+| 23 | Step 09 - Printing output to console with Java - Exercise Solutions | 03:58 | ✅ | ✅ |
 | 24 | Step 10 - Printing output to console with Java - Puzzles | 08:01 | ☐ | ☐ |
 | 25 | JShell Tip - Multiple Lines of Code | 02:13 | ☐ | ☐ |
 | 26 | Step 11 - Advanced Printing output to console with Java | 06:41 | ☐ | ☐ |

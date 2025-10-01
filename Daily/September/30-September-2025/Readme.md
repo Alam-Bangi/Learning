@@ -11,7 +11,9 @@
 ### Videos
 
 ### Assignment
-- Solve given actions.
+- Write a program using list, set and map all used in one.
+- Make changes in BookStoreApp in 29-September-2025.
+- Go through Assignment 3 of SE.
 
 ### Doubts
 
@@ -19,14 +21,23 @@
  
 ## Second Half
 - Java -Section 22- Collections in Java Programming. ✅
-- Solved given actions.
+- Used list, set and map and programmed a movie theatre.
+ - Went through Assignment3 of SE.
 
 ### Videos
-- Java - Section 22 (285-288) (334-338)
+- Java - Section 22 (285-288) (334-338) ✅
+1. (334)Learnt TreeMap methods with Navigable Map such as flooKey, higherKey, subMap...
+2. (335) conclusion for the whole section 22.
+3. (336) Flash cards </br>
+        - [OOPS](https://www.in28minutes.com/flashcard-java-11-objectorientedprogrammingagain)</br>
+        - [Collections](https://www.in28minutes.com/flashcard-java-12-01-collections)</br>
+        - [Collection Methods](https://www.in28minutes.com/flashcard-java-12-02-collections)
+
+4. (338) Talk on how to decide your goals.
 ### Assignment
- - Went through Assignment3 of SE.
+
 ### Doubts
-- Didn't understand what to do in bookstore.
+- Can't recollect what to do in bookstore.
 
 ### Links
-- https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/41324184#overview
+- https://www.udemy.com/course/java-programming-tutorial-for-beginners/
