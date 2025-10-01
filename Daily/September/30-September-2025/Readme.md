@@ -1,4 +1,4 @@
-# 29-September-2025
+# 30-September-2025
 
 ## First Half
 - Rectified solution1 of 29-September-2025.
