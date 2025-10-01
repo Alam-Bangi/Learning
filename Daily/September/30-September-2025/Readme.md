@@ -2,7 +2,11 @@
 
 ## First Half
 - Rectified solution1 of 29-September-2025.
-- 
+1. break the string into different parts of each length k starting from position 0 then position 1 and so on...
+2. return smallest and largest word in terms of ascending order.
+3. value of k should be less than or equal to string.
+4. if value of k is greater than string or in negative give errors accordingly. 
+5. value of k should not be 0.
 
 ### Videos
 
