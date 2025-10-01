@@ -18,7 +18,7 @@
 - Solved given actions.
 
 ### Videos
-- Java - Section 22 (285-288) (334-337)
+- Java - Section 22 (285-288) (334-338)
 ### Assignment
  - Went through Assignment3 of SE.
 ### Doubts

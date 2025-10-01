@@ -345,10 +345,10 @@ Not Assignment  : 🚫
 | 332 | Step 25 - Map Interface - Comparison - HashMap vs LinkedHashMap vs TreeMap | 04:20 | ✅ | ✅ |
 | 333 | Step 26 - Map Interface - Exercise - Count occurances of characters and words in | 08:43 | ✅ | ✅ |
 | 334 | Step 27 - TreeMap - Methods from NavigableMap - floorKey, higherKey, firstEntry, | 04:26 | ✅ | ✅ |
-| 335 | Step 28 - Java Collections - Conclusion with Three Tips | 03:01 | ☐ | ☐ |
-| 336 | DO NOT SKIP - FLASH CARDS | 00:20 | ☐ | ☐ |
+| 335 | Step 28 - Java Collections - Conclusion with Three Tips | 03:01 | ✅ | ✅ |
+| 336 | DO NOT SKIP - FLASH CARDS | 00:20 | ✅ | ✅ |
 | 337 | Section Quiz | 13 questions | ☐ | ☐ |
-| 338 | How to Decide Your Goals | 01:39 | ☐ | ☐ |
+| 338 | How to Decide Your Goals | 01:39 | ✅ | ✅ |
 | 339 | Coding Exercise - Anagram Checker | 1 question | ☐ | ☐ |
 | 340 | Solution Video For Coding Exercise - Anagram Checker | 07:48 | ☐ | ☐ |
 | 341 | Coding Exercise - Is Hexadecimal String? | 1 question | ☐ | ☐ |
