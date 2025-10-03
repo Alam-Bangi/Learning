@@ -6,9 +6,14 @@
 - JAVA- Section 10- Java Coding Exercises - Set 2
 
 ### Videos
-
 - JAVA Section 9 ✅
+        - JAVA class and its objects
+        - Object state and behaviour, encapsulation
+        - Creating Getters and Setters
+        - Creating Constructors of class
+
 - JAVA Section 10 ✅
+        -(107-136)
 
 ### Assignment
 

@@ -13,6 +13,14 @@ What is a variable in Java?
 - A keyword to reserve memory for data
 
 Question 4:
-How can we change the value of a variable?</br>
+How can we change the value of a variable?
 - By assigning a new value using the assignment operator
+
+Question 5:
+Which of the following variable names is NOT allowed in Java?
+- 3goals
+
+Question 6:
+Which of the following is a recommended naming convention for variables in Java?
+- Use camelCase for variable names with multiple words
 ```

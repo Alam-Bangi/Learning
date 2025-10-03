@@ -8,8 +8,9 @@
 ### Videos
 
 - JAVA Section 11 ✅
+        - Primitive data types 
 - JAVA Section 12 🔄
-
+- (137-154)
 ### Assignment
 
 - Revise Java Commands.

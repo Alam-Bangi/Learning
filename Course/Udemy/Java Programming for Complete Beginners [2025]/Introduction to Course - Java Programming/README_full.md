@@ -34,137 +34,137 @@ Not Assignment  : 🚫
 | 21 | Step 08 - Printing output to console with Java - Exercise Statements | 01:40 | ✅ | 🚫 |
 | 22 | Do You Want to Help Us? | 00:16 | ✅ | 🚫 |
 | 23 | Step 09 - Printing output to console with Java - Exercise Solutions | 03:58 | ✅ | ✅ |
-| 24 | Step 10 - Printing output to console with Java - Puzzles | 08:01 | ☐ | ☐ |
-| 25 | JShell Tip - Multiple Lines of Code | 02:13 | ☐ | ☐ |
-| 26 | Step 11 - Advanced Printing output to console with Java | 06:41 | ☐ | ☐ |
-| 27 | Step 12 - Advanced Printing output to console with Java - Exercises | 04:11 | ☐ | ☐ |
-| 28 | Section Quiz 2 | 6 questions | ☐ | ☐ |
-| 29 | Step 13 - Introduction to Variables in Java | 08:28 | ☐ | ☐ |
-| 30 | Step 14 - Introduction to Variables in Java - Exercises and Puzzles | 06:27 | ☐ | ☐ |
-| 31 | Step 15 - 4 Important Things to Know about Variables in Java | 01:02 | ☐ | ☐ |
-| 32 | Step 16 - How are variables stored in memory? | 04:33 | ☐ | ☐ |
-| 33 | Step 17 - How to name a variable? | 04:06 | ☐ | ☐ |
-| 34 | Section Quiz 3 | 6 questions | ☐ | ☐ |
-| 35 | Step 18 - Understanding Primitive Variable Types in Java | 06:55 | ☐ | ☐ |
-| 36 | Step 19 - Understanding Primitive Variable Types in Java - Choosing a Type | 06:14 | ☐ | ☐ |
-| 37 | Java Tip - String Concatenation | 03:05 | ☐ | ☐ |
-| 38 | Step 20 - Java Assignment Operator | 04:20 | ☐ | ☐ |
-| 39 | Step 21 - Java Assignment Operator - Puzzles on Increment, Decrement and Compoun | 03:21 | ☐ | ☐ |
-| 40 | Step 22 - Programming Tips : JShell - Shortcuts, Multiple Lines and Variables | 07:08 | ☐ | ☐ |
-| 41 | Section Quiz | 5 questions | ☐ | ☐ |
-| 42 | Step 23 - Java Conditionals and If Statement - Introduction | 07:59 | ☐ | ☐ |
-| 43 | Step 24 - Java Conditionals and If Statement - Exercise Statements | 02:11 | ☐ | ☐ |
-| 44 | Step 25 - Java Conditionals and If Statement - Exercise Solutions | 06:31 | ☐ | ☐ |
-| 45 | Step 26 - Java Conditionals and If Statement - Puzzles | 06:38 | ☐ | ☐ |
-| 46 | Step 27 - Java For Loop to Print Multiplication Table - Introduction | 09:04 | ☐ | ☐ |
-| 47 | Step 28 - Java For Loop to Print Multiplication Table - Exercise Statements | 01:38 | ☐ | ☐ |
-| 48 | Step 29 - Java For Loop to Print Multiplication Table - Exercise Solutions | 11:09 | ☐ | ☐ |
-| 49 | Step 30 - Java For Loop to Print Multiplication Table - Puzzles | 06:33 | ☐ | ☐ |
-| 50 | Step 31 - Getting Started with Programming - Revise all Terminology | 07:07 | ☐ | ☐ |
-| 51 | Section Quiz 5 | 6 questions | ☐ | ☐ |
-| 52 | How to remember things for long time | 01:51 | ☐ | ☐ |
-| 53 | Maximizing Learning Efficiency with Playback Speed | 01:57 | ☐ | ☐ |
-| 54 | Step 00 - Section 02 - Methods - An Introduction | 01:07 | ☐ | ☐ |
-| 55 | Code Reference For Next Step | 00:09 | ☐ | ☐ |
-| 56 | Step 01 - Your First Java Method - Hello World Twice and Exercise Statements | 09:22 | ☐ | ☐ |
-| 57 | Step 02 - Introduction to Java Methods - Exercises and Puzzles | 06:19 | ☐ | ☐ |
-| 58 | Step 03 - Programming Tip - Editing Methods with JShell | 05:15 | ☐ | ☐ |
-| 59 | Code Reference For The Next Step | 00:12 | ☐ | ☐ |
-| 60 | Step 04 - Introduction to Java Methods - Arguments and Parameters | 10:36 | ☐ | ☐ |
-| 61 | Step 05 - Introduction to Java Method Arguments - Exercises | 05:19 | ☐ | ☐ |
-| 62 | Step 06 - Introduction to Java Method Arguments - Puzzles and Tips | 04:09 | ☐ | ☐ |
-| 63 | Step 07 - Getting back to Multiplication Table - Creating a method | 05:48 | ☐ | ☐ |
-| 64 | Step 08 - Print Multiplication Table with a Parameter and Method Overloading | 04:12 | ☐ | ☐ |
-| 65 | Step 09 - Passing Multiple Parameters to a Java Method | 05:14 | ☐ | ☐ |
-| 66 | Step 10 - Returning from a Java Method - An Introduction | 05:48 | ☐ | ☐ |
-| 67 | Step 11 - Returning from a Java Method - Exercises | 05:43 | ☐ | ☐ |
-| 68 | Step 12 - Methods - Section Review | 02:26 | ☐ | ☐ |
-| 69 | DO NOT SKIP: FLASH CARDS | 00:18 | ☐ | ☐ |
-| 70 | Section Quiz | 6 questions | ☐ | ☐ |
-| 71 | How to be consistent? | 02:09 | ☐ | ☐ |
-| 72 | Step 00 - Section 03 - Overview Of Java Platform - Section Overview | 01:08 | ☐ | ☐ |
-| 73 | Step 01 - Overview Of Java Platform - An Introduction - java, javac, bytecode an | 05:13 | ☐ | ☐ |
-| 74 | DO NOT SKIP - OPTIONAL HANDS-ON | 00:17 | ☐ | ☐ |
-| 75 | Step 02 - Java Class and Object - First Look | 05:38 | ☐ | ☐ |
-| 76 | Step 03 - Create a method in a Java class | 06:21 | ☐ | ☐ |
-| 77 | Step 04 - Create and Compile Planet.java class | 06:05 | ☐ | ☐ |
-| 78 | Step 05 - Run Planet class with Java - Using a main method | 06:17 | ☐ | ☐ |
-| 79 | Step 06 - Play and Learn with Planet Class | 05:19 | ☐ | ☐ |
-| 80 | Step 07 - JDK vs JRE vs JVM | 05:57 | ☐ | ☐ |
-| 81 | About Your Instructor | 01:53 | ☐ | ☐ |
-| 82 | Step 00 - Installing Eclipse - Windows | 02:34 | ☐ | ☐ |
-| 83 | Step 00 - Installing Eclipse - Mac | 02:27 | ☐ | ☐ |
-| 84 | Step 01 - Creating a New Java Project with Eclipse | 05:13 | ☐ | ☐ |
-| 85 | Step 02 - Your first Java class with Eclipse | 05:27 | ☐ | ☐ |
-| 86 | Step 03 - Writing Multiplication Table Java Program with Eclipse | 06:10 | ☐ | ☐ |
-| 87 | Step 04 - Adding more methods for Multiplication Table Program | 03:52 | ☐ | ☐ |
-| 88 | Eclipse Tip - Save Actions | 02:41 | ☐ | ☐ |
-| 89 | Do Not use Modules for now | 00:59 | ☐ | ☐ |
-| 90 | Step 05 - Programming Tip 1 : Refactoring with Eclipse | 04:38 | ☐ | ☐ |
-| 91 | Step 06 - Programming Tip 2 : Debugging with Eclipse | 10:05 | ☐ | ☐ |
-| 92 | Step 07 - Programming Tip 3 : Eclipse vs JShell - How to choose? | 05:39 | ☐ | ☐ |
-| 93 | How to Stay UpTo Date With Technology Changes | 02:07 | ☐ | ☐ |
-| 94 | Introduction To Java Coding Exercises | 11:35 | ☐ | ☐ |
-| 95 | My 10 Rules for Happy Programmers | 03:33 | ☐ | ☐ |
-| 96 | Coding Exercise: Hello Coding Exercises | 1 question | ☐ | ☐ |
-| 97 | Coding Exercise: Print Hello World | 1 question | ☐ | ☐ |
-| 98 | Solution Video For Coding Exercise: Print Hello World | 03:08 | ☐ | ☐ |
-| 99 | Coding Exercise: Time Converter | 1 question | ☐ | ☐ |
-| 100 | Solution Video For Coding Exercise: Time Converter | 04:38 | ☐ | ☐ |
-| 101 | Coding Exercise: Exam Result Checker | 1 question | ☐ | ☐ |
-| 102 | Solution Video For Coding Exercise - Exam Result Checker | 03:22 | ☐ | ☐ |
-| 103 | Coding Exercise: Sum of Squares of First N Numbers | 1 question | ☐ | ☐ |
-| 104 | Solution Video For Coding Exercise - Sum of Squares of First N Numbers | 04:56 | ☐ | ☐ |
-| 105 | Story of in28minutes | 02:12 | ☐ | ☐ |
-| 106 | Github Book | 00:12 | ☐ | ☐ |
-| 107 | Step 00 - Introduction to Object Oriented Programming - Section Overview | 01:01 | ☐ | ☐ |
-| 108 | Step 01 - Introduction to Object Oriented Programming - Basics | 05:25 | ☐ | ☐ |
-| 109 | Step 02 - Introduction to Object Oriented Programming - Terminology - Class, Obj | 04:56 | ☐ | ☐ |
-| 110 | Step 03 - Introduction to Object Oriented Programming - Exercise - Online Shoppi | 03:08 | ☐ | ☐ |
-| 111 | Step 04 - Create Motor Bike Java Class and a couple of objects | 06:30 | ☐ | ☐ |
-| 112 | Step 05 - Exercise Solutions - Book class and Three instances | 02:02 | ☐ | ☐ |
-| 113 | Step 06 - Introducing State of an object with speed variable | 05:54 | ☐ | ☐ |
-| 114 | Step 07 - Understanding basics of Encapsulation with Setter methods | 07:05 | ☐ | ☐ |
-| 115 | Step 08 - Exercises and Tips - Getters and Generating Getters and Setters with E | 05:40 | ☐ | ☐ |
-| 116 | Step 09 - Puzzles on this and initialization of member variables | 07:21 | ☐ | ☐ |
-| 117 | Step 10 - First Advantage of Encapsulation | 01:53 | ☐ | ☐ |
-| 118 | Step 11 - Introduction to Encapsulation - Level 2 | 06:07 | ☐ | ☐ |
-| 119 | Step 12 - Encapsulation Exercises - Better Validation and Book class | 03:53 | ☐ | ☐ |
-| 120 | Step 13 - Introdcution to Abstraction | 03:05 | ☐ | ☐ |
-| 121 | Step 14 - Introduction to Java Constructors | 04:26 | ☐ | ☐ |
-| 122 | Step 15 - Introduction to Java Constructors - Exercises and Puzzles | 06:47 | ☐ | ☐ |
-| 123 | Step 16 - Introduction to Object Oriented Programming - Conclusion | 01:13 | ☐ | ☐ |
-| 124 | Do You Want To Help Us? | 00:17 | ☐ | ☐ |
-| 125 | DO NOT SKIP - FLASH CARDS | 00:20 | ☐ | ☐ |
-| 126 | Section Quiz | 9 questions | ☐ | ☐ |
-| 127 | What should I do when I face a challenge | 02:35 | ☐ | ☐ |
-| 128 | Coding Exercise: Inches to Object (Feet, Inches) | 1 question | ☐ | ☐ |
-| 129 | Solution Video For Coding Exercise - Inches to Object (Feet, Inches) | 06:11 | ☐ | ☐ |
-| 130 | Coding Exercise: Create a Square class | 1 question | ☐ | ☐ |
-| 131 | Solution Video For Coding Exercise - Create a Square class | 03:30 | ☐ | ☐ |
-| 132 | Coding Exercise: Create a Point class with 2 d co-ordinates x,y | 1 question | ☐ | ☐ |
-| 133 | Solution Video For Coding Exercise - Create a Point class with 2 d co-ordinates | 07:11 | ☐ | ☐ |
-| 134 | Coding Exercise: RGB Color Class | 1 question | ☐ | ☐ |
-| 135 | Solution Video For Coding Exercise - RGB Color Class | 05:24 | ☐ | ☐ |
-| 136 | All Work and No Play Makes You a Dull Kid | 01:15 | ☐ | ☐ |
-| 137 | Step 00 - Primitive Data Types in Depth - Section Overview | 01:08 | ☐ | ☐ |
-| 138 | Step 01 - Basics about Java Integer Data Types - Casting, Operators and More | 07:30 | ☐ | ☐ |
-| 139 | Step 02 - Java Integer Data Types - Puzzles - Octal, Hexadecimal, Post and Pre i | 09:50 | ☐ | ☐ |
-| 140 | Step 03 - Java Integer Data Types - Exercises - BiNumber - add, multiply and dou | 09:03 | ☐ | ☐ |
-| 141 | Step 04 - Java Floating Point Data Types - Casting , Conversion and Accuracy | 04:35 | ☐ | ☐ |
-| 142 | Step 05 - Introduction to BigDecimal Java Class | 06:58 | ☐ | ☐ |
-| 143 | Step 06 - BigDecimal Puzzles - Adding Integers | 03:13 | ☐ | ☐ |
-| 144 | Step 07 - BigDecimal Exercises - Simple Interest Calculation | 11:34 | ☐ | ☐ |
-| 145 | Step 08 - Java Boolean Data Type - Relational and Logical Operators | 10:38 | ☐ | ☐ |
-| 146 | Step 09 - Java Boolean Data Type - Puzzles - Short Circuit Operators | 05:02 | ☐ | ☐ |
-| 147 | Step 10 - Java Character Data Type char - Representation and Conversion | 06:02 | ☐ | ☐ |
-| 148 | Step 11 - Java char Data Type - Exercises 1 - isVowel | 07:47 | ☐ | ☐ |
-| 149 | Step 12 - Java char Data Type - Exercises 2 - isDigit | 08:03 | ☐ | ☐ |
-| 150 | Step 13 - Java char Data Type - Exercises 3 - isConsonant, List Upper Case and L | 09:00 | ☐ | ☐ |
-| 151 | Step 14 - Primitive Data Types in Depth - Conclusion | 01:23 | ☐ | ☐ |
-| 152 | DO NOT SKIP - FLASH CARDS | 00:21 | ☐ | ☐ |
-| 153 | Section Quiz | 9 questions | ☐ | ☐ |
-| 154 | How to be Productive - 3 Tips | 02:43 | ☐ | ☐ |
+| 24 | Step 10 - Printing output to console with Java - Puzzles | 08:01 | ✅ | ✅ |
+| 25 | JShell Tip - Multiple Lines of Code | 02:13 | ✅ | ✅ |
+| 26 | Step 11 - Advanced Printing output to console with Java | 06:41 | ✅ | ✅ |
+| 27 | Step 12 - Advanced Printing output to console with Java - Exercises | 04:11 | ✅ | ✅ |
+| 28 | Section Quiz 2 | 6 questions | ✅ | ✅ |
+| 29 | Step 13 - Introduction to Variables in Java | 08:28 | ✅ | ✅ |
+| 30 | Step 14 - Introduction to Variables in Java - Exercises and Puzzles | 06:27 | ✅ | ✅ |
+| 31 | Step 15 - 4 Important Things to Know about Variables in Java | 01:02 | ✅ | 🚫 |
+| 32 | Step 16 - How are variables stored in memory? | 04:33 | ✅ | 🚫 |
+| 33 | Step 17 - How to name a variable? | 04:06 | ✅ | 🚫 |
+| 34 | Section Quiz 3 | 6 questions | ✅ | ✅ |
+| 35 | Step 18 - Understanding Primitive Variable Types in Java | 06:55 | ✅ | ✅ |
+| 36 | Step 19 - Understanding Primitive Variable Types in Java - Choosing a Type | 06:14 | ✅ | ✅ |
+| 37 | Java Tip - String Concatenation | 03:05 | ✅ | ✅ |
+| 38 | Step 20 - Java Assignment Operator | 04:20 | ✅ | ✅ |
+| 39 | Step 21 - Java Assignment Operator - Puzzles on Increment, Decrement and Compoun | 03:21 | ✅ | ✅ |
+| 40 | Step 22 - Programming Tips : JShell - Shortcuts, Multiple Lines and Variables | 07:08 | ✅ | ✅ |
+| 41 | Section Quiz | 5 questions | ✅ | ✅ |
+| 42 | Step 23 - Java Conditionals and If Statement - Introduction | 07:59 | ✅ | ✅ |
+| 43 | Step 24 - Java Conditionals and If Statement - Exercise Statements | 02:11 | ✅ | ✅ |
+| 44 | Step 25 - Java Conditionals and If Statement - Exercise Solutions | 06:31 | ✅ | ✅ |
+| 45 | Step 26 - Java Conditionals and If Statement - Puzzles | 06:38 | ✅ | ✅ |
+| 46 | Step 27 - Java For Loop to Print Multiplication Table - Introduction | 09:04 | ✅ | ✅ |
+| 47 | Step 28 - Java For Loop to Print Multiplication Table - Exercise Statements | 01:38 | ✅ | 🚫 |
+| 48 | Step 29 - Java For Loop to Print Multiplication Table - Exercise Solutions | 11:09 | ✅ | ✅ |
+| 49 | Step 30 - Java For Loop to Print Multiplication Table - Puzzles | 06:33 | ✅ | ✅ |
+| 50 | Step 31 - Getting Started with Programming - Revise all Terminology | 07:07 | ✅ | 🚫 |
+| 51 | Section Quiz 5 | 6 questions | ✅ | ✅ |
+| 52 | How to remember things for long time | 01:51 | ✅ | 🚫 |
+| 53 | Maximizing Learning Efficiency with Playback Speed | 01:57 | ✅ | 🚫 |
+| 54 | Step 00 - Section 02 - Methods - An Introduction | 01:07 | ✅ | 🚫 |
+| 55 | Code Reference For Next Step | 00:09 | ✅ | 🚫 |
+| 56 | Step 01 - Your First Java Method - Hello World Twice and Exercise Statements | 09:22 | ✅ | ✅ |
+| 57 | Step 02 - Introduction to Java Methods - Exercises and Puzzles | 06:19 | ✅ | ✅ |
+| 58 | Step 03 - Programming Tip - Editing Methods with JShell | 05:15 | ✅ | ✅ |
+| 59 | Code Reference For The Next Step | 00:12 | ✅ | 🚫 |
+| 60 | Step 04 - Introduction to Java Methods - Arguments and Parameters | 10:36 | ✅ | ✅ |
+| 61 | Step 05 - Introduction to Java Method Arguments - Exercises | 05:19 | ✅ | ✅ |
+| 62 | Step 06 - Introduction to Java Method Arguments - Puzzles and Tips | 04:09 | ✅ | ✅ |
+| 63 | Step 07 - Getting back to Multiplication Table - Creating a method | 05:48 | ✅ | ✅ |
+| 64 | Step 08 - Print Multiplication Table with a Parameter and Method Overloading | 04:12 | ✅ | ✅ |
+| 65 | Step 09 - Passing Multiple Parameters to a Java Method | 05:14 | ✅ | ✅ |
+| 66 | Step 10 - Returning from a Java Method - An Introduction | 05:48 | ✅ | ✅ |
+| 67 | Step 11 - Returning from a Java Method - Exercises | 05:43 | ✅ | ✅ |
+| 68 | Step 12 - Methods - Section Review | 02:26 | ✅ | 🚫 |
+| 69 | DO NOT SKIP: FLASH CARDS | 00:18 | ✅ | ✅ |
+| 70 | Section Quiz | 6 questions | ✅ | ✅ |
+| 71 | How to be consistent? | 02:09 | ✅ | 🚫 |
+| 72 | Step 00 - Section 03 - Overview Of Java Platform - Section Overview | 01:08 | ✅ | 🚫 |
+| 73 | Step 01 - Overview Of Java Platform - An Introduction - java, javac, bytecode an | 05:13 | ✅ | 🚫 |
+| 74 | DO NOT SKIP - OPTIONAL HANDS-ON | 00:17 | ✅ | 🚫 |
+| 75 | Step 02 - Java Class and Object - First Look | 05:38 | ✅ | ✅ |
+| 76 | Step 03 - Create a method in a Java class | 06:21 | ✅ | ✅ |
+| 77 | Step 04 - Create and Compile Planet.java class | 06:05 | ✅ | ✅ |
+| 78 | Step 05 - Run Planet class with Java - Using a main method | 06:17 | ✅ | 🚫 |
+| 79 | Step 06 - Play and Learn with Planet Class | 05:19 | ✅ | 🚫 |
+| 80 | Step 07 - JDK vs JRE vs JVM | 05:57 | ✅ | 🚫 |
+| 81 | About Your Instructor | 01:53 | ✅ | 🚫 |
+| 82 | Step 00 - Installing Eclipse - Windows | 02:34 | ✅ | 🚫 |
+| 83 | Step 00 - Installing Eclipse - Mac | 02:27 | ✅ | 🚫 |
+| 84 | Step 01 - Creating a New Java Project with Eclipse | 05:13 | ✅ | 🚫 |
+| 85 | Step 02 - Your first Java class with Eclipse | 05:27 | ✅ | ✅ |
+| 86 | Step 03 - Writing Multiplication Table Java Program with Eclipse | 06:10 | ✅ | ✅ |
+| 87 | Step 04 - Adding more methods for Multiplication Table Program | 03:52 | ✅ | ✅ |
+| 88 | Eclipse Tip - Save Actions | 02:41 | ✅ | 🚫 |
+| 89 | Do Not use Modules for now | 00:59 | ✅ | 🚫 |
+| 90 | Step 05 - Programming Tip 1 : Refactoring with Eclipse | 04:38 | ✅ | ✅ |
+| 91 | Step 06 - Programming Tip 2 : Debugging with Eclipse | 10:05 | ✅ | 🚫 |
+| 92 | Step 07 - Programming Tip 3 : Eclipse vs JShell - How to choose? | 05:39 | ✅ | 🚫 |
+| 93 | How to Stay UpTo Date With Technology Changes | 02:07 | ✅ | 🚫 |
+| 94 | Introduction To Java Coding Exercises | 11:35 | ✅ | 🚫 |
+| 95 | My 10 Rules for Happy Programmers | 03:33 | ✅ | 🚫 |
+| 96 | Coding Exercise: Hello Coding Exercises | 1 question | ✅ | ✅ |
+| 97 | Coding Exercise: Print Hello World | 1 question | ✅ | ✅ |
+| 98 | Solution Video For Coding Exercise: Print Hello World | 03:08 | ✅ | 🚫 |
+| 99 | Coding Exercise: Time Converter | 1 question | ✅ | ✅ |
+| 100 | Solution Video For Coding Exercise: Time Converter | 04:38 | ✅ | 🚫 |
+| 101 | Coding Exercise: Exam Result Checker | 1 question | ✅ | ✅ |
+| 102 | Solution Video For Coding Exercise - Exam Result Checker | 03:22 | ✅ | 🚫 |
+| 103 | Coding Exercise: Sum of Squares of First N Numbers | 1 question | ✅ | ✅ |
+| 104 | Solution Video For Coding Exercise - Sum of Squares of First N Numbers | 04:56 | ✅ | 🚫 |
+| 105 | Story of in28minutes | 02:12 | ✅ | 🚫 |
+| 106 | Github Book | 00:12 | ✅ | 🚫 |
+| 107 | Step 00 - Introduction to Object Oriented Programming - Section Overview | 01:01 | ✅ | 🚫 |
+| 108 | Step 01 - Introduction to Object Oriented Programming - Basics | 05:25 | ✅ | 🚫 |
+| 109 | Step 02 - Introduction to Object Oriented Programming - Terminology - Class, Obj | 04:56 | ✅ | 🚫 |
+| 110 | Step 03 - Introduction to Object Oriented Programming - Exercise - Online Shoppi | 03:08 | ✅ | 🚫 |
+| 111 | Step 04 - Create Motor Bike Java Class and a couple of objects | 06:30 | ✅ | ✅ |
+| 112 | Step 05 - Exercise Solutions - Book class and Three instances | 02:02 | ✅ | ✅ |
+| 113 | Step 06 - Introducing State of an object with speed variable | 05:54 | ✅ | ✅ |
+| 114 | Step 07 - Understanding basics of Encapsulation with Setter methods | 07:05 | ✅ | ✅ |
+| 115 | Step 08 - Exercises and Tips - Getters and Generating Getters and Setters with E | 05:40 | ✅ | ✅ |
+| 116 | Step 09 - Puzzles on this and initialization of member variables | 07:21 | ✅ | 🚫 |
+| 117 | Step 10 - First Advantage of Encapsulation | 01:53 | ✅ | 🚫 |
+| 118 | Step 11 - Introduction to Encapsulation - Level 2 | 06:07 | ✅ | ✅ |
+| 119 | Step 12 - Encapsulation Exercises - Better Validation and Book class | 03:53 | ✅ | ✅ |
+| 120 | Step 13 - Introdcution to Abstraction | 03:05 | ✅ | 🚫 |
+| 121 | Step 14 - Introduction to Java Constructors | 04:26 | ✅ | ✅ |
+| 122 | Step 15 - Introduction to Java Constructors - Exercises and Puzzles | 06:47 | ✅ | ✅ |
+| 123 | Step 16 - Introduction to Object Oriented Programming - Conclusion | 01:13 | ✅ | 🚫 |
+| 124 | Do You Want To Help Us? | 00:17 | ✅ | 🚫 |
+| 125 | DO NOT SKIP - FLASH CARDS | 00:20 | ✅ | ✅ |
+| 126 | Section Quiz | 9 questions | ✅ | ✅ |
+| 127 | What should I do when I face a challenge | 02:35 | ✅ | 🚫 |
+| 128 | Coding Exercise: Inches to Object (Feet, Inches) | 1 question | ✅ | ✅ |
+| 129 | Solution Video For Coding Exercise - Inches to Object (Feet, Inches) | 06:11 | ✅ | 🚫 |
+| 130 | Coding Exercise: Create a Square class | 1 question | ✅ | ✅ |
+| 131 | Solution Video For Coding Exercise - Create a Square class | 03:30 | ✅ | 🚫 |
+| 132 | Coding Exercise: Create a Point class with 2 d co-ordinates x,y | 1 question | ✅ | ✅ |
+| 133 | Solution Video For Coding Exercise - Create a Point class with 2 d co-ordinates | 07:11 | ✅ | 🚫 |
+| 134 | Coding Exercise: RGB Color Class | 1 question | ✅ | ✅ |
+| 135 | Solution Video For Coding Exercise - RGB Color Class | 05:24 | ✅ | 🚫 |
+| 136 | All Work and No Play Makes You a Dull Kid | 01:15 | ✅ | 🚫 |
+| 137 | Step 00 - Primitive Data Types in Depth - Section Overview | 01:08 | ✅ | 🚫 |
+| 138 | Step 01 - Basics about Java Integer Data Types - Casting, Operators and More | 07:30 | ✅ | ✅ |
+| 139 | Step 02 - Java Integer Data Types - Puzzles - Octal, Hexadecimal, Post and Pre i | 09:50 | ✅ | ✅ |
+| 140 | Step 03 - Java Integer Data Types - Exercises - BiNumber - add, multiply and dou | 09:03 | ✅ | ✅ |
+| 141 | Step 04 - Java Floating Point Data Types - Casting , Conversion and Accuracy | 04:35 | ✅ | ✅ |
+| 142 | Step 05 - Introduction to BigDecimal Java Class | 06:58 | ✅ | ✅ |
+| 143 | Step 06 - BigDecimal Puzzles - Adding Integers | 03:13 | ✅ | ✅ |
+| 144 | Step 07 - BigDecimal Exercises - Simple Interest Calculation | 11:34 | ✅ | ✅ |
+| 145 | Step 08 - Java Boolean Data Type - Relational and Logical Operators | 10:38 | ✅ | ✅ |
+| 146 | Step 09 - Java Boolean Data Type - Puzzles - Short Circuit Operators | 05:02 | ✅ | ✅ |
+| 147 | Step 10 - Java Character Data Type char - Representation and Conversion | 06:02 | ✅ | ✅ |
+| 148 | Step 11 - Java char Data Type - Exercises 1 - isVowel | 07:47 | ✅ | ✅ |
+| 149 | Step 12 - Java char Data Type - Exercises 2 - isDigit | 08:03 | ✅ | ✅ |
+| 150 | Step 13 - Java char Data Type - Exercises 3 - isConsonant, List Upper Case and L | 09:00 | ✅ | ✅ |
+| 151 | Step 14 - Primitive Data Types in Depth - Conclusion | 01:23 | ✅ | 🚫 |
+| 152 | DO NOT SKIP - FLASH CARDS | 00:21 | ✅ | ✅ |
+| 153 | Section Quiz | 9 questions | ✅ | ✅ |
+| 154 | How to be Productive - 3 Tips | 02:43 | ✅ | 🚫 |
 | 155 | Step 00 - Conditionals with Java - Section Overview | 01:23 | ☐ | ☐ |
 | 156 | Step 01 - Introduction to If Else Statement | 04:52 | ☐ | ☐ |
 | 157 | Step 02 - Introduction to Nested If Else | 04:48 | ☐ | ☐ |
