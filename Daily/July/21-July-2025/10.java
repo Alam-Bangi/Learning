@@ -25,6 +25,11 @@ class Main {
             if (isPrime(i))
                 System.out.println(i);
         }
+        if(isPrime(number)) {
+            System.out.println(number + " is a prime number");
+        } else {
+            System.out.println(number + " is not a prime number");
+        }
         
     }
    static void myName() {

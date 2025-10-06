@@ -53,7 +53,7 @@ Not Assignment  : 🚫
 | 40 | Step 22 - Programming Tips : JShell - Shortcuts, Multiple Lines and Variables | 07:08 | ✅ | ✅ |
 | 41 | Section Quiz | 5 questions | ✅ | ✅ |
 | 42 | Step 23 - Java Conditionals and If Statement - Introduction | 07:59 | ✅ | ✅ |
-| 43 | Step 24 - Java Conditionals and If Statement - Exercise Statements | 02:11 | ✅ | ✅ |
+| 43 | Step 24 - Java Conditionals and If Statement - Exercise Statements | 02:11 | ✅ | 🚫 |
 | 44 | Step 25 - Java Conditionals and If Statement - Exercise Solutions | 06:31 | ✅ | ✅ |
 | 45 | Step 26 - Java Conditionals and If Statement - Puzzles | 06:38 | ✅ | ✅ |
 | 46 | Step 27 - Java For Loop to Print Multiplication Table - Introduction | 09:04 | ✅ | ✅ |
