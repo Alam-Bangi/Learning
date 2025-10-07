@@ -13,7 +13,6 @@
         - Creating Constructors of class
 
 - JAVA Section 10 ✅
-        -(107-136)
 
 ### Assignment
 
@@ -23,7 +22,7 @@
 
 ### Links
 
-- https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/9565472#overview
+- https://www.udemy.com/course/java-programming-tutorial-for-beginners/
 
 ## Second Half
 
