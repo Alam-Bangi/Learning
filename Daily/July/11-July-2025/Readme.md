@@ -31,6 +31,7 @@
         - No Assignment
     - (32) Step 16 - How are variables stored in memory?
         - No assignment 
+        - Added summary from google
     - (33) Step 17 - How to name a variable?
         - No assignment
         - Learned about variable declaration syntax
@@ -54,6 +55,7 @@
             jshell> int things2
             things2 ==> 0
             ```
+            
     - (34) Section Quiz 3
         - https://github.com/Alam-Bangi/Learning/blob/main/Daily/July/11-July-2025/(34)quiz.md
     - (35) Step 18 - Understanding Primitive Variable Types in Java
@@ -81,7 +83,26 @@
         - Performed various operations using IF condition
     - (45) Step 26 - Java Conditionals and If Statement - Puzzles
         - Used if statement to check condition and then print output if condition is met
-    - (46) 
+    - (46) Step 27 - Java For Loop to Print Multiplication Table - Introduction
+        - Used FOR loop to print multiplication table of 5
+    - (47) Step 28 - Java For Loop to Print Multiplication Table - Exercise Statements
+        - No Assignment
+    - (48) Step 29 - Java For Loop to Print Multiplication Table - Exercise Solutions
+        - Used FOR loop to print multiplication table of a number
+        - Printed squares of numbers from 1 to 10 using FOR loop
+        - Printed odd numbers from 1 to 10 in reverse order using FOR loop
+        - Printed even numbers from 1 to 10 in reverse order using FOR loop
+        - Printed squares of all even numbers from 1 to 10 using FOR loop
+    - (49) Step 30 - Java For Loop to Print Multiplication Table - Puzzles
+        - FOR loop increament and decreament operator (++ , --)
+    - (50) Step 31 - Getting Started with Programming - Revise all Terminology
+        - No Assignment
+    - (51) Section Quiz 5
+        - https://github.com/Alam-Bangi/Learning/blob/main/Daily/July/11-July-2025/(51)quiz.md
+    - (52) How to remember things for long time
+        - No Assignment
+    - (53) Maximizing Learning Efficiency with Playback Speed
+         - No Assignment
 
 ### Assignment
 
@@ -89,7 +110,7 @@
 
 ### Links
 
-- https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/9565340#overview
+- https://www.udemy.com/course/java-programming-tutorial-for-beginners/
 
 ## Second Half
 
@@ -98,6 +119,11 @@
 ### Videos
 
 - COURSE DSA -Chapter 2 ✅
+    - 1. Used FOR loop and printed numbers 1 to 10
+    - 2a. Used FOR loop to print odd numbers from 1 to 10
+    - 2b. Used FOR loop to print remainders of all numbers between 1 to 10 when divided by 2
+    - 3a. FOR loop to check if number is prime or not
+    - 3b. FOR loop to check if number is prime or not (code corrected)
 
 ### Assignment
 
