@@ -165,14 +165,14 @@ Not Assignment  : 🚫
 | 152 | DO NOT SKIP - FLASH CARDS | 00:21 | ✅ | ✅ |
 | 153 | Section Quiz | 9 questions | ✅ | ✅ |
 | 154 | How to be Productive - 3 Tips | 02:43 | ✅ | 🚫 |
-| 155 | Step 00 - Conditionals with Java - Section Overview | 01:23 | ☐ | ☐ |
-| 156 | Step 01 - Introduction to If Else Statement | 04:52 | ☐ | ☐ |
-| 157 | Step 02 - Introduction to Nested If Else | 04:48 | ☐ | ☐ |
-| 158 | Step 03 - If Else Statement - Puzzles | 08:02 | ☐ | ☐ |
-| 159 | Step 04 - If Else Problem - How to get User Input in Java? | 06:45 | ☐ | ☐ |
-| 160 | Step 05 - If Else Problem - How to get number 2 and choice from user? | 03:06 | ☐ | ☐ |
-| 161 | Step 06 - If Else Problem - Implementing with Nested If Else | 03:37 | ☐ | ☐ |
-| 162 | Programming Tip - CodingBat dot Com | 01:35 | ☐ | ☐ |
+| 155 | Step 00 - Conditionals with Java - Section Overview | 01:23 | ✅ | 🚫 |
+| 156 | Step 01 - Introduction to If Else Statement | 04:52 | ✅ | ✅ |
+| 157 | Step 02 - Introduction to Nested If Else | 04:48 | ✅ | ✅ |
+| 158 | Step 03 - If Else Statement - Puzzles | 08:02 | ✅ | ✅ |
+| 159 | Step 04 - If Else Problem - How to get User Input in Java? | 06:45 | ✅ | ✅ |
+| 160 | Step 05 - If Else Problem - How to get number 2 and choice from user? | 03:06 | ✅ | ✅ |
+| 161 | Step 06 - If Else Problem - Implementing with Nested If Else | 03:37 | ✅ | ✅ |
+| 162 | Programming Tip - CodingBat dot Com | 01:35 | ✅ | 🚫 |
 | 163 | Step 07 - Java Switch Statement - An introduction | 09:32 | ☐ | ☐ |
 | 164 | Step 08 - Java Switch Statement - Puzzles - Default, Break and Fall Through | 07:01 | ☐ | ☐ |
 | 165 | Step 09 - Java Switch Statement - Exercises - isWeekDay, nameOfMonth, nameOfDay | 13:02 | ☐ | ☐ |

@@ -19,12 +19,4 @@ class MyCharRunner {
         }
         return false;
     }
-
-    void isNumber() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    boolean isConsonant() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
 }
