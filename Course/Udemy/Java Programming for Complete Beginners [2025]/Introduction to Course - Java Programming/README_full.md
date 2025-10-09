@@ -173,28 +173,28 @@ Not Assignment  : 🚫
 | 160 | Step 05 - If Else Problem - How to get number 2 and choice from user? | 03:06 | ✅ | ✅ |
 | 161 | Step 06 - If Else Problem - Implementing with Nested If Else | 03:37 | ✅ | ✅ |
 | 162 | Programming Tip - CodingBat dot Com | 01:35 | ✅ | 🚫 |
-| 163 | Step 07 - Java Switch Statement - An introduction | 09:32 | ☐ | ☐ |
-| 164 | Step 08 - Java Switch Statement - Puzzles - Default, Break and Fall Through | 07:01 | ☐ | ☐ |
-| 165 | Step 09 - Java Switch Statement - Exercises - isWeekDay, nameOfMonth, nameOfDay | 13:02 | ☐ | ☐ |
-| 166 | Step 10 - Java Ternary Operation - An Introduction | 06:22 | ☐ | ☐ |
-| 167 | Step 11 - Conditionals with Java - Conclusion | 00:32 | ☐ | ☐ |
-| 168 | Section Quiz | 8 questions | ☐ | ☐ |
-| 169 | Why should you teach others | 01:57 | ☐ | ☐ |
-| 170 | Coding Exercise: Is Valid Triangle | 1 question | ☐ | ☐ |
-| 171 | Solution Video For Coding Exercise - Is Valid Triangle | 04:45 | ☐ | ☐ |
-| 172 | Coding Exercise: Is Right Angled Triangle | 1 question | ☐ | ☐ |
-| 173 | Solution Video For Coding Exercise - Is Right Angled Triangle | 05:29 | ☐ | ☐ |
-| 174 | Coding Exercise: Is Leap Year | 1 question | ☐ | ☐ |
-| 175 | Solution Video For Coding Exercise - Is Leap Year | 12:34 | ☐ | ☐ |
-| 176 | Coding Exercise: Is Perfect Number | 1 question | ☐ | ☐ |
-| 177 | Solution Video For Coding Exercise - Is Perfect Number | 06:11 | ☐ | ☐ |
-| 178 | Coding Exercise: Student Grades A to F based on Marks | 1 question | ☐ | ☐ |
-| 179 | Solution Video For Coding Exercise - Student Grades A to F based on Marks | 04:51 | ☐ | ☐ |
-| 180 | Coding Exercise: Weather Advisor | 1 question | ☐ | ☐ |
-| 181 | Solution Video For Coding Exercise - Weather Advisor | 06:30 | ☐ | ☐ |
-| 182 | Coding Exercise: Switch with Char - Is a Vowel or Not | 1 question | ☐ | ☐ |
-| 183 | Solution Video For Coding Exercise - Switch with Char - Is a Vowel or Not | 06:30 | ☐ | ☐ |
-| 184 | How to handle failures | 01:34 | ☐ | ☐ |
+| 163 | Step 07 - Java Switch Statement - An introduction | 09:32 | ✅ | ✅ |
+| 164 | Step 08 - Java Switch Statement - Puzzles - Default, Break and Fall Through | 07:01 | ✅ | ✅ |
+| 165 | Step 09 - Java Switch Statement - Exercises - isWeekDay, nameOfMonth, nameOfDay | 13:02 | ✅ | ✅ |
+| 166 | Step 10 - Java Ternary Operation - An Introduction | 06:22 | ✅ | ✅ |
+| 167 | Step 11 - Conditionals with Java - Conclusion | 00:32 | ✅ | 🚫 |
+| 168 | Section Quiz | 8 questions | ✅ | ✅ |
+| 169 | Why should you teach others | 01:57 | ✅ | 🚫 |
+| 170 | Coding Exercise: Is Valid Triangle | 1 question | ✅ | ✅ |
+| 171 | Solution Video For Coding Exercise - Is Valid Triangle | 04:45 | ✅ | 🚫 |
+| 172 | Coding Exercise: Is Right Angled Triangle | 1 question | ✅ | ✅ |
+| 173 | Solution Video For Coding Exercise - Is Right Angled Triangle | 05:29 | ✅ | 🚫 |
+| 174 | Coding Exercise: Is Leap Year | 1 question | ✅ | ✅ |
+| 175 | Solution Video For Coding Exercise - Is Leap Year | 12:34 | ✅ | 🚫 |
+| 176 | Coding Exercise: Is Perfect Number | 1 question | ✅ | ✅ |
+| 177 | Solution Video For Coding Exercise - Is Perfect Number | 06:11 | ✅ | 🚫 |
+| 178 | Coding Exercise: Student Grades A to F based on Marks | 1 question | ✅ | ✅ |
+| 179 | Solution Video For Coding Exercise - Student Grades A to F based on Marks | 04:51 | ✅ | 🚫 |
+| 180 | Coding Exercise: Weather Advisor | 1 question | ✅ | ✅ |
+| 181 | Solution Video For Coding Exercise - Weather Advisor | 06:30 | ✅ | 🚫 |
+| 182 | Coding Exercise: Switch with Char - Is a Vowel or Not | 1 question | ✅ | ✅ |
+| 183 | Solution Video For Coding Exercise - Switch with Char - Is a Vowel or Not | 06:30 | ✅ | 🚫 |
+| 184 | How to handle failures | 01:34 | v | 🚫 |
 | 185 | Step 00 - Java Loops - Section Introduction | 00:58 | ☐ | ☐ |
 | 186 | Step 01 - Java For Loop - Syntax and Puzzles | 06:56 | ☐ | ☐ |
 | 187 | Step 02 - Java For Loop - Exercises Overview and First Exercise Prime Numbers | 12:38 | ☐ | ☐ |
