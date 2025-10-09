@@ -27,7 +27,7 @@ class MenuRunner {
         switch (choice) {
             case 1:
                 System.out.println("Result: " + (number1 + number2));
-                break;
+    
             case 2:
                 System.out.println("Result: " + (number1 - number2));
                 break;
