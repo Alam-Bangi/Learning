@@ -208,21 +208,21 @@ Not Assignment  : 🚫
 | 195 | Step 09 - Introduction to Break and Continue | 04:40 | ✅ | ✅ |
 | 196 | Step 10 - Selecting Loop in Java - For vs While vs Do While | 03:41 | ✅ | 🚫 |
 | 197 | Technology Change is an Opportunity | 01:20 | ✅ | 🚫 |
-| 198 | Coding Exercise: Calculate Factorial Of a Number | 1 question | ☐ | ☐ |
-| 199 | Solution Video For Coding Exercise - Calculate Factorial Of a Number | 04:13 | ☐ | ☐ |
-| 200 | Coding Exercise: Find Last Digit Of A Number | 1 question | ☐ | ☐ |
-| 201 | Solution Video For Coding Exercise - Find Last Digit Of A Number | 02:20 | ☐ | ☐ |
-| 202 | Coding Exercise: Find Number of Digits in a Number | 1 question | ☐ | ☐ |
-| 203 | Solution Video For Coding Exercise - Find Number of Digits in a Number | 04:44 | ☐ | ☐ |
-| 204 | Coding Exercise: Calculate Sum of Digits of a Number | 1 question | ☐ | ☐ |
-| 205 | Solution Video For Coding Exercise - Calculate Sum of Digits of a Number | 06:34 | ☐ | ☐ |
-| 206 | Coding Exercise: Reverse a Number | 1 question | ☐ | ☐ |
-| 207 | Solution Video For Coding Exercise - Reverse a Number | 10:19 | ☐ | ☐ |
-| 208 | Coding Exercise: LCM Of A Number | 1 question | ☐ | ☐ |
-| 209 | Solution Video For Coding Exercise - LCM Of A Number | 10:08 | ☐ | ☐ |
-| 210 | Coding Exercise: GCD of a Number | 1 question | ☐ | ☐ |
-| 211 | Solution Video For Coding Exercise - GCD of a Number | 07:09 | ☐ | ☐ |
-| 212 | How can you help us? | 00:49 | ☐ | ☐ |
+| 198 | Coding Exercise: Calculate Factorial Of a Number | 1 question | ✅ | ✅ |
+| 199 | Solution Video For Coding Exercise - Calculate Factorial Of a Number | 04:13 | ✅ | 🚫 |
+| 200 | Coding Exercise: Find Last Digit Of A Number | 1 question | ✅ | ✅ |
+| 201 | Solution Video For Coding Exercise - Find Last Digit Of A Number | 02:20 | ✅ | 🚫 |
+| 202 | Coding Exercise: Find Number of Digits in a Number | 1 question | ✅ | ✅ |
+| 203 | Solution Video For Coding Exercise - Find Number of Digits in a Number | 04:44 | ✅ | 🚫 |
+| 204 | Coding Exercise: Calculate Sum of Digits of a Number | 1 question | ✅ | ✅ |
+| 205 | Solution Video For Coding Exercise - Calculate Sum of Digits of a Number | 06:34 | ✅ | 🚫 |
+| 206 | Coding Exercise: Reverse a Number | 1 question | ✅ | ✅ |
+| 207 | Solution Video For Coding Exercise - Reverse a Number | 10:19 | ✅ | 🚫 |
+| 208 | Coding Exercise: LCM Of A Number | 1 question | ✅ | ✅ |
+| 209 | Solution Video For Coding Exercise - LCM Of A Number | 10:08 | ✅ | 🚫 |
+| 210 | Coding Exercise: GCD of a Number | 1 question | ✅ | ✅ |
+| 211 | Solution Video For Coding Exercise - GCD of a Number | 07:09 | ✅ | 🚫 |
+| 212 | How can you help us? | 00:49 | ✅ | 🚫 |
 | 213 | Step 00 - Java Reference Types - Section Introduction | 01:31 | ☐ | ☐ |
 | 214 | Step 01 - Reference Types - How are they stored in Memory? | 07:02 | ☐ | ☐ |
 | 215 | Step 02 - Java Reference Types - Puzzles | 08:53 | ☐ | ☐ |
