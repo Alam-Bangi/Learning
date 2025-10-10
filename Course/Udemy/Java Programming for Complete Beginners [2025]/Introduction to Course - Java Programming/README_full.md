@@ -198,16 +198,16 @@ Not Assignment  : 🚫
 | 185 | Step 00 - Java Loops - Section Introduction | 00:58 | ✅ | 🚫 |
 | 186 | Step 01 - Java For Loop - Syntax and Puzzles | 06:56 | ✅ | ✅ |
 | 187 | Step 02 - Java For Loop - Exercises Overview and First Exercise Prime Numbers | 12:38 | ✅ | ✅ |
-| 188 | Step 03 - Java For Loop - Exercise - Sum Upto N Numbers and Sum of Divisors | 06:54 | ☐ | ☐ |
-| 189 | Step 04 - Java For Loop - Exercise - Print a Number Triangle | 05:19 | ☐ | ☐ |
-| 190 | Eclipse Tip - Templates - sysout, main, fore, ifelse | 02:23 | ☐ | ☐ |
-| 191 | Step 05 - While Loop in Java - An Introduction | 05:05 | ☐ | ☐ |
-| 192 | Step 06 - While Loop - Exericises - Cubes and Squares upto limit | 09:04 | ☐ | ☐ |
-| 193 | Step 07 - Do While Loop in Java - An Introduction | 04:10 | ☐ | ☐ |
-| 194 | Step 08 - Do While Loop in Java - An Example - Cube while user enters positive n | 08:27 | ☐ | ☐ |
-| 195 | Step 09 - Introduction to Break and Continue | 04:40 | ☐ | ☐ |
-| 196 | Step 10 - Selecting Loop in Java - For vs While vs Do While | 03:41 | ☐ | ☐ |
-| 197 | Technology Change is an Opportunity | 01:20 | ☐ | ☐ |
+| 188 | Step 03 - Java For Loop - Exercise - Sum Upto N Numbers and Sum of Divisors | 06:54 | ✅ | ✅ |
+| 189 | Step 04 - Java For Loop - Exercise - Print a Number Triangle | 05:19 | ✅ | ✅ |
+| 190 | Eclipse Tip - Templates - sysout, main, fore, ifelse | 02:23 | ✅ | 🚫 |
+| 191 | Step 05 - While Loop in Java - An Introduction | 05:05 | ✅ | ✅ |
+| 192 | Step 06 - While Loop - Exericises - Cubes and Squares upto limit | 09:04 | ✅ | ✅ |
+| 193 | Step 07 - Do While Loop in Java - An Introduction | 04:10 | ✅ | ✅ |
+| 194 | Step 08 - Do While Loop in Java - An Example - Cube while user enters positive n | 08:27 | ✅ | ✅ |
+| 195 | Step 09 - Introduction to Break and Continue | 04:40 | ✅ | ✅ |
+| 196 | Step 10 - Selecting Loop in Java - For vs While vs Do While | 03:41 | ✅ | 🚫 |
+| 197 | Technology Change is an Opportunity | 01:20 | ✅ | 🚫 |
 | 198 | Coding Exercise: Calculate Factorial Of a Number | 1 question | ☐ | ☐ |
 | 199 | Solution Video For Coding Exercise - Calculate Factorial Of a Number | 04:13 | ☐ | ☐ |
 | 200 | Coding Exercise: Find Last Digit Of A Number | 1 question | ☐ | ☐ |
