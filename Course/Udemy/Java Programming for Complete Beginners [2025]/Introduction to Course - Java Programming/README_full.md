@@ -194,10 +194,10 @@ Not Assignment  : 🚫
 | 181 | Solution Video For Coding Exercise - Weather Advisor | 06:30 | ✅ | 🚫 |
 | 182 | Coding Exercise: Switch with Char - Is a Vowel or Not | 1 question | ✅ | ✅ |
 | 183 | Solution Video For Coding Exercise - Switch with Char - Is a Vowel or Not | 06:30 | ✅ | 🚫 |
-| 184 | How to handle failures | 01:34 | v | 🚫 |
-| 185 | Step 00 - Java Loops - Section Introduction | 00:58 | ☐ | ☐ |
-| 186 | Step 01 - Java For Loop - Syntax and Puzzles | 06:56 | ☐ | ☐ |
-| 187 | Step 02 - Java For Loop - Exercises Overview and First Exercise Prime Numbers | 12:38 | ☐ | ☐ |
+| 184 | How to handle failures | 01:34 | ✅ | 🚫 |
+| 185 | Step 00 - Java Loops - Section Introduction | 00:58 | ✅ | 🚫 |
+| 186 | Step 01 - Java For Loop - Syntax and Puzzles | 06:56 | ✅ | ✅ |
+| 187 | Step 02 - Java For Loop - Exercises Overview and First Exercise Prime Numbers | 12:38 | ✅ | ✅ |
 | 188 | Step 03 - Java For Loop - Exercise - Sum Upto N Numbers and Sum of Divisors | 06:54 | ☐ | ☐ |
 | 189 | Step 04 - Java For Loop - Exercise - Print a Number Triangle | 05:19 | ☐ | ☐ |
 | 190 | Eclipse Tip - Templates - sysout, main, fore, ifelse | 02:23 | ☐ | ☐ |
