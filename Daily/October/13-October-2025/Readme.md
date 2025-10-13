@@ -15,7 +15,6 @@
 ### Videos
 
 ### Assignment
-
 - Write a code to print odd digits of a given number.
 - Write a code to print odd position of digits of a given number.
 
@@ -27,13 +26,18 @@
 
 
 ## Second Half
-
+- Studied about Perfect Number.
+- Completed all questions in questions.md
 
 ### Videos
 
 
 ### Assignment
-
+- Write a code to tryout all possible values supported by switch case.
+- Write a code to tryout ternary inside a ternary operator.
+- Write a code to tryout all possible functions of scanner class.
+- Write code for swapping 2 numbers .
+- Write code for fibonacci series. 
 
 ### Doubts
 
