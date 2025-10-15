@@ -17,7 +17,7 @@
 
 ### Videos
 
-- JAVA Section 16 ✅
+- JAVA Section 16 🔄
     - (213) Step 00 - Java Reference Types - Section Introduction
         - No assignment
     - (214) Step 01 - Reference Types - How are they stored in Memory?
