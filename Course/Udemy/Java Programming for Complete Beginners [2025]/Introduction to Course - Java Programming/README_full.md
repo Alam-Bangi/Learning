@@ -223,31 +223,31 @@ Not Assignment  : 🚫
 | 210 | Coding Exercise: GCD of a Number | 1 question | ✅ | ✅ |
 | 211 | Solution Video For Coding Exercise - GCD of a Number | 07:09 | ✅ | 🚫 |
 | 212 | How can you help us? | 00:49 | ✅ | 🚫 |
-| 213 | Step 00 - Java Reference Types - Section Introduction | 01:31 | ☐ | ☐ |
-| 214 | Step 01 - Reference Types - How are they stored in Memory? | 07:02 | ☐ | ☐ |
-| 215 | Step 02 - Java Reference Types - Puzzles | 08:53 | ☐ | ☐ |
-| 216 | Step 03 - String class - Introduction and Exercise - Print each word and char on | 08:38 | ☐ | ☐ |
-| 217 | Step 04 - String class - Exercise Solution and Some More Important Methods | 08:39 | ☐ | ☐ |
-| 218 | Step 05 - Understanding String is Immutable and String Concat, Upper Case, Lower | 05:10 | ☐ | ☐ |
-| 219 | Step 06 - String Concatenation and Join, Replace Methods | 07:34 | ☐ | ☐ |
-| 220 | Step 07 - Java String Alternatives - StringBuffer and StringBuilder | 04:54 | ☐ | ☐ |
-| 221 | Step 08 - Java Wrapper Classes - An Introduction - Why and What? | 02:46 | ☐ | ☐ |
-| 222 | Step 09 - Java Wrapper Classes - Creation - Constructor and valueOf | 05:22 | ☐ | ☐ |
-| 223 | Step 10 - Java Wrapper Classes - Auto Boxing and a Few Wrapper Constants - SIZE, | 03:27 | ☐ | ☐ |
-| 224 | Step 11 - Java Dates - Introduction to LocalDate, LocalTime and LocalDateTime | 04:15 | ☐ | ☐ |
-| 225 | Step 12 - Java Dates - Exploring LocalDate - Creation and Methods to play with D | 07:13 | ☐ | ☐ |
-| 226 | Step 13 - Java Dates - Exploring LocalDate - Comparing Dates and Creating Specif | 05:20 | ☐ | ☐ |
-| 227 | Eclipse Tip - Exploring Java API | 03:45 | ☐ | ☐ |
-| 228 | Step 14 - Java Reference Types - Conclusion | 01:45 | ☐ | ☐ |
-| 229 | Section Quiz | 8 questions | ☐ | ☐ |
-| 230 | Share Your Experience | 01:13 | ☐ | ☐ |
-| 231 | Coding Exercise: Count uppercase letters in a String | 1 question | ☐ | ☐ |
-| 232 | Solution Video For Coding Exercise - Count uppercase letters in a String | 04:52 | ☐ | ☐ |
-| 233 | Coding Exercise: Does a String have two consecutive identical characters | 1 question | ☐ | ☐ |
-| 234 | Solution Video For Coding Exercise - Does a String have two consecutive chars? | 05:32 | ☐ | ☐ |
-| 235 | Coding Exercise: Right most Digit in a String | 1 question | ☐ | ☐ |
-| 236 | Solution Video For Coding Exercise - Right most Digit in a String | 06:42 | ☐ | ☐ |
-| 237 | Reviewing Regularly is the Key | 01:10 | ☐ | ☐ |
+| 213 | Step 00 - Java Reference Types - Section Introduction | 01:31 | ✅ | 🚫 |
+| 214 | Step 01 - Reference Types - How are they stored in Memory? | 07:02 | ✅ | ✅ |
+| 215 | Step 02 - Java Reference Types - Puzzles | 08:53 | ✅ | ✅ |
+| 216 | Step 03 - String class - Introduction and Exercise - Print each word and char on | 08:38 | ✅ | ✅ |
+| 217 | Step 04 - String class - Exercise Solution and Some More Important Methods | 08:39 | ✅ | ✅ |
+| 218 | Step 05 - Understanding String is Immutable and String Concat, Upper Case, Lower | 05:10 | ✅ | ✅ |
+| 219 | Step 06 - String Concatenation and Join, Replace Methods | 07:34 | ✅ | ✅ |
+| 220 | Step 07 - Java String Alternatives - StringBuffer and StringBuilder | 04:54 | ✅ | ✅ |
+| 221 | Step 08 - Java Wrapper Classes - An Introduction - Why and What? | 02:46 | ✅ | 🚫 |
+| 222 | Step 09 - Java Wrapper Classes - Creation - Constructor and valueOf | 05:22 | ✅ | ✅ |
+| 223 | Step 10 - Java Wrapper Classes - Auto Boxing and a Few Wrapper Constants - SIZE, | 03:27 | ✅ | ✅ |
+| 224 | Step 11 - Java Dates - Introduction to LocalDate, LocalTime and LocalDateTime | 04:15 | ✅ | ✅ |
+| 225 | Step 12 - Java Dates - Exploring LocalDate - Creation and Methods to play with D | 07:13 | ✅ | ✅ |
+| 226 | Step 13 - Java Dates - Exploring LocalDate - Comparing Dates and Creating Specif | 05:20 | ✅ | ✅ |
+| 227 | Eclipse Tip - Exploring Java API | 03:45 | ✅ | 🚫 |
+| 228 | Step 14 - Java Reference Types - Conclusion | 01:45 | ✅ | 🚫 |
+| 229 | Section Quiz | 8 questions | ✅ | ✅ |
+| 230 | Share Your Experience | 01:13 | ✅ | 🚫 |
+| 231 | Coding Exercise: Count uppercase letters in a String | 1 question | ✅ | ✅ |
+| 232 | Solution Video For Coding Exercise - Count uppercase letters in a String | 04:52 | ✅ | 🚫 |
+| 233 | Coding Exercise: Does a String have two consecutive identical characters | 1 question | ✅ | ✅ |
+| 234 | Solution Video For Coding Exercise - Does a String have two consecutive chars? | 05:32 | ✅ | 🚫 |
+| 235 | Coding Exercise: Right most Digit in a String | 1 question | ✅ | ✅ |
+| 236 | Solution Video For Coding Exercise - Right most Digit in a String | 06:42 | ✅ | 🚫 |
+| 237 | Reviewing Regularly is the Key | 01:10 | ✅ | 🚫 |
 | 238 | Step 00 - Introduction to Array and ArrayList - Section Introduction with a Chal | 01:19 | ☐ | ☐ |
 | 239 | Step 01 - Understanding the need and Basics about an Array | 05:26 | ☐ | ☐ |
 | 240 | Step 02 - Java Arrays - Creating and Accessing Values - Introduction | 06:04 | ☐ | ☐ |
