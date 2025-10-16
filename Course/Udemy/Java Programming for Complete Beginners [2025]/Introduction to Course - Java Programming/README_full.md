@@ -248,28 +248,28 @@ Not Assignment  : 🚫
 | 235 | Coding Exercise: Right most Digit in a String | 1 question | ✅ | ✅ |
 | 236 | Solution Video For Coding Exercise - Right most Digit in a String | 06:42 | ✅ | 🚫 |
 | 237 | Reviewing Regularly is the Key | 01:10 | ✅ | 🚫 |
-| 238 | Step 00 - Introduction to Array and ArrayList - Section Introduction with a Chal | 01:19 | ☐ | ☐ |
-| 239 | Step 01 - Understanding the need and Basics about an Array | 05:26 | ☐ | ☐ |
-| 240 | Step 02 - Java Arrays - Creating and Accessing Values - Introduction | 06:04 | ☐ | ☐ |
-| 241 | Step 03 - Java Arrays - Puzzles - Arrays of Objects, Primitive Data Types, toStr | 08:11 | ☐ | ☐ |
-| 242 | Step 04 - Java Arrays - Compare, Sort and Fill | 05:11 | ☐ | ☐ |
-| 243 | Step 05 - Java Arrays - Exercise - Create Student Class - Part 1 - Total and Ave | 06:17 | ☐ | ☐ |
-| 244 | Step 06 - Java Arrays - Exercise - Create Student Class - Part 2 - Maximum and M | 13:06 | ☐ | ☐ |
-| 245 | Step 07 - Introduction to Variable Arguments - Need | 04:36 | ☐ | ☐ |
-| 246 | Step 08 - Introduction to Variable Arguments - Basics | 05:04 | ☐ | ☐ |
-| 247 | Step 09 - Introduction to Variable Arguments - Enhancing Student Class | 01:59 | ☐ | ☐ |
-| 248 | Step 10 - Java Arrays - Using Person Objects and String Elements with Exercises | 03:35 | ☐ | ☐ |
-| 249 | Eclipse Tip - Code Generation | 02:41 | ☐ | ☐ |
-| 250 | Step 11 - Java String Arrays - Exercise Solutions - Print Day of Week with Most | 04:56 | ☐ | ☐ |
-| 251 | Step 12 - Adding and Removing Marks - Problem with Arrays | 03:21 | ☐ | ☐ |
-| 252 | Step 13 - First Look at ArrayList - An Introduction | 04:37 | ☐ | ☐ |
-| 253 | Step 14 - First Look at ArrayList - Refactoring Student Class to use ArrayList | 05:57 | ☐ | ☐ |
-| 254 | Step 15 - First Look at ArrayList - Enhancing Student Class with Add and Remove | 02:30 | ☐ | ☐ |
-| 255 | Step 16 - Introduction to Array and ArrayList - Conclusion | 01:09 | ☐ | ☐ |
-| 256 | Coding Exercise: Longest Word Finder | 1 question | ☐ | ☐ |
-| 257 | Solution Video For Coding Exercise - Longest Word Finder | 05:28 | ☐ | ☐ |
-| 258 | Section Quiz | 15 questions | ☐ | ☐ |
-| 259 | Understanding Importance of Deep Work | 02:22 | ☐ | ☐ |
+| 238 | Step 00 - Introduction to Array and ArrayList - Section Introduction with a Chal | 01:19 | ✅ | 🚫 |
+| 239 | Step 01 - Understanding the need and Basics about an Array | 05:26 | ✅ | ✅ |
+| 240 | Step 02 - Java Arrays - Creating and Accessing Values - Introduction | 06:04 | ✅ | ✅ |
+| 241 | Step 03 - Java Arrays - Puzzles - Arrays of Objects, Primitive Data Types, toStr | 08:11 | ✅ | ✅ |
+| 242 | Step 04 - Java Arrays - Compare, Sort and Fill | 05:11 | ✅ | ✅ |
+| 243 | Step 05 - Java Arrays - Exercise - Create Student Class - Part 1 - Total and Ave | 06:17 | ✅ | ✅ |
+| 244 | Step 06 - Java Arrays - Exercise - Create Student Class - Part 2 - Maximum and M | 13:06 | ✅ | ✅ |
+| 245 | Step 07 - Introduction to Variable Arguments - Need | 04:36 | ✅ | ✅ |
+| 246 | Step 08 - Introduction to Variable Arguments - Basics | 05:04 | ✅ | ✅ |
+| 247 | Step 09 - Introduction to Variable Arguments - Enhancing Student Class | 01:59 | ✅ | 🚫 |
+| 248 | Step 10 - Java Arrays - Using Person Objects and String Elements with Exercises | 03:35 | ✅ | ✅ |
+| 249 | Eclipse Tip - Code Generation | 02:41 | ✅ | 🚫 |
+| 250 | Step 11 - Java String Arrays - Exercise Solutions - Print Day of Week with Most | 04:56 | ✅ | ✅ |
+| 251 | Step 12 - Adding and Removing Marks - Problem with Arrays | 03:21 | ✅ | ✅ |
+| 252 | Step 13 - First Look at ArrayList - An Introduction | 04:37 | ✅ | ✅ |
+| 253 | Step 14 - First Look at ArrayList - Refactoring Student Class to use ArrayList | 05:57 | ✅ | ✅ |
+| 254 | Step 15 - First Look at ArrayList - Enhancing Student Class with Add and Remove | 02:30 | ✅ | ✅ |
+| 255 | Step 16 - Introduction to Array and ArrayList - Conclusion | 01:09 | ✅ | 🚫 |
+| 256 | Coding Exercise: Longest Word Finder | 1 question | ✅ | ✅ |
+| 257 | Solution Video For Coding Exercise - Longest Word Finder | 05:28 | ✅ | 🚫 |
+| 258 | Section Quiz | 15 questions | ✅ | ✅ |
+| 259 | Understanding Importance of Deep Work | 02:22 | ✅ | 🚫 |
 | 260 | Reminder - My 10 Rules for Happy Programmers | 01:17 | ☐ | ☐ |
 | 261 | Coding Exercise: Is There a Greater Element | 1 question | ☐ | ☐ |
 | 262 | Solution Video For Coding Exercise - Is There a Greater Element | 03:38 | ☐ | ☐ |
