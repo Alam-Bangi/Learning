@@ -270,22 +270,22 @@ Not Assignment  : 🚫
 | 257 | Solution Video For Coding Exercise - Longest Word Finder | 05:28 | ✅ | 🚫 |
 | 258 | Section Quiz | 15 questions | ✅ | ✅ |
 | 259 | Understanding Importance of Deep Work | 02:22 | ✅ | 🚫 |
-| 260 | Reminder - My 10 Rules for Happy Programmers | 01:17 | ☐ | ☐ |
-| 261 | Coding Exercise: Is There a Greater Element | 1 question | ☐ | ☐ |
-| 262 | Solution Video For Coding Exercise - Is There a Greater Element | 03:38 | ☐ | ☐ |
-| 263 | Coding Exercise: Find Second Largest Element | 1 question | ☐ | ☐ |
-| 264 | Solution Video For Coding Exercise - Find Second Largest Element | 10:30 | ☐ | ☐ |
-| 265 | Coding Exercise: Are Sum of Arrays Equal | 1 question | ☐ | ☐ |
-| 266 | Solution Video For Coding Exercise - Are Sum of Arrays Equal | 03:55 | ☐ | ☐ |
-| 267 | Coding Exercise: Check if an Array is Sorted | 1 question | ☐ | ☐ |
-| 268 | Solution Video For Coding Exercise - Check if an Array is Sorted | 07:09 | ☐ | ☐ |
-| 269 | Coding Exercise: Reverse an Array | 1 question | ☐ | ☐ |
-| 270 | Solution Video For Coding Exercise - Reverse an Array | 08:02 | ☐ | ☐ |
-| 271 | Coding Exercise: Return Factors Of A Number in an ArrayList | 1 question | ☐ | ☐ |
-| 272 | Solution Video For Coding Exercise - Return Factors Of A Number in an ArrayList | 03:52 | ☐ | ☐ |
-| 273 | Coding Exercise: Return ArrayList with multiples of a given number less than a specified limit | 1 question | ☐ | ☐ |
-| 274 | Solution Video For Coding Exercise - Return ArrayList with multiples of a number | 04:22 | ☐ | ☐ |
-| 275 | HALF WAY STAGE How to take care of yourselves | 01:53 | ☐ | ☐ |
+| 260 | Reminder - My 10 Rules for Happy Programmers | 01:17 | ✅ | 🚫 |
+| 261 | Coding Exercise: Is There a Greater Element | 1 question | ✅ | ✅ |
+| 262 | Solution Video For Coding Exercise - Is There a Greater Element | 03:38 | ✅ | 🚫 |
+| 263 | Coding Exercise: Find Second Largest Element | 1 question | ✅ | ✅ |
+| 264 | Solution Video For Coding Exercise - Find Second Largest Element | 10:30 | ✅ | 🚫 |
+| 265 | Coding Exercise: Are Sum of Arrays Equal | 1 question | ✅ | ✅ |
+| 266 | Solution Video For Coding Exercise - Are Sum of Arrays Equal | 03:55 | ✅ | 🚫 |
+| 267 | Coding Exercise: Check if an Array is Sorted | 1 question | ✅ | ✅ |
+| 268 | Solution Video For Coding Exercise - Check if an Array is Sorted | 07:09 | ✅ | 🚫 |
+| 269 | Coding Exercise: Reverse an Array | 1 question | ✅ | 😕 |
+| 270 | Solution Video For Coding Exercise - Reverse an Array | 08:02 | ✅ | 🚫 |
+| 271 | Coding Exercise: Return Factors Of A Number in an ArrayList | 1 question | ✅ | ✅ |
+| 272 | Solution Video For Coding Exercise - Return Factors Of A Number in an ArrayList | 03:52 | ✅ | 🚫 |
+| 273 | Coding Exercise: Return ArrayList with multiples of a given number less than a specified limit | 1 question | ✅ | ✅ |
+| 274 | Solution Video For Coding Exercise - Return ArrayList with multiples of a number | 04:22 | ✅ | 🚫 |
+| 275 | HALF WAY STAGE How to take care of yourselves | 01:53 | ✅ | 🚫 |
 | 276 | Step 00 - Object Oriented Programming - Level 2 - Section Introduction | 01:55 | ☐ | ☐ |
 | 277 | Step 01 - Basics of Designing a Class - Class, Object, State and Behavior | 03:49 | ☐ | ☐ |
 | 278 | Step 02 - OOPS Example - Fan Class - Deciding State and Constructors | 10:06 | ☐ | ☐ |
