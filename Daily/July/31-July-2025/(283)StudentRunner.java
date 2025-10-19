@@ -1,0 +1,57 @@
+class StudentRunner {
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.setName("Alice");
+        student.setEmail("aliceinwonderland@gmail.com");
+        student.setPhoneNumber("1234567890");
+        student.setCollege("Wonderland University");
+        student.setYear(2);
+    }
+}
+class Person {
+    private String name;
+    private String email;
+    private String phoneNumber;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }    
+}
+class Student extends Person {
+    private String college;
+    private int year;
+
+    public String getCollege() {
+        return college;
+    }
+    public void setCollege(String college) {
+        this.college = college;
+    }
+    public int getYear() {
+        return year;
+    }
+    public void setYear(int year) {
+        this.year = year;
+    }
+}
+
+
