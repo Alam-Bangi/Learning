@@ -286,37 +286,37 @@ Not Assignment  : 🚫
 | 273 | Coding Exercise: Return ArrayList with multiples of a given number less than a specified limit | 1 question | ✅ | ✅ |
 | 274 | Solution Video For Coding Exercise - Return ArrayList with multiples of a number | 04:22 | ✅ | 🚫 |
 | 275 | HALF WAY STAGE How to take care of yourselves | 01:53 | ✅ | 🚫 |
-| 276 | Step 00 - Object Oriented Programming - Level 2 - Section Introduction | 01:55 | ☐ | ☐ |
-| 277 | Step 01 - Basics of Designing a Class - Class, Object, State and Behavior | 03:49 | ☐ | ☐ |
-| 278 | Step 02 - OOPS Example - Fan Class - Deciding State and Constructors | 10:06 | ☐ | ☐ |
-| 279 | Step 03 - OOPS Example - Fan Class - Deciding Behavior with Methods | 06:28 | ☐ | ☐ |
-| 280 | Step 04 - OOPS Exercise - Rectangle Class | 06:27 | ☐ | ☐ |
-| 281 | Step 05 - Understanding Object Composition with Customer Address Example | 10:50 | ☐ | ☐ |
-| 282 | Step 06 - Understanding Object Composition - An Exercise - Books and Reviews | 02:48 | ☐ | ☐ |
-| 283 | Step 07 - Understanding Inheritance - Why do we need it? | 07:52 | ☐ | ☐ |
-| 284 | Step 08 - Object is at top of Inheritance Hierarchy | 04:06 | ☐ | ☐ |
-| 285 | Step 09 - Inheritance and Overriding - with toString() method | 04:55 | ☐ | ☐ |
-| 286 | Step 10 - Java Inheritance - Exercise - Student and Employee Classes | 06:53 | ☐ | ☐ |
-| 287 | Step 11 - Java Inheritance - Default Constructors and super() method call | 09:18 | ☐ | ☐ |
-| 288 | Step 12 - Java Inheritance - Puzzles - Multiple Inheritance, Reference Variables | 06:22 | ☐ | ☐ |
-| 289 | Section Quiz 1 | 9 questions | ☐ | ☐ |
-| 290 | Step 13 - Java Abstract Class - Introduction | 06:10 | ☐ | ☐ |
-| 291 | Step 14 - Java Abstract Class - First Example - Creating Recipes with Template M | 07:37 | ☐ | ☐ |
-| 292 | Step 15 - Java Abstract Class - Puzzles | 03:41 | ☐ | ☐ |
-| 293 | Step 16 - Java Interface - Example 1 - Gaming Console - How to think about Intef | 08:30 | ☐ | ☐ |
-| 294 | Step 17 - Java Interface - Example 2 - Complex Algorithm - API defined by extern | 05:58 | ☐ | ☐ |
-| 295 | Step 18 - Java Interface - Puzzles - Unimplemented methods, Abstract Classes, Va | 09:42 | ☐ | ☐ |
-| 296 | Step 19 - Java Interface vs Abstract Class - A Comparison | 03:49 | ☐ | ☐ |
-| 297 | Step 20 - Java Interface Flyable and Abstract Class Animal - An Exercise | 05:26 | ☐ | ☐ |
-| 298 | Programming Tip - 97 Things every programming should know | 02:22 | ☐ | ☐ |
-| 299 | Step 21 - Polymorphism - An introduction | 06:11 | ☐ | ☐ |
-| 300 | Section Quiz 2 | 7 questions | ☐ | ☐ |
-| 301 | How to stay relevant | 02:26 | ☐ | ☐ |
-| 302 | Java Coding Exercise - Arithmetic Operations | 1 question | ☐ | ☐ |
-| 303 | Solution Video For Coding Exercise - Arithmetic Operations | 03:07 | ☐ | ☐ |
-| 304 | Java Coding Exercise - Shapes and Area | 1 question | ☐ | ☐ |
-| 305 | Solution Video For Coding Exercise - Shapes and Area | 07:07 | ☐ | ☐ |
-| 306 | Do You Know Your Learning Style | 02:19 | ☐ | ☐ |
+| 276 | Step 00 - Object Oriented Programming - Level 2 - Section Introduction | 01:55 | ✅ | 🚫 |
+| 277 | Step 01 - Basics of Designing a Class - Class, Object, State and Behavior | 03:49 | ✅ | 🚫 |
+| 278 | Step 02 - OOPS Example - Fan Class - Deciding State and Constructors | 10:06 | ✅ | ✅ |
+| 279 | Step 03 - OOPS Example - Fan Class - Deciding Behavior with Methods | 06:28 | ✅ | ✅ |
+| 280 | Step 04 - OOPS Exercise - Rectangle Class | 06:27 | ✅ | ✅ |
+| 281 | Step 05 - Understanding Object Composition with Customer Address Example | 10:50 | ✅ | ✅ |
+| 282 | Step 06 - Understanding Object Composition - An Exercise - Books and Reviews | 02:48 | ✅ | ✅ |
+| 283 | Step 07 - Understanding Inheritance - Why do we need it? | 07:52 | ✅ | ✅ |
+| 284 | Step 08 - Object is at top of Inheritance Hierarchy | 04:06 | ✅ | 🚫 |
+| 285 | Step 09 - Inheritance and Overriding - with toString() method | 04:55 | ✅ | ✅ |
+| 286 | Step 10 - Java Inheritance - Exercise - Student and Employee Classes | 06:53 | ✅ | ✅ |
+| 287 | Step 11 - Java Inheritance - Default Constructors and super() method call | 09:18 | ✅ | ✅ |
+| 288 | Step 12 - Java Inheritance - Puzzles - Multiple Inheritance, Reference Variables | 06:22 | ✅ | ✅ |
+| 289 | Section Quiz 1 | 9 questions | ✅ | ✅ |
+| 290 | Step 13 - Java Abstract Class - Introduction | 06:10 | ✅ | ✅ |
+| 291 | Step 14 - Java Abstract Class - First Example - Creating Recipes with Template M | 07:37 | ✅ | ✅ |
+| 292 | Step 15 - Java Abstract Class - Puzzles | 03:41 | ✅ | ✅ |
+| 293 | Step 16 - Java Interface - Example 1 - Gaming Console - How to think about Intef | 08:30 | ✅ | ✅ |
+| 294 | Step 17 - Java Interface - Example 2 - Complex Algorithm - API defined by extern | 05:58 | ✅ | ✅ |
+| 295 | Step 18 - Java Interface - Puzzles - Unimplemented methods, Abstract Classes, Va | 09:42 | ✅ | ✅ |
+| 296 | Step 19 - Java Interface vs Abstract Class - A Comparison | 03:49 | ✅ | 🚫 |
+| 297 | Step 20 - Java Interface Flyable and Abstract Class Animal - An Exercise | 05:26 | ✅ | ✅ |
+| 298 | Programming Tip - 97 Things every programming should know | 02:22 | ✅ | 🚫 |
+| 299 | Step 21 - Polymorphism - An introduction | 06:11 | ✅ | ✅ |
+| 300 | Section Quiz 2 | 7 questions | ✅ | ✅ |
+| 301 | How to stay relevant | 02:26 | ✅ | 🚫 |
+| 302 | Java Coding Exercise - Arithmetic Operations | 1 question | ✅ | ✅ |
+| 303 | Solution Video For Coding Exercise - Arithmetic Operations | 03:07 | ✅ | 🚫 |
+| 304 | Java Coding Exercise - Shapes and Area | 1 question | ✅ | ✅ |
+| 305 | Solution Video For Coding Exercise - Shapes and Area | 07:07 | ✅ | 🚫 |
+| 306 | Do You Know Your Learning Style | 02:19 | ✅ | 🚫 |
 | 307 | Step 01 - Java Collections - Section Overview with Need For Collections | 03:17 | ✅ | ✅ |
 | 308 | Step 02 - List Interface - Introduction - Position is King | 07:05 | ✅ | ✅ |
 | 309 | Step 03 - List Inteface - Immutability and Introduction of Implementations - Arr | 04:37 | ✅ | ✅ |
@@ -347,7 +347,7 @@ Not Assignment  : 🚫
 | 334 | Step 27 - TreeMap - Methods from NavigableMap - floorKey, higherKey, firstEntry, | 04:26 | ✅ | ✅ |
 | 335 | Step 28 - Java Collections - Conclusion with Three Tips | 03:01 | ✅ | ✅ |
 | 336 | DO NOT SKIP - FLASH CARDS | 00:20 | ✅ | ✅ |
-| 337 | Section Quiz | 13 questions | ☐ | ☐ |
+| 337 | Section Quiz | 13 questions | ✅ | ✅ |
 | 338 | How to Decide Your Goals | 01:39 | ✅ | ✅ |
 | 339 | Coding Exercise - Anagram Checker | 1 question | ☐ | ☐ |
 | 340 | Solution Video For Coding Exercise - Anagram Checker | 07:48 | ☐ | ☐ |

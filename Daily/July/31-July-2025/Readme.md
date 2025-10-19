@@ -77,12 +77,11 @@
     - (303)	Solution Video For Coding Exercise - Arithmetic Operations
         - No assignment
     - (304) Java Coding Exercise - Shapes and Area
-        - Program to calculatr area according to shape
+        - Program to calculate area according to shape
     - (305)	Solution Video For Coding Exercise - Shapes and Area
         - No assignment
     - (306) Do You Know Your Learning Style
         - No assignment
-    
 
 ### Assignment
 - Logic Building.
