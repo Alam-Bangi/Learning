@@ -23,20 +23,32 @@
 
 ### Assignment
 
-
 ### Doubts
 
-
 ### Links
-
+- https://www.udemy.com/course/java-programming-tutorial-for-beginners
 
 ## Second Half
+- JAVA- Section 24 - Generics in Java Programming ✅
 
 ### Videos
-
+- Java- Section 24 ✅
+    - (346) Step 01 - Introduction to Generics - Why do we need Generics?
+	    - Learned a bit about generics
+    - (347) Step 02 - Implementing Generics for the Custom List
+	    - Learned how generics works and how to use it
+    - (348) Step 03 - Extending Custom List with a Generic Return Method
+	    - Learned how to return value of type T
+    - (349) Step 04 - Generics Puzzles - Restrictions with extends and Generic Methods
+	    - Learned about restrictions with extends keyword
+    - (350) Step 05 - Generics and WildCards - Upper Bound and Lower Bound
+        - Learned about upper bound and lower bound
+        - Upper bound helps implement logic for all list extending specific type
+        - Lower bound helps add data of a specific type
 
 ### Assignment
 
 ### Doubts
 
 ### Links
+- https://www.udemy.com/course/java-programming-tutorial-for-beginners
