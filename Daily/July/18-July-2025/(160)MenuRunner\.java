@@ -19,6 +19,7 @@ class MenuRunner {
         System.out.println("Enter your choice: ");
         int choice = scanner.nextInt();
 
+
         System.out.println("Your choices are:");
         System.out.println("number1 = " + number1);
         System.out.println("number2 = " + number2);
