@@ -349,23 +349,23 @@ Not Assignment  : 🚫
 | 336 | DO NOT SKIP - FLASH CARDS | 00:20 | ✅ | ✅ |
 | 337 | Section Quiz | 13 questions | ✅ | ✅ |
 | 338 | How to Decide Your Goals | 01:39 | ✅ | ✅ |
-| 339 | Coding Exercise - Anagram Checker | 1 question | ☐ | ☐ |
-| 340 | Solution Video For Coding Exercise - Anagram Checker | 07:48 | ☐ | ☐ |
-| 341 | Coding Exercise - Is Hexadecimal String? | 1 question | ☐ | ☐ |
-| 342 | Solution Video For Coding Exercise - Is Hexadecimal String? | 07:40 | ☐ | ☐ |
-| 343 | Coding Exercise - Word Reverser | 1 question | ☐ | ☐ |
-| 344 | Solution Video For Coding Exercise - Word Reverser | 06:00 | ☐ | ☐ |
-| 345 | Why Should You Embrace a Growth Mindset | 01:18 | ☐ | ☐ |
-| 346 | Step 01 - Introduction to Generics - Why do we need Generics? | 05:44 | ☐ | ☐ |
-| 347 | Step 02 - Implementing Generics for the Custom List | 05:05 | ☐ | ☐ |
-| 348 | Step 03 - Extending Custom List with a Generic Return Method | 02:19 | ☐ | ☐ |
-| 349 | Step 04 - Generics Puzzles - Restrictions with extends and Generic Methods | 07:32 | ☐ | ☐ |
-| 350 | Step 05 - Generics and WildCards - Upper Bound and Lower Bound | 06:18 | ☐ | ☐ |
-| 351 | Step 01 - Introduction to Functional Programming - Functions are First Class Cit | 02:22 | ☐ | ☐ |
-| 352 | Step 02 - Functional Programming - First Example with Function as Parameter | 07:10 | ☐ | ☐ |
-| 353 | Step 03 - Functional Programming - Exercise - Loop a List of Numbers | 02:21 | ☐ | ☐ |
-| 354 | Step 04 - Functional Programming - Filtering - Exercises to print odd and even n | 07:27 | ☐ | ☐ |
-| 355 | Step 05 - Functional Programming - Collect - Sum of Numbers in a List | 06:55 | ☐ | ☐ |
+| 339 | Coding Exercise - Anagram Checker | 1 question | ✅ | ✅ |
+| 340 | Solution Video For Coding Exercise - Anagram Checker | 07:48 | ✅ | 🚫 |
+| 341 | Coding Exercise - Is Hexadecimal String? | 1 question | ✅ | ✅ |
+| 342 | Solution Video For Coding Exercise - Is Hexadecimal String? | 07:40 | ✅ | 🚫 |
+| 343 | Coding Exercise - Word Reverser | 1 question | ✅ | ✅ |
+| 344 | Solution Video For Coding Exercise - Word Reverser | 06:00 | ✅ | 🚫 |
+| 345 | Why Should You Embrace a Growth Mindset | 01:18 | ✅ | 🚫 |
+| 346 | Step 01 - Introduction to Generics - Why do we need Generics? | 05:44 | ✅ | ✅ |
+| 347 | Step 02 - Implementing Generics for the Custom List | 05:05 | ✅ | ✅ |
+| 348 | Step 03 - Extending Custom List with a Generic Return Method | 02:19 | ✅ | ✅ |
+| 349 | Step 04 - Generics Puzzles - Restrictions with extends and Generic Methods | 07:32 | ✅ | ✅ |
+| 350 | Step 05 - Generics and WildCards - Upper Bound and Lower Bound | 06:18 | ✅ | ✅ |
+| 351 | Step 01 - Introduction to Functional Programming - Functions are First Class Cit | 02:22 | ✅ | 🚫 |
+| 352 | Step 02 - Functional Programming - First Example with Function as Parameter | 07:10 | ✅ | ✅ |
+| 353 | Step 03 - Functional Programming - Exercise - Loop a List of Numbers | 02:21 | ✅ | ✅ |
+| 354 | Step 04 - Functional Programming - Filtering - Exercises to print odd and even n | 07:27 | ✅ | ✅ |
+| 355 | Step 05 - Functional Programming - Collect - Sum of Numbers in a List | 06:55 | ✅ | ✅ |
 | 356 | Step 06 - Functional Programming vs Structural Programming - A Quick Comparison | 04:31 | ☐ | ☐ |
 | 357 | Step 07 - Functional Programming Terminology - Lambda Expression, Stream and Ope | 06:20 | ☐ | ☐ |
 | 358 | Step 08 - Stream Intermediate Operations - Sort, Distinct, Filter and Map | 04:31 | ☐ | ☐ |
