@@ -19,7 +19,12 @@
     - (385) Step 06 - Communication between Threads - join method
         - Learned about join method and its uses
     - (386) Step 07 - Thread utility methods and synchronized keyword - sleep, yield
-        - 
+        - No assignment
+        - Learned about synchronized , sleep and yield keyword and its uses
+    - (387) Step 08 - Need for Controlling the Execution of Threads
+        - Learned a bit about controlling the execution of threads
+    - (388) Step 09 - Introduction to Executor Service
+        - Learned about executor service 
 
 ### Assignment
 
