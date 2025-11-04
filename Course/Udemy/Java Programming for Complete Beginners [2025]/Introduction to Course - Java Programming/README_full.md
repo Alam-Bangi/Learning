@@ -366,45 +366,45 @@ Not Assignment  : 🚫
 | 353 | Step 03 - Functional Programming - Exercise - Loop a List of Numbers | 02:21 | ✅ | ✅ |
 | 354 | Step 04 - Functional Programming - Filtering - Exercises to print odd and even n | 07:27 | ✅ | ✅ |
 | 355 | Step 05 - Functional Programming - Collect - Sum of Numbers in a List | 06:55 | ✅ | ✅ |
-| 356 | Step 06 - Functional Programming vs Structural Programming - A Quick Comparison | 04:31 | ☐ | ☐ |
-| 357 | Step 07 - Functional Programming Terminology - Lambda Expression, Stream and Ope | 06:20 | ☐ | ☐ |
-| 358 | Step 08 - Stream Intermediate Operations - Sort, Distinct, Filter and Map | 04:31 | ☐ | ☐ |
-| 359 | Step 09 - Stream Intermediate Operations - Exercises - Squares of First 10, Map | 04:34 | ☐ | ☐ |
-| 360 | Step 10 - Stream Terminal Operations - 1 - max operation with Comparator | 07:29 | ☐ | ☐ |
-| 361 | Step 11 - Stream Terminal Operations - 2 - min, collect to List, | 07:02 | ☐ | ☐ |
-| 362 | Step 12 - Optional class in Java - An Introduction | 04:49 | ☐ | ☐ |
-| 363 | Step 13 - Behind the Screens with Functional Interfaces - Implement Predicate In | 08:27 | ☐ | ☐ |
-| 364 | Step 14 - Behind the Screens with Functional Interfaces - Implement Consumer Int | 03:09 | ☐ | ☐ |
-| 365 | Step 15 - Behind the Screens with Functional Interfaces - Implement Function Int | 04:22 | ☐ | ☐ |
-| 366 | Step 16 - Simplify Functional Programming code with Method References - static a | 09:48 | ☐ | ☐ |
-| 367 | Step 17 - Functions are First Class Citizens | 03:30 | ☐ | ☐ |
-| 368 | Step 18 - Introduction to Functional Programming - Conclusion | 02:52 | ☐ | ☐ |
-| 369 | Section Quiz | 11 questions | ☐ | ☐ |
-| 370 | Coding Exercise - Filter Odd Numbers | 1 question | ☐ | ☐ |
-| 371 | Solution Video For Coding Exercise - Filter Odd Numbers | 04:22 | ☐ | ☐ |
-| 372 | Coding Exercise: Get Cubes of First N Numbers | 1 question | ☐ | ☐ |
-| 373 | Solution Video For Coding Exercise - Get Cubes of First N Numbers | 04:01 | ☐ | ☐ |
-| 374 | Coding Exercises: Length of Course Names | 1 question | ☐ | ☐ |
-| 375 | Solution Video For Coding Exercise - Length of Course Names | 02:47 | ☐ | ☐ |
-| 376 | Coding Exercise: Sum of Squares | 1 question | ☐ | ☐ |
-| 377 | Solution Video For Coding Exercise - Sum of Squares | 02:26 | ☐ | ☐ |
-| 378 | Coding Exercise: Find Max Even Number | 1 question | ☐ | ☐ |
-| 379 | Solution Video For Coding Exercise - Find Max Even Number | 04:39 | ☐ | ☐ |
-| 380 | Step 01 - Introduction to Threads and MultiThreading - Need for Threads | 04:52 | ☐ | ☐ |
-| 381 | Step 02 - Creating a Thread for Task1 - Extending Thread Class | 06:07 | ☐ | ☐ |
-| 382 | Step 03 - Creating a Thread for Task2 - Implement Runnable Interface | 04:50 | ☐ | ☐ |
-| 383 | Step 04 - Theory - States of a Thread | 05:21 | ☐ | ☐ |
-| 384 | Step 05 - Placing Priority Requests for Threads | 04:19 | ☐ | ☐ |
-| 385 | Step 06 - Communication between Threads - join method | 03:48 | ☐ | ☐ |
-| 386 | Step 07 - Thread utility methods and synchronized keyword - sleep, yield | 05:44 | ☐ | ☐ |
-| 387 | Step 08 - Need for Controlling the Execution of Threads | 02:42 | ☐ | ☐ |
-| 388 | Step 09 - Introduction to Executor Service | 04:27 | ☐ | ☐ |
-| 389 | Step 10 - Executor Service - Customizing number of Threads | 05:28 | ☐ | ☐ |
-| 390 | Step 11 - Executor Service - Returning a Future from Thread using Callable | 06:43 | ☐ | ☐ |
-| 391 | Step 12 - Executor Service - Waiting for completion of multiple tasks using invo | 06:58 | ☐ | ☐ |
-| 392 | Step 13 - Executor Service - Wait for only the fastest task using invokeAny | 02:42 | ☐ | ☐ |
-| 393 | Step 14 - Threads and MultiThreading - Conclusion | 02:23 | ☐ | ☐ |
-| 394 | Section Quiz | 11 questions | ☐ | ☐ |
+| 356 | Step 06 - Functional Programming vs Structural Programming - A Quick Comparison | 04:31 | ✅ | ✅ |
+| 357 | Step 07 - Functional Programming Terminology - Lambda Expression, Stream and Ope | 06:20 | ✅ | ✅ |
+| 358 | Step 08 - Stream Intermediate Operations - Sort, Distinct, Filter and Map | 04:31 | ✅ | ✅ |
+| 359 | Step 09 - Stream Intermediate Operations - Exercises - Squares of First 10, Map | 04:34 | ✅ | ✅ |
+| 360 | Step 10 - Stream Terminal Operations - 1 - max operation with Comparator | 07:29 | ✅ | ✅ |
+| 361 | Step 11 - Stream Terminal Operations - 2 - min, collect to List, | 07:02 | ✅ | ✅ |
+| 362 | Step 12 - Optional class in Java - An Introduction | 04:49 | ✅ | ✅ |
+| 363 | Step 13 - Behind the Screens with Functional Interfaces - Implement Predicate In | 08:27 | ✅ | ✅ |
+| 364 | Step 14 - Behind the Screens with Functional Interfaces - Implement Consumer Int | 03:09 | ✅ | ✅ |
+| 365 | Step 15 - Behind the Screens with Functional Interfaces - Implement Function Int | 04:22 | ✅ | ✅ |
+| 366 | Step 16 - Simplify Functional Programming code with Method References - static a | 09:48 | ✅ | ✅ |
+| 367 | Step 17 - Functions are First Class Citizens | 03:30 | ✅ | 🚫 |
+| 368 | Step 18 - Introduction to Functional Programming - Conclusion | 02:52 | ✅ | 🚫 |
+| 369 | Section Quiz | 11 questions | ✅ | ✅ |
+| 370 | Coding Exercise - Filter Odd Numbers | 1 question | ✅ | ✅ |
+| 371 | Solution Video For Coding Exercise - Filter Odd Numbers | 04:22 | ✅ | 🚫 |
+| 372 | Coding Exercise: Get Cubes of First N Numbers | 1 question | ✅ | ✅ |
+| 373 | Solution Video For Coding Exercise - Get Cubes of First N Numbers | 04:01 | ✅ | 🚫 |
+| 374 | Coding Exercises: Length of Course Names | 1 question | ✅ | ✅ |
+| 375 | Solution Video For Coding Exercise - Length of Course Names | 02:47 | ✅ | 🚫 |
+| 376 | Coding Exercise: Sum of Squares | 1 question | ✅ | ✅ |
+| 377 | Solution Video For Coding Exercise - Sum of Squares | 02:26 | ✅ | 🚫 |
+| 378 | Coding Exercise: Find Max Even Number | 1 question | ✅ | ✅ |
+| 379 | Solution Video For Coding Exercise - Find Max Even Number | 04:39 | ✅ | 🚫 |
+| 380 | Step 01 - Introduction to Threads and MultiThreading - Need for Threads | 04:52 | ✅ | ✅ |
+| 381 | Step 02 - Creating a Thread for Task1 - Extending Thread Class | 06:07 | ✅ | ✅ |
+| 382 | Step 03 - Creating a Thread for Task2 - Implement Runnable Interface | 04:50 | ✅ | ✅ |
+| 383 | Step 04 - Theory - States of a Thread | 05:21 | ✅ | 🚫 |
+| 384 | Step 05 - Placing Priority Requests for Threads | 04:19 | ✅ | ✅ |
+| 385 | Step 06 - Communication between Threads - join method | 03:48 | ✅ | ✅ |
+| 386 | Step 07 - Thread utility methods and synchronized keyword - sleep, yield | 05:44 | ✅ | 🚫 |
+| 387 | Step 08 - Need for Controlling the Execution of Threads | 02:42 | ✅ | 🚫 |
+| 388 | Step 09 - Introduction to Executor Service | 04:27 | ✅ | ✅ |
+| 389 | Step 10 - Executor Service - Customizing number of Threads | 05:28 | ✅ | ✅ |
+| 390 | Step 11 - Executor Service - Returning a Future from Thread using Callable | 06:43 | ✅ | ✅ |
+| 391 | Step 12 - Executor Service - Waiting for completion of multiple tasks using invo | 06:58 | ✅ | ✅ |
+| 392 | Step 13 - Executor Service - Wait for only the fastest task using invokeAny | 02:42 | ✅ | ✅ |
+| 393 | Step 14 - Threads and MultiThreading - Conclusion | 02:23 | ✅ | 🚫 |
+| 394 | Section Quiz | 11 questions | ✅ | ✅ |
 | 395 | Step 01 - Introduction to Exception Handling - Your Thought Process during Excep | 03:13 | ☐ | ☐ |
 | 396 | Step 02 - Basics of Exceptions - NullPointerException and StackTrace | 06:16 | ☐ | ☐ |
 | 397 | Step 03 - Basics of Handling Exceptions - try and catch | 05:19 | ☐ | ☐ |
