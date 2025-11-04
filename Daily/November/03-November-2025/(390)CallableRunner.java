@@ -14,7 +14,7 @@ class CallableRunner {
 }
 class CallableTask implements Callable<String> {
     private String name;
-    public CallableTask(String name) }{
+    public CallableTask(String name) {
         this.name = name;
     }
 
