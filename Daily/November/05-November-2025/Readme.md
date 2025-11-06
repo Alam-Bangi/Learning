@@ -34,3 +34,6 @@
 
 
 ### Links
+- (Palindrome) https://www.hackerrank.com/challenges/java-string-reverse/problem?isFullScreen=true
+- (isProbablePrime) https://www.hackerrank.com/challenges/java-primality-test/problem?isFullScreen=true
+- (StringOpeartions) https://www.hackerrank.com/challenges/java-strings-introduction/problem?isFullScreen=true
