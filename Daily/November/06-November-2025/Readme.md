@@ -6,10 +6,12 @@
 ### Videos
 - Java- Section 28
     - (400) Step 06 - Basics of Handling Exceptions - Puzzles
+        - No assignment
         - Discussed about a few puzzles about catch and finally
     - (401) Step 07 - Checked Exceptions vs Unchecked Exceptions - An Example
         - Learned that every method can throw different exceptions
     - (402) Step 08 - Hierarchy of Errors and Exceptions - Checked and Runtime
+        - No assignment
         - Learned little bit about Exception Hierarchy
 
 ### Assignment
@@ -32,16 +34,12 @@
         - Learned about Checked Exception 
 
 ### Assignment
-- (HackerRank) String split method
-- (HackerRank) BigInteger Operations
-- (HackerRank) Input Array Elements
+- (HackerRank) [String Split](https://www.hackerrank.com/challenges/java-string-tokens/problem?isFullScreen=true)
+- (HackerRank) [BigInteger Operations](https://www.hackerrank.com/challenges/java-biginteger/problem?isFullScreen=true)
+- (HackerRank) [Input Array Elements](http://hackerrank.com/challenges/java-1d-array-introduction/problem?isFullScreen=true)
 
 ### Doubts
 
 
 ### Links
 - https://www.udemy.com/course/java-programming-tutorial-for-beginners
-
-- (String Split) https://www.hackerrank.com/challenges/java-string-tokens/problem?isFullScreen=true
-- (BigInteger Operations) https://www.hackerrank.com/challenges/java-biginteger/problem?isFullScreen=true
-- (Input Array Elements) http://hackerrank.com/challenges/java-1d-array-introduction/problem?isFullScreen=true
