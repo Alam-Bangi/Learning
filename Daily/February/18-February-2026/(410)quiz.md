@@ -1,4 +1,4 @@
-'''
+```
 1. What is an exception in Java?
 - An event that occurs during the execution of a program and disrupts the normal flow of instructions
 
@@ -51,4 +51,4 @@
 16. What is the purpose of the try-with-resources statement in Java?
 - To automatically manage resources that implement the AutoCloseable interface.
 
-'''
+```
