@@ -1,3 +1,4 @@
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -69,5 +70,26 @@ class BiCounterWithLock {
 
     public int getJ() {
         return j;
+    }
+}
+
+class BiCounterWithAtomicInteger {
+    private AtomicInteger i = new AtomicInteger();
+    private AtomicInteger j = new AtomicInteger();
+
+    public void increamentI() {
+        i.incrementAndGet();
+    }
+
+    public int getI() {
+        return i.get();
+    }
+
+    public void increamentJ() {
+        j.incrementAndGet();
+    }
+
+    public int getJ() {
+        return j.get();
     }
 }
