@@ -10,8 +10,10 @@
         - No assignment
         - Learned how ConcurrentHashMap helps us with more concurrency by using different locks for different regions
     - 423 - Step 08 - CopyOnWrite Concurrent Collections - When reads are more than writes
+        - No Assignment
         - Learned how CopyOnWrite works on ArrayList and in general
     - 424 - Step 09 - Conclusion
+        - No Assignment
         - Went through all the topics we leaned in concurrent collections
 
 ### Assignment
