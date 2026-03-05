@@ -35,7 +35,9 @@ class SwitchExpressionRunner {
 
     public static String findDayOfTheWeekWithSwitchExpression(int day) {
         String dayOfWeek = switch (day) {
-            case 0 -> "Sunday";
+            case 0 -> {
+                yield "Sunday";
+            }
             case 1 -> "Monday";
             case 2 -> "Tuesday";
             case 3 -> "Wednesday";
