@@ -2,6 +2,7 @@
 
 ## First Half
 - Java- Section 36 - Java Platform- Java Review (Interview) Guide✅ 
+- Java- Section 37 - Java Landscape- Java Review (Interview) Guide
 ### Videos
 - Java- Section 36
     - 482 - 5 Questions - CLASSPATH and Class Loaders
@@ -15,6 +16,7 @@
     - 485 - 3 Questions - JVM Optimizations
         - No Assignment
         - Learned about JVM optimizations
+- Java- Section 37
     - 486 - Section Introduction - Java Landscape
         - No Assignment
     - 487 - Java Landscape - Java Review (Interview) Guide - Getting Started
