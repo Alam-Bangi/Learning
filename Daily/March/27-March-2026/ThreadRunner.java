@@ -1,0 +1,44 @@
+class ThreadRunner {
+    public static void main(String[] args) throws InterruptedException {
+        Task1 task1 = new Task1();
+        task1.setPriority(5);
+        task1.start();
+
+        // Task1 task = new Task1();
+        // task.start();
+
+        Task2 task2 = new Task2();
+        Thread task2Thread = new Thread(task2);
+        task2Thread.setPriority(10);
+        task2Thread.start();
+
+        task1.join();
+        task2Thread.join();
+
+        System.out.print("\nTask3 Started");
+        for (int i = 201; i <= 300; i++) {
+            System.out.print(i);
+        }
+        System.out.print("\nTask3 Done");
+    }
+}
+
+class Task1 extends Thread {
+    public void run() {
+        System.out.print("\nTask1 Started");
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(i);
+        }
+        System.out.print("\nTask1 Done");
+    }
+}
+
+class Task2 implements Runnable {
+    public void run() {
+        System.out.print("\nTask2 Started");
+        for (int i = 101; i <= 200; i++) {
+            System.out.print(i);
+        }
+        System.out.print("\nTask2 Done");
+    }
+}
