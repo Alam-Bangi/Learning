@@ -42,7 +42,7 @@ OOP:-
 - Slower than primitives due to:
     - object creation
     - memory overhead
-    
+
 
 - By default floating point value(decimal value) is double
 
@@ -133,3 +133,13 @@ Reference variable - name of object as it refers to object
 - (concat()) → method-based
 - String - stored as char[] (before java9)
     - stored as byte[] (after java9)
+```
+
+```
+Arrays- 
+    - Arrays.fill(arrname, value)
+    - Arrays.equals(arr1,arr2)
+    - Arrays.toString(arrname)
+    - Arrays.sort(arrname)
+
+```
