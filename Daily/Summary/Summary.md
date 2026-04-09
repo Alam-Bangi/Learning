@@ -142,4 +142,70 @@ Arrays-
     - Arrays.toString(arrname)
     - Arrays.sort(arrname)
 
+An array is a fixed-size data structure that stores elements of the same type in contiguous memory locations, allowing fast access using an index.
+
+🔹 Key Points to Mention
+-Fast access: O(1) using index
+-Fixed size: Cannot grow or shrink after creation
+-Homogeneous data: Same data type only
+-Memory efficient: Stored in continuous memory
+🔹 Time Complexity
+-Access → O(1)
+-Search → O(n)
+-Insertion/Deletion → O(n) (due to shifting)
+🔹 Advantages
+-Very fast access
+-Simple and easy to use
+-Cache-friendly (better performance)
+🔹 Disadvantages
+-Fixed size
+-Costly insert/delete
+-Possible memory wastage
+🔹 Common Techniques (Important 🔥)
+-Two Pointer → pairs, reversing
+-Sliding Window → subarray problems
+-Prefix Sum → range queries
+-Hashing → fast lookup
+🔹 When to Use
+-When size is known
+-When performance is critical
+-When frequent access is required
+
+🧠 One-Line Interview Answer
+“Array is a fixed-size, index-based data structure stored in contiguous memory, providing O(1) access but O(n) insertion and deletion, and is best used when size is known and fast access is needed.”
 ```
+
+```
+- ArrayList
+ArrayList is a dynamic array from the Java Collection Framework that can grow and shrink automatically, and stores elements in ordered form.
+
+🔹 Key Points to Mention
+-Dynamic size (resizable)
+-Maintains insertion order
+-Stores only objects (uses wrapper classes for primitives)
+-Backed by an internal array
+🔹 Time Complexity
+-Access → O(1)
+-Add (end) → O(1) amortized
+-Insert/Delete (middle) → O(n)
+-Search → O(n)
+🔹 Internal Working (Very Important 🔥)
+-Default capacity starts at 10
+-When full → creates a new array (~1.5x bigger)
+-Copies old elements to new array
+🔹 Advantages
+-Flexible size
+-Easy to use (built-in methods)
+-Good for frequent read operations
+🔹 Disadvantages
+-Slower than arrays (due to resizing & object handling)
+-Extra memory usage
+-Not thread-safe
+🔹 When to Use
+-When size is unknown or changes frequently
+-When you need easy insertion at the end
+-When working with collections of objects
+
+🧠 One-Line Interview Answer
+“ArrayList is a resizable array in Java that provides dynamic sizing with O(1) access and amortized O(1) insertion, but has O(n) cost for insertions and deletions due to element shifting.”
+``` 
