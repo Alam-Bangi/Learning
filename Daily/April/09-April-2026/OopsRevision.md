@@ -26,6 +26,6 @@ class Student
     - getGrades, getPercentage, getResult, addSubject, removeSubject, updateMarks, getDetails, isEligibleforExam, 
 
 class ReportCard
-    - Student, Percentage, List of Grades , Result, remarks, examType, issueDate
-    - calculatePercentage(), calculateGrade(), getResult(), addRemarks(), generateReportCard(), totalMarks(), 
+    - Student, Percentage, List of Grades , Result, remarks, examType, issueDate, Average, totalMarks
+    - calculatePercentage(), calculateGrade(), getResult(), addRemarks(), generateReportCard(), totalMarks(), getAverage()
 ```
