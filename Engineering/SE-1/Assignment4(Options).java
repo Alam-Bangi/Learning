@@ -1,17 +1,33 @@
 
 /**
-Write a Python program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following: D 100 W 200 (Withdrawal is not allowed if balance is going negative. Write functions for withdraw and deposit) D means deposit while W means withdrawal.
+Write a Python program that computes the net amount of a bank 
+account based a transaction log from console input. The 
+transaction log format is shown as following: 
+D 100 W 200 (Withdrawal is not allowed if balance is going negative. 
+Write functions for withdraw and deposit) D means deposit 
+while W means withdrawal.
 Suppose the following input is supplied to the program:
 D 300, D 300, W 200, D 100 Then, the output should be: 500
 */
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Assignment4 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+    static BankAccount account;
 
-        BankAccount account;
+    public static void main(String[] args) {
+
+        System.out.println("Select your choice");
+        System.out.println("1. Menu Driven");
+        System.out.println("2. String Driven");
+        System.out.print("Your Selection: ");
+        int selected = sc.nextInt();
+        while (selected != 1 && selected != 2) {
+            System.out.print("Enter valid choice: ");
+            selected = sc.nextInt();
+        }
 
         System.out.println("\n------------------------------");
         System.out.println("Welcome to Bank Account Management System");
@@ -19,6 +35,10 @@ class Assignment4 {
         System.out.println("2. Current Account");
         System.out.print("Enter your choice: ");
         int choice = sc.nextInt();
+        while (choice != 1 && choice != 2) {
+            System.out.print("Enter valid choice: ");
+            choice = sc.nextInt();
+        }
 
         switch (choice) {
             case 1:
@@ -27,15 +47,62 @@ class Assignment4 {
             case 2:
                 account = new CurrentAccount();
                 break;
-            default:
-                System.out.println("Invalid choice.");
-                return;
         }
+        switch (selected) {
+            case 1:
+                menuDriven();
+                break;
+            case 2:
+                stringDriven();
+                break;
+        }
+    }
+
+    public static void menuDriven() {
+        while (true) {
+            System.out.println("\n------------------------------");
+            System.out.println("1. Deposit Amount");
+            System.out.println("2. Withdraw Amount");
+            System.out.println("3. Display Balance");
+            System.out.println("4. See All Transactions");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+            int option = sc.nextInt();
+
+            switch (option) {
+                case 1:
+                    System.out.print("Enter amount to deposit: ");
+                    double depositAmount = sc.nextDouble();
+                    account.depositAmount(depositAmount);
+                    break;
+                case 2:
+                    System.out.print("Enter amount to withdraw: ");
+                    double withdrawAmount = sc.nextDouble();
+                    account.withdrawAmount(withdrawAmount);
+                    break;
+                case 3:
+                    account.displayBalance();
+                    break;
+                case 4:
+                    account.displayTransactions();
+                    break;
+                case 5:
+                    System.out.println("Thank You for using Bank System!!!");
+                    sc.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        }
+    }
+
+    public static void stringDriven() {
         while (true) {
             System.out.println("\n------------------------------");
             System.out.println("1. Display Balance");
             System.out.println("2. Enter Transaction String");
-            System.out.println("3. Exit");
+            System.out.println("3. See All Transactions ");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             int option = sc.nextInt();
 
@@ -47,6 +114,9 @@ class Assignment4 {
                     account.stringTransactions();
                     break;
                 case 3:
+                    account.displayTransactions();
+                    break;
+                case 4:
                     System.out.println("Thank You for using Bank System!!!");
                     sc.close();
                     return;
@@ -61,6 +131,7 @@ abstract class BankAccount {
     Scanner scanner = new Scanner(System.in);
 
     double balance;
+    ArrayList<Transactions> transactions = new ArrayList<>();
 
     abstract void depositAmount(double amount);
 
@@ -69,7 +140,7 @@ abstract class BankAccount {
     abstract void withdrawAmount(double amount);
 
     public boolean validateAmount(double amount) {
-        return amount < 1;
+        return amount <= 0;
     }
 
     public boolean validateString(String input) {
@@ -99,6 +170,16 @@ abstract class BankAccount {
         System.out.println("Current Balance: " + balance);
     }
 
+    public void displayTransactions() {
+        if(transactions.isEmpty()){
+            System.out.println("No transactions yet");
+        } else {
+            System.out.println("Your Transactions are: ");
+            for(Transactions transaction : transactions) {
+                System.out.println(transaction);
+            }
+        }
+    }
 }
 
 class SavingsAccount extends BankAccount {
@@ -108,6 +189,7 @@ class SavingsAccount extends BankAccount {
             amount = scanner.nextDouble();
         }
         balance += amount;
+        this.transactions.add(new Transactions("Deposit: ", amount));
         System.out.println(amount + " deposited successfully.");
     }
 
@@ -120,6 +202,7 @@ class SavingsAccount extends BankAccount {
             System.out.println("Insufficient balance. Withdrawal failed.");
         } else {
             this.balance -= amount;
+            this.transactions.add(new Transactions("Withdraw: ", amount));
             System.out.println(amount + " withdrawn successfully.");
         }
     }
@@ -163,6 +246,7 @@ class CurrentAccount extends BankAccount {
             amount = scanner.nextDouble();
         }
         this.balance += amount;
+        this.transactions.add(new Transactions("Deposit: ", amount));
         System.out.println(amount + " deposited successfully.");
     }
 
@@ -178,8 +262,9 @@ class CurrentAccount extends BankAccount {
             this.balance -= amount;
             if (this.balance < 1000) {
                 this.balance += amount;
-                System.out.println("Insufficient balance. Withdrawal failed.");
+                System.out.println("Insufficient balance (Need to keep minimum balance of Rs.1000).");
             } else {
+                this.transactions.add(new Transactions("Withdraw: ", amount));
                 System.out.println(amount + " withdrawn successfully.");
             }
         }
@@ -196,7 +281,7 @@ class CurrentAccount extends BankAccount {
         for (String transaction : transactions) {
             transaction = transaction.trim();
             String[] transactionDetails = transaction.split(" ");
-            if (transactionDetails.length > 2) {
+            if (transactionDetails.length >= 2) {
                 System.out.println("Invalid transaction format: " + transaction);
                 continue;
             }
@@ -209,5 +294,18 @@ class CurrentAccount extends BankAccount {
                 withdrawAmount(amount);
             }
         }
+    }
+}
+class Transactions {
+    String type;
+    double amount;
+
+    public Transactions(String type, double amount) {
+        this.type = type;
+        this.amount = amount;
+    }
+
+    public String toString() {
+        return type + amount;
     }
 }

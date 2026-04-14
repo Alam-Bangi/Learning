@@ -109,6 +109,10 @@ class SavingsAccount extends BankAccount {
 }
 
 class CurrentAccount extends BankAccount {
+    public CurrentAccount() {
+        this.balance = 1000;
+    }
+
     public void depositAmount(double amount) {
         while (validateAmount(amount)) {
             System.out.println("Enter valid amount (Cannot be negative): ");
@@ -119,6 +123,7 @@ class CurrentAccount extends BankAccount {
     }
 
     public void withdrawAmount(double amount) {
+
         while (validateAmount(amount)) {
             System.out.println("Enter valid amount (Cannot be negative): ");
             amount = scanner.nextDouble();
@@ -127,7 +132,12 @@ class CurrentAccount extends BankAccount {
             System.out.println("Insufficient balance. Withdrawal failed.");
         } else {
             this.balance -= amount;
-            System.out.println(amount + " withdrawn successfully.");
+            if(this.balance < 1000) {
+                this.balance += amount;
+                System.out.println("Cannot withdraw as minimum balance should be 1000");
+            } else {
+                System.out.println(amount + " withdrawn successfully.");
+            }
         }
     }
 }
