@@ -102,3 +102,116 @@ When an array is passed to a method in Java:
     Any modification inside the method affects the original array
 ```
 ```
+Inheritance
+    Inheritance is a mechanism where one class acquires properties (fields + methods) of another class using extends.
+
+Why is inheritance used?
+    Code reusability
+    Method overriding (runtime polymorphism)
+    Better organization (IS-A relationship) 
+
+Does Java support multiple inheritance?
+   ❌ Not with classes 
+   ✅ Yes with interfaces
+
+Types of inheritance in Java
+    Single - One child class inherits from one parent class.
+    Multilevel - A class inherits from a class, which itself inherits from another class.
+    Hierarchical - Multiple child classes inherit from one parent class.
+    Multiple (via interfaces only) - One class inherits from multiple sources (interfaces).
+    ❗ Java does NOT support multiple inheritance with classes.
+    Hybrid (via interfaces) - Combination of two or more inheritance types.
+       A
+      / \
+     B   C
+      \ /
+       D
+
+Difference between overloading and overriding?
+Feature	                Overloading	    Overriding
+Same method name	    Yes	            Yes
+Parameters	            Different	    Same
+Inheritance needed	    No	            Yes
+Runtime polymorphism    No	            Yes
+
+What is protected access modifier?
+Accessible:
+    Within package
+    Outside package via inheritance
+
+What is dynamic method dispatch?
+    Method call resolved at runtime based on object type.
+
+What is diamond problem?
+    Occurs in multiple inheritance when two parents have same method.
+
+Can we downcast safely?
+    Yes, but requires explicit casting:
+    Parent p = new Child();
+    Child c = (Child) p;
+
+Can child class access parent static variables?
+    ✅ Yes (via class name or inheritance)
+```
+```
+Abstract Class
+    An abstract class is a class declared with abstract keyword that:
+        Cannot be instantiated
+        May contain abstract (no body) and non-abstract methods
+
+What is an abstract method?
+    A method without implementation.
+
+Why use abstract classes?
+    To provide a common base
+    To enforce method implementation in subclasses
+    To achieve partial abstraction
+
+Can abstract class have variables?
+✅ Yes (instance + static)
+
+Can abstract class be final?
+    ❌ No
+    👉 Because:
+    abstract → must be inherited
+    final → cannot be inherited
+
+What happens if subclass doesn’t implement abstract method?
+    Subclass must also be declared abstract.
+
+Difference between abstract class and interface?
+Feature	                Abstract Class	        Interface
+Methods	                Abstract + concrete	    Abstract (default/static allowed)
+Variables	            Any type	            public static final only
+Constructors	        Yes	                    No
+Multiple inheritance	No❌                    Yes✅
+
+Can abstract methods be static?
+    ❌ No
+
+Can we call constructor of abstract class?
+    ✅ Yes, via subclass
+
+What is partial abstraction?
+    Abstract class provides some implemented methods and some abstract methods.
+
+When to use abstract class instead of interface?
+    Use abstract class when:
+        You want default implementation
+        You need constructors
+        You want state (instance variables)
+
+“If abstract class has no abstract methods, why use it?”
+    Prevent instantiation
+    Provide common base class
+
+Quick Revision (Must Remember)
+    ❌ Cannot instantiate abstract class
+    ✅ Can have constructor
+    ❌ Abstract methods cannot be:
+        private
+        final
+        static
+    Supports partial abstraction
+    Used for base class design
+```
