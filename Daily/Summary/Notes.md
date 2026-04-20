@@ -155,6 +155,9 @@ Can child class access parent static variables?
 ```
 ```
 Abstract Class
+
+    An abstract class in Java is used for partial abstraction and code reuse with a common base structure for related classes.
+
     An abstract class is a class declared with abstract keyword that:
         Cannot be instantiated
         May contain abstract (no body) and non-abstract methods
@@ -214,4 +217,171 @@ Quick Revision (Must Remember)
         static
     Supports partial abstraction
     Used for base class design
+```
+```
+INTERFACE 
+🔹 1. What is an Interface in Java?
+    An interface is a blueprint of a class that contains abstract methods (by default) and constants.
+    👉 It defines what a class should do, not how to do it.
+    interface Animal {
+        void makeSound(); // abstract method
+    }
+
+🔹 2. Why do we use Interfaces?
+    To achieve 100% abstraction
+    To support multiple inheritance
+    To enforce a contract between classes
+    To enable loose coupling
+
+🔹 3. How is Interface different from a Class?
+Feature	        Interface	        Class
+Methods	        Abstract (default)	Concrete + Abstract
+Variables	    public static final	Any type
+Inheritance	    Multiple allowed	Single
+Object creation	Not possible	    Possible
+
+🔹 4. How do you implement an Interface?
+    Use the implements keyword.
+    interface Animal {
+        void makeSound();
+    }
+    class Dog implements Animal {
+        public void makeSound() {
+            System.out.println("Bark");
+        }
+    }
+
+🔹 5. Can we create an object of an Interface?
+    ❌ No, but you can create a reference:
+    Animal obj = new Dog();
+    obj.makeSound();
+
+🔹 6. What are default methods in Interface? (Java 8+)
+    Methods with a body using default keyword.
+    interface Animal {
+        default void sleep() {
+            System.out.println("Sleeping...");
+        }
+    }
+
+🔹 7. What are static methods in Interface?
+    interface Animal {
+        static void info() {
+            System.out.println("Animals are living beings");
+        }
+    }
+    Call using:
+    Animal.info();
+
+🔹 8. What is a functional interface?
+    An interface with only one abstract method.
+    @FunctionalInterface
+    interface MyInterface {
+        void display();
+    }
+    Used in Lambda expressions.
+
+🔹 9. Can an Interface extend another Interface?
+✅ Yes
+    interface A {
+        void methodA();
+    }
+    interface B extends A {
+        void methodB();
+}
+
+🔹 10. Can a class implement multiple interfaces?
+✅ Yes (this is how Java achieves multiple inheritance)
+    interface A {
+        void show();
+    }
+    interface B {
+        void display();
+    }
+    class Test implements A, B {
+        public void show() {}
+        public void display() {}
+    }
+
+🔹 11. What happens if two interfaces have same method?
+    No problem if signatures are same:
+    interface A {
+        void show();
+    }
+    interface B {
+        void show();
+    }
+    class Test implements A, B {
+        public void show() {
+            System.out.println("Same method");
+        }
+    }
+
+🔹 12. What if two interfaces have default methods with same name?
+    You must override it:
+    interface A {
+        default void show() {
+            System.out.println("A");
+        }
+    }
+    interface B {
+        default void show() {
+            System.out.println("B");
+        }
+    }
+    class Test implements A, B {
+        public void show() {
+            System.out.println("Resolved conflict");
+        }
+}
+
+🔹 13. Can Interface have constructor?
+    ❌ No, because you cannot create objects of interface.
+
+🔹 14. Are variables in Interface final?
+✅ Yes, by default:
+        interface A {
+            int x = 10; // public static final
+        }
+
+🔹 15. Can Interface have private methods?
+✅ Yes (Java 9+), used internally:
+        Interface A {
+            private void helper() {
+                System.out.println("Helper method");
+            }
+        }
+
+🔹 16. Real-life example of Interface
+    Think of a remote control:
+        Buttons = interface methods
+        TV = implementing class
+
+🔹 17. Interface vs Abstract Class (Important Interview Q)
+Feature	                Interface	        Abstract Class
+Multiple inheritance	Yes	                No
+Constructors	        No	                Yes
+Variables	            final only	        any
+Methods	                abstract + default	abstract + concrete
+
+🔹 18. What is marker interface?
+    An empty interface used to “mark” a class.
+    Example:
+    Serializable
+    Cloneable
+
+🔹 19. Can we override static methods?
+    ❌ No, static methods are not overridden.
+
+🔹 20. When should you use Interface?
+    Use interface when:
+    You need multiple inheritance
+    You want to define a contract
+    You want loose coupling
+
+🔹 21. Why interface is preferred in Spring Boot?
+    Answer:
+    Supports dependency injection
+    Enables loose coupling
+    Easy testing and mocking
 ```

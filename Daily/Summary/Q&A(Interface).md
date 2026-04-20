@@ -133,3 +133,167 @@ Delivery system	    DeliveryService
 📌 20. Final Interview One-liner
     👉 “Interface in Java is used to achieve abstraction and multiple inheritance, and it defines a contract that implementing classes must follow.”
 ```
+```
+🔹 1. Why does Java allow default methods in interface? Isn’t interface supposed to be pure abstraction?
+    Answer:
+    Originally, interfaces were 100% abstract. But Java added default methods (Java 8) to:
+    Add new methods without breaking existing implementations
+    Support backward compatibility in large APIs (like Collections framework)
+    👉 Example problem it solved:
+    If Java added a new method to List, all existing classes would break. Default methods prevent that.
+
+🔹 2. Can interface break encapsulation?
+    Answer (tricky):
+    Indirectly yes, if misused.
+    Because:
+    Interface exposes methods publicly
+    No control over implementation hiding inside interface contract
+    But it still promotes abstraction, not full encapsulation.
+    👉 Encapsulation = hiding state
+    👉 Interface = hiding implementation logic (not data)
+
+🔹 3. Why can’t we have instance variables in interface?
+    Answer:
+    Because:
+    Interface is not meant to hold state
+    State belongs to objects (classes), not contracts
+    So Java forces:
+    public static final
+    👉 This ensures interface remains stateless design contract
+
+🔹 4. What problem happens if interface had instance variables?
+    Answer (important thinking question):
+    It would create:
+    Multiple copies per object
+    Confusion in multiple inheritance
+    State ambiguity (diamond problem again)
+    So Java avoided it completely.
+
+🔹 5. Can abstract class solve everything interface does?
+    Answer:
+    No.
+    Because abstract class has limitations:
+    Only single inheritance
+    Tightly couples base class
+
+    Interface gives:
+    Multiple inheritance
+    Loose coupling
+    👉 So both exist for different design goals.
+
+🔹 6. Why does Java not support multiple inheritance with abstract classes?
+    Answer:
+    Because of:
+    👉 Method ambiguity problem
+    If two parent classes have same method:
+    class A { void show() {} }
+    class B { void show() {} }
+    Child class won't know which one to inherit.
+    Interfaces avoid this because:
+    No implementation conflict (until default methods, which must be resolved manually)
+
+🔹 7. What happens if two interfaces have same default method?
+    Answer:
+    Compiler forces override:
+    interface A {
+        default void show() {
+            System.out.println("A");
+        }
+    }
+    interface B {
+        default void show() {
+            System.out.println("B");
+        }
+    }
+    class C implements A, B {
+        public void show() {
+            A.super.show(); // or B.super.show()
+        }
+    }
+    👉 This is called diamond resolution manually handled
+
+🔹 8. Why is interface preferred in Spring Boot?
+    Answer:
+    Because Spring uses:
+    Proxy pattern
+    Dependency injection
+    Runtime polymorphism
+
+    👉 Without interfaces:
+    No mocking in testing
+    No flexible swapping of implementations
+
+🔹 9. Can abstract class be replaced with interface completely in modern Java?
+    Answer:
+    Almost yes, but not fully.
+
+    Interface cannot:
+    Hold instance state
+    Have constructors
+    Maintain object lifecycle logic
+
+    So abstract class still needed for:
+    shared state
+    base logic initialization
+
+🔹 10. What is “tight coupling hidden inside abstract class”?
+    Answer:
+    If you use abstract class heavily:
+    class Service extends BaseService
+    👉 Your class becomes dependent on base implementation
+    👉 Harder to change parent later
+    So abstract class = semi-tight coupling risk
+
+🔹 11. Can interface be used for dependency injection without Spring?
+Answer:
+Yes.
+    interface Payment {
+        void pay();
+    }
+    class UPI implements Payment {
+        public void pay() {}
+    }
+    class Checkout {
+        Payment p;
+        Checkout(Payment p) {
+            this.p = p;
+        }
+    }
+    👉 This is manual DI (Spring automates it)
+
+🔹 12. What is hidden cost of using interfaces everywhere?
+    Answer (rarely asked):
+    More object creation layers
+    Slight runtime overhead (dynamic dispatch)
+    Harder debugging due to abstraction layers
+    👉 But benefits outweigh cost in large systems
+
+🔹 13. Why Java uses keyword “implements” instead of “extends” for interface?
+    Answer:
+    Because:
+    extends = inheritance (is-a relationship)
+    implements = contract fulfillment
+    👉 Interface is NOT parent class, it's a behavior agreement
+
+🔹 14. Can interface methods be overridden partially?
+    Answer:
+    No.
+    You must:
+    implement full method OR
+    use default method
+    Partial implementation is not allowed.
+
+🔹 15. What is the biggest design mistake beginners make with interface?
+    Answer:
+    👉 Creating interface for everything
+    Bad design:
+    interface Car {
+        void drive();
+    }
+    If only one implementation exists → interface is unnecessary.
+
+🔥 Final “Senior-Level” Insight
+
+👉 Use interface when behavior may change
+👉 Use abstract class when structure is fixed but partial logic is shared
+```
