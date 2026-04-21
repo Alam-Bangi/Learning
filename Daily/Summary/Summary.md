@@ -209,3 +209,113 @@ ArrayList is a dynamic array from the Java Collection Framework that can grow an
 🧠 One-Line Interview Answer
 “ArrayList is a resizable array in Java that provides dynamic sizing with O(1) access and amortized O(1) insertion, but has O(n) cost for insertions and deletions due to element shifting.”
 ``` 
+```
+🔹 What is List?
+    Part of Java Collections Framework
+    An ordered collection
+    Allows duplicates
+    Supports index-based access
+    👉 Keywords to remember:
+    Order + Duplicates + Index
+
+🔹 Common Implementations
+    ArrayList → Default choice
+    LinkedList → Insert/delete use
+    Vector → Legacy
+    CopyOnWriteArrayList → Thread-safe
+
+🔹 When to Use What?
+    ArrayList → Fast reads (most common)
+    LinkedList → Frequent insert/delete
+    CopyOnWriteArrayList → Multithreading (read-heavy)
+👉 Interview truth:
+    👉 Use ArrayList in 90% cases
+
+🔹 Core Features
+    Maintains insertion order
+    Allows nulls (except immutable lists)
+    Dynamic size
+    Supports indexing
+
+🔹 Important Methods (concept)
+    Add element
+    Get element
+    Remove element
+    Replace element
+    Check size
+    Search element
+    👉 These are enough for most problems
+
+🔹 Time Complexity (ArrayList)
+    Access → O(1)
+    Add → O(1) (amortized)
+    Remove → O(n)
+    Search → O(n)
+
+🔹 Key Concepts
+    1. Size vs Capacity
+        Size → elements present
+        Capacity → internal array size
+    2. Resizing
+        ArrayList grows when full
+        Causes occasional slow operation
+    3. Autoboxing
+        Primitive → Object
+        Adds memory + performance cost
+    4. Equality
+        Same elements + same order
+
+🔹 Important Differences
+    List vs Set
+    List → allows duplicates
+    Set → no duplicates
+    List vs Array
+    List → dynamic
+    Array → fixed
+
+🔹 Thread Safety
+    List is not thread-safe by default
+    Use:
+    Synchronized list
+    CopyOnWriteArrayList
+
+🔹 Most Asked Tricky Points
+    1. remove confusion
+        remove(index) vs remove(value)
+
+    👉 Common interview trap
+
+    2. Arrays.asList()
+        Fixed-size list
+        Cannot add/remove
+    3. List.of()
+        Immutable list
+        No null allowed
+    4. subList()
+        Returns view, not copy
+        Affects original list
+    5. Fail-Fast
+        Modifying during iteration → exception
+
+🔹 Exceptions to Remember
+    IndexOutOfBoundsException
+    ConcurrentModificationException
+    UnsupportedOperationException
+
+🔹 Performance Insights (Important)
+    ArrayList is usually faster than LinkedList
+    LinkedList has high memory overhead
+    contains() is slow (O(n))
+
+🔹 Best Practices
+    Use List, not specific implementation in method return
+    Prefer ArrayList
+    Avoid modifying list during iteration
+    Choose correct structure based on use-case
+
+🧠 Final Memory Trick
+    👉 LIST = O D I
+    O → Ordered
+    D → Duplicates allowed
+    I → Indexed
+```
