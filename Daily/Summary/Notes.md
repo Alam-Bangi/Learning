@@ -20,8 +20,8 @@ ArrayList iterators → fail-fast
 Cloning → deep copy; assignment → shallow copy
 subList → view backed by original list
 ```
+# ARRAY / ARRAYLIST
 ```
-            ARRAYS / ARRAYLIST
 Operation	                Time Complexity
 Access                      O(1) ✅
 Search	                    O(n) ❌
@@ -153,8 +153,8 @@ Can we downcast safely?
 Can child class access parent static variables?
     ✅ Yes (via class name or inheritance)
 ```
+# Abstract Class
 ```
-Abstract Class
 
     An abstract class in Java is used for partial abstraction and code reuse with a common base structure for related classes.
 
@@ -218,8 +218,8 @@ Quick Revision (Must Remember)
     Supports partial abstraction
     Used for base class design
 ```
+# INTERFACE 
 ```
-INTERFACE 
 🔹 1. What is an Interface in Java?
     An interface is a blueprint of a class that contains abstract methods (by default) and constants.
     👉 It defines what a class should do, not how to do it.
@@ -384,4 +384,390 @@ Methods	                abstract + default	abstract + concrete
     Supports dependency injection
     Enables loose coupling
     Easy testing and mocking
+```
+# List Interface
+```
+
+🔹 1. What is the List interface?
+    List is part of the Java Collections Framework and represents an ordered collection that:
+    Maintains insertion order
+    Allows duplicates
+    Supports index-based access
+    👉 FAANG tip: Always say order + duplicates + index clearly.
+
+🔹 2. Why do we use List instead of arrays?
+    Because List provides:
+    Dynamic size
+    Built-in methods
+    Better abstraction
+    👉 Strong answer:
+    “Array is fixed, List is flexible.”
+
+🔹 3. What is the difference between ArrayList and LinkedList?
+    ArrayList
+    Fast access (O(1))
+    Slower insert/delete
+
+    LinkedList
+    Slow access (O(n))
+    Faster insert/delete
+
+    👉 FAANG insight:
+    “In real systems, ArrayList is usually preferred due to better cache performance.”
+
+🔹 4. When would you use ArrayList?
+    When:
+    You need fast reading
+    You access elements frequently
+    👉 Interview upgrade line:
+    “Optimized for read-heavy operations.”
+
+🔹 5. When would you use LinkedList?
+    When:
+    Frequent insertions/deletions
+    Queue or deque operations
+    👉 Honest FAANG answer:
+    “Rarely used in modern applications.”
+
+🔹 6. What is time complexity of ArrayList operations?
+    Access → O(1)
+    Add → O(1) (amortized)
+    Remove → O(n)
+    👉 Key word: amortized (interviewers love this)
+
+🔹 7. Why is ArrayList add() not always O(1)?
+    Because when capacity is full:
+    A new array is created
+    Elements are copied
+    👉 This resizing makes it occasionally O(n)
+
+🔹 8. What is the biggest mistake with List?
+    Confusing remove() behavior.
+    Code:
+    list.remove(1);
+    Why this is asked:
+    Tests understanding of method overloading
+    👉 Explanation:
+    Removes element at index 1, not value 1
+
+🔹 9. What is fail-fast behavior?
+    If you modify a list during iteration:
+    It throws ConcurrentModificationException
+    👉 FAANG tip:
+    Say “fail-fast iterator detects structural modification.”
+
+🔹 10. Why does this fail?
+    for(String s : list) {
+        list.remove(s);
+    }
+    Why interviewers ask this:
+    Tests understanding of iteration
+    👉 Explanation:
+    You are modifying the list while iterating
+    Iterator detects change → throws exception
+
+🔹 11. What is structural modification?
+    Any change that affects list size:
+    add/remove → YES
+    set → NO
+
+🔹 12. What is the difference between size and capacity?
+    Size → number of elements
+    Capacity → internal storage
+    👉 FAANG insight:
+    “ArrayList may have extra unused memory.”
+
+🔹 13. Why is contains() slow in List?
+    Because it checks elements one by one → O(n)
+    👉 Better alternative:
+    Use Set for fast lookup
+
+🔹 14. What is Arrays.asList() trap?
+    List<String> list = Arrays.asList("A", "B");
+    list.add("C");
+    Why this is asked:
+    Very common interview trap
+    👉 Explanation:
+    Creates fixed-size list
+    Cannot add/remove elements
+    👉 Result:
+    UnsupportedOperationException
+
+🔹 15. What is List.of()?
+    Creates an immutable list
+    👉 Important:
+    Cannot add/remove
+    Does not allow null
+
+🔹 16. What is subList() and why is it dangerous?
+    It returns a view of original list
+    👉 Why asked:
+    Many think it’s a copy
+    👉 Risk:
+    Changes affect original list
+    Can cause unexpected bugs
+
+🔹 17. Is List thread-safe?
+    ❌ No
+    👉 Follow-up answer:
+    Use:
+    Synchronized list
+    CopyOnWriteArrayList
+
+🔹 18. Why is CopyOnWriteArrayList used?
+    Because:
+    Safe for concurrent reads
+    No fail-fast exception
+    👉 Trade-off:
+    Slow writes
+
+🔹 19. Can List store primitives?
+    ❌ No
+    👉 Reason:
+    Java generics work with objects only
+    👉 Use wrapper classes:
+    int → Integer
+
+🔹 20. What is autoboxing problem?
+    Primitive values are converted into objects
+    👉 Impact:
+    More memory
+    Slower performance
+
+🔹 21. What is equality in List?
+    Two lists are equal if:
+    Same elements
+    Same order
+    👉 Order matters (important!)
+
+🔹 22. Why is removing from middle slow?
+    Because elements shift left
+    👉 Time complexity:
+    O(n)
+
+🔹 23. What is the best implementation for most cases?
+👉 ArrayList
+
+🔹 24. What would you return in a method: List or ArrayList?
+    👉 Return List
+    👉 Why:
+    Abstraction
+    Flexibility
+
+🔹 25. What is the most important takeaway?
+    Choose correct implementation
+    Understand performance
+    Avoid common traps
+
+🧠 FAANG Interview Strategy (Important)
+If interviewer asks about List:
+Start with definition
+Compare ArrayList vs LinkedList
+Mention complexity
+Talk about edge cases
+Add one real-world use
+👉 That’s a perfect answer structure
+```
+# Set Interface
+```
+Set interface can only have unique things. Doesn't allow duplication of data.
+It does not provide positional access.
+It is unordered.
+
+Types:
+    1. HashSet
+    2. LinkedHashSet - maintains insertion order
+    3. TreeSet - sorted order
+
+TreeSet Operations
+    1. floor() - returns value lower or equal to given number
+    2. lower()
+    3. ceiling() - returns value greater or equal to given number
+    4. higher()
+    5. subset() - returns all no between 2 i/p no
+        - (number, number) - lower number inclusive, upper number exclusive
+        - (number, true, no, true) - both number inclusive
+        - (number, false, no, false) - both number exclusive
+    6. headset() - prints all numbers before given number (excludes i/p)
+    7. tailset() - prints all numbers after given number (includes i/p)
+
+1. Basics
+What is Set in Java?
+    Set is an interface in the Java Collections Framework that represents a collection of unique elements (no duplicates).
+
+What are the key properties of Set?
+    No duplicate elements
+    Not index-based
+    Allows at most one null (depends on implementation)
+    Part of Java Programming Language
+
+How is Set different from Collection?
+    Collection is a root interface
+    Set extends Collection and adds uniqueness constraint
+
+🧱 2. Implementations
+What are main Set implementations?
+    HashSet
+    LinkedHashSet
+    TreeSet
+    EnumSet
+    CopyOnWriteArraySet
+    ConcurrentSkipListSet
+
+Difference between HashSet, LinkedHashSet, TreeSet?
+Feature	        HashSet	        LinkedHashSet	        TreeSet
+Order	        No	            Insertion order	        Sorted
+Performance	    Fastest	        Slightly slower	        Slowest
+Data structure	Hash table	    Hash + Linked list	    Red-Black Tree
+
+⚙️ 3. Internal Working
+How does HashSet work internally?
+    Uses HashMap
+    Stores elements as keys
+    Uses hashCode() + equals()
+
+Why equals() and hashCode() are important?
+    hashCode() → finds bucket
+    equals() → checks duplicates
+
+What happens if hashCode is not overridden?
+    Duplicate objects may be inserted incorrectly
+
+🚫 4. Duplicate Handling
+How does Set prevent duplicates?
+    If:
+    obj1.hashCode() == obj2.hashCode()
+    AND obj1.equals(obj2)
+    → second element is rejected
+
+Can Set contain duplicate objects?
+    No (logically), but:
+    If equals()/hashCode() are wrong → duplicates may appear
+
+🧪 5. Null Handling
+Set Type	    Null Allowed
+HashSet	        Yes (1 null)
+LinkedHashSet	Yes
+TreeSet	        ❌ No
+
+Why TreeSet does not allow null?
+    Because it uses sorting, and null cannot be compared.
+
+🔢 6. Ordering & Sorting
+How does TreeSet maintain order?
+    Natural ordering (Comparable)
+    Custom ordering (Comparator)
+
+    Example using Comparator
+    Set<Integer> set = new TreeSet<>(Comparator.reverseOrder());
+    set.add(10);
+    set.add(5);
+    System.out.println(set); // [10, 5]
+
+What is Comparable vs Comparator?
+Feature	    Comparable	        Comparator
+Package	    java.lang	        java.util
+Method	    compareTo()	        compare()
+Use	        Default sorting	    Custom sorting
+
+🔄 7. Iteration
+    Ways to iterate a Set
+    For-each loop
+    Iterator
+    Stream API
+
+Example
+Set<String> set = new HashSet<>();
+set.add("A");
+set.add("B");
+set.forEach(System.out::println);
+
+🚀 8. Performance
+Time complexity of HashSet
+    Add: O(1)
+    Remove: O(1)
+    Search: O(1)
+
+Why TreeSet is slower?
+    Uses tree structure → O(log n)
+
+🧵 9. Thread Safety
+Is HashSet thread-safe?
+    ❌ No
+    Thread-safe alternatives?
+    Collections.synchronizedSet()
+    CopyOnWriteArraySet
+    ConcurrentSkipListSet
+
+🔐 10. Immutable Sets
+How to create immutable Set?
+    Set<Integer> set = Set.of(1, 2, 3);
+    Properties:
+    No modification allowed
+    Throws UnsupportedOperationException
+
+🧰 11. Advanced Concepts
+What is EnumSet?
+    Specialized Set for enums
+    Very fast (bit vector)
+
+What is CopyOnWriteArraySet?
+    Thread-safe
+    Copies array on modification
+
+What is ConcurrentSkipListSet?
+    Thread-safe
+    Sorted
+    Uses skip list
+
+🔍 12. Methods in Set Interface
+Common methods:
+    add()
+    remove()
+    contains()
+    size()
+    isEmpty()
+    clear()
+
+⚠️ 13. Common Mistakes
+Mistake 1: Not overriding equals & hashCode
+    → duplicates issue
+Mistake 2: Using TreeSet without Comparable
+    → ClassCastException
+Mistake 3: Assuming order in HashSet
+    → order is unpredictable
+
+🔄 14. Set vs Other Collections
+Set vs List vs Map
+Feature	    Set	        List	        Map
+Duplicates	No	        Yes	            Keys: No
+Order	    Depends	    Yes	            Depends
+Structure	Elements	Elements	    Key-Value
+
+🧠 15. Real-world Use Cases
+    Removing duplicates
+    Database unique records
+    Tag systems
+    Caching unique values
+
+💥 16. Tricky Interview Questions
+Q: Can we synchronize HashSet?
+    Yes:
+    Set<Integer> set = Collections.synchronizedSet(new HashSet<>());
+
+Q: Why Set has no get() method?
+    Because no index-based access
+
+Q: Can we convert List to Set?
+    Set<Integer> set = new HashSet<>(list);
+
+Q: Difference between fail-fast and fail-safe?
+    Fail-fast → throws exception (HashSet iterator)
+    Fail-safe → works on copy (CopyOnWriteArraySet)
+
+🧾 17. Java 8+ Features
+    Stream with Set
+    set.stream()
+    .filter(x -> x > 10)
+    .forEach(System.out::println);
 ```

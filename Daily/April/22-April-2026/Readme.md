@@ -1,17 +1,18 @@
-# 21-April-2026
+# 22-April-2026
 
 ## First Half
 - Java
-    - Revised List Interface.
+    - Revised Set Interface.
 
 ### Videos
 
 
 ### Assignment
-- Practiced implementation for List
-    - AttendanceTracker
-    - ToDoList
-- Made notes on List Interface.
+- Practiced implementation for Set Interface
+    - FirstDuplicate
+    - MissingNumbers
+    - Find two numbers which equals to given number
+- Made notes on Set Interface.
 ### Doubts
 
 
