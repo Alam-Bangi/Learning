@@ -771,3 +771,147 @@ Q: Difference between fail-fast and fail-safe?
     .filter(x -> x > 10)
     .forEach(System.out::println);
 ```
+# Queue Interface
+```
+- It's arranged in order of processing.
+- Extends collection and supports all collection methods.
+    - Extra methods it supports:-
+    - boolean add(E paramE);
+    - boolean offer(E paramE);
+    - E remove();
+    - E poll();
+    - E peek();
+
+# Priority Queue
+    - Elements are stored in a natural sorted order
+    - Follows First-In-First-Out(FIFO) order.
+
+🔹 What is the Queue interface in Java?
+    The Queue interface (in Java Collections Framework) represents a collection designed for holding elements prior to processing. It typically follows the FIFO (First-In-First-Out) principle.
+
+🔹 Which package contains Queue?
+    It is part of:
+    java.util.Queue
+
+🔹 What are the main implementations of Queue?
+    Common implementations include:
+    LinkedList
+    PriorityQueue
+    ArrayDeque
+
+🔹 What are the core methods of Queue?
+Method	    Description
+add(E e)	Inserts element, throws exception if fails
+offer(E e)	Inserts element, returns false if fails
+remove()	Removes and returns head, throws exception if empty
+poll()	    Removes and returns head, returns null if empty
+element()	Retrieves head, throws exception if empty
+peek()	    Retrieves head, returns null if empty
+
+🔹 Difference between add() and offer()
+add()	                    offer()
+Throws exception if full	Returns false if full
+
+🔹 Difference between remove() and poll()
+remove()	                poll()
+Throws exception if empty	Returns null if empty
+
+🔹 Difference between element() and peek()
+element()	                peek()
+Throws exception if empty	Returns null if empty
+
+🔹 What is FIFO?
+FIFO means First-In-First-Out, the element inserted first is removed first.
+
+🔹 Can Queue allow null elements?
+    Most implementations do not allow null
+    Example: PriorityQueue does NOT allow null
+
+🔹 What is a PriorityQueue?
+    A PriorityQueue orders elements based on:
+    Natural ordering (Comparable)
+    Custom Comparator
+    👉 It does NOT follow FIFO strictly
+
+🔹 Example of Queue using LinkedList
+    import java.util.*;
+
+    public class Main {
+        public static void main(String[] args) {
+            Queue<Integer> q = new LinkedList<>();
+
+            q.add(10);
+            q.add(20);
+            q.add(30);
+
+            System.out.println(q);       // [10, 20, 30]
+            System.out.println(q.poll()); // 10
+            System.out.println(q.peek()); // 20
+        }
+    }
+
+🔹 Difference between Queue and Deque
+Queue	                    Deque
+FIFO	                    Double-ended
+Insert/remove from one end	Insert/remove both ends
+Example: ArrayDeque
+
+🔹 What is Deque?
+    Deque = Double Ended Queue
+    Allows:
+    Insert/remove from front and rear
+
+🔹 Is Queue thread-safe?
+    No, standard Queue implementations are not thread-safe
+    Use:
+    PriorityBlockingQueue
+    ConcurrentLinkedQueue
+
+🔹 When to use Queue?
+    Use Queue when:
+    Processing tasks sequentially
+    BFS (Breadth-First Search)
+    Scheduling jobs
+    Handling requests
+
+🔹 What is BlockingQueue?
+    A subinterface of Queue that supports:
+    Waiting for elements to become available
+    Thread-safe operations
+    Example implementations:
+    ArrayBlockingQueue
+    LinkedBlockingQueue
+
+🔹 What is the difference between Queue and Stack?
+Queue	        Stack
+FIFO	        LIFO
+add(), poll()	push(), pop()
+
+🔹 Can we iterate over a Queue?
+    Yes, using:
+    Iterator
+    Enhanced for loop
+
+🔹 How to reverse a Queue?
+    Using a Stack:
+    Dequeue all elements into stack
+    Push back into queue
+
+🔹 What is the time complexity?
+    Insert: O(1)
+    Delete: O(1)
+    Peek: O(1)
+    (Except PriorityQueue → O(log n))
+```
+# Comparator
+```
+- compare()
+    - Eg: Ascending order based on length
+    public int compare(String v1, String v2) {
+        return Integer.compare(v1.length(),v2.length());
+    }
+    - Descending order based on length
+    public int compare(String v1, String v2) {
+        return Integer.compare(v2.length(), v1.length());
+    }
+```
