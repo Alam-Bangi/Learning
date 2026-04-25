@@ -915,3 +915,192 @@ add(), poll()	push(), pop()
         return Integer.compare(v2.length(), v1.length());
     }
 ```
+# Map Interface
+```
+- It doesn't extend Collections.
+- It's a set of key-value pair
+- Implementations:
+    - HashMap : unsorted, unordered, allows key with null values.
+    - HashTable : unsorted, unordered, synchronized, thread-safe version of HashMap.
+    - LinkedHashMap : insertion order, slower insert/delete, fast iteration.
+    - TreeMap : implements Navigable Map, sorted order.
+    
+1. Basics of Map
+
+❓ What is a Map in Java?
+    A Map is an object that stores data in key-value pairs. Each key is unique.
+
+❓ Which package contains Map?
+    java.util.Map
+
+❓ Is Map part of Collection interface?
+    No. It is part of the Collections Framework, but it does NOT extend Collection.
+
+❓ Key features of Map?
+    Stores key-value pairs
+    Keys are unique
+    Values can be duplicated
+    Allows fast lookup using keys
+
+🧩 2. Common Map Implementations
+
+❓ What are the main Map implementations?
+    HashMap
+    LinkedHashMap
+    TreeMap
+    Hashtable
+
+❓ Difference between HashMap and Hashtable?
+Feature	        HashMap	        Hashtable
+Thread-safe	    ❌ No	       ✅Yes
+Performance	    Faster	        Slower
+Null key	    Allowed (1)	    Not allowed
+Null values	    Allowed	Not     allowed
+
+❓ Difference between HashMap and LinkedHashMap?
+    HashMap → No order
+    LinkedHashMap → Maintains insertion order
+
+❓ Difference between HashMap and TreeMap?
+    HashMap → Unordered
+    TreeMap → Sorted (natural order or comparator)
+
+🧩 3. Basic Operations
+
+❓ How to create a Map?
+    Map<String, Integer> map = new HashMap<>();
+
+❓ How to add elements?
+    map.put("A", 1);
+    map.put("B", 2);
+
+❓ How to get value?
+    map.get("A");
+
+❓ How to remove entry?
+    map.remove("A");
+
+❓ How to check key/value?
+    map.containsKey("A");
+    map.containsValue(1);
+
+🧩 4. Iteration Techniques
+
+❓ How to iterate Map?
+    1. Using entrySet
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+        System.out.println(entry.getKey() + " " + entry.getValue());
+    }
+    2. Using keySet
+    for (String key : map.keySet()) {
+        System.out.println(key);
+    }
+    3. Using forEach (Java 8)
+    map.forEach((k, v) -> System.out.println(k + ":" + v));
+
+🧩 5. Advanced Methods (Java 8+)
+
+❓ What is putIfAbsent()?
+    Adds value only if key is not present.
+    map.putIfAbsent("A", 10);
+
+❓ What is compute()?
+    Updates value using a function.
+    map.compute("A", (k, v) -> v + 1);
+
+❓ What is merge()?
+    map.merge("A", 1, Integer::sum);
+
+🧩 6. Null Handling
+
+❓ Can Map have null keys/values?
+Map Type	    Null Key	                Null Value
+HashMap	✅      1 allowed	✅              allowed
+TreeMap	        ❌ (if natural ordering)	    ✅ allowed
+Hashtable	    ❌	                        ❌
+
+🧩 7. Internal Working (Important for Interviews)
+
+❓ How does HashMap work internally?
+    Uses hashing
+    Converts key → hash → bucket index
+    Stores data in array of nodes
+    Handles collisions using:
+    Linked list (before Java 8)
+    Balanced tree (after Java 8)
+
+❓ What is load factor?
+    Default = 0.75
+    It decides when to resize HashMap.
+
+❓ What is initial capacity?
+    Default = 16
+
+❓ What happens during collision?
+    Multiple keys map to same bucket
+    Stored as linked list / tree
+
+🧩 8. TreeMap Specific
+
+❓ How does TreeMap work?
+    Based on Red-Black Tree
+    Maintains sorted order
+    O(log n) operations
+
+❓ Can we use null key in TreeMap?
+    No (throws NullPointerException)
+
+🧩 9. Thread Safety
+
+❓ Which Map is thread-safe?
+    Hashtable (legacy)
+    ConcurrentHashMap (modern)
+
+❓ What is ConcurrentHashMap?
+    Thread-safe without locking entire map.
+
+🧩 10. Performance
+
+Operation	    HashMap	    TreeMap
+Insert	        O(1) avg	O(log n)
+Search	        O(1) avg	O(log n)
+
+🧩 11. Real Interview Questions
+
+❓ Why Map doesn't extend Collection?
+    Because it stores key-value pairs, not single elements.
+
+❓ Can we synchronize HashMap?
+    Yes:
+    Map map = Collections.synchronizedMap(new HashMap<>());
+
+❓ What is identityHashMap?
+    Uses == instead of .equals().
+
+❓ Difference between fail-fast and fail-safe?
+    Fail-fast → throws exception on modification
+    Fail-safe → works on copy
+
+🧩 12. Practical Use Cases
+
+    Caching
+    Counting frequency
+    Database-like lookup
+    Configuration storage
+
+🧩 13. Common Mistakes
+    Using mutable keys
+    Not overriding hashCode() and equals()
+    Ignoring concurrency issues
+
+🧩 14. Bonus Trick Questions
+
+❓ Can two keys have same hashCode?
+    Yes ✅
+
+❓ Can two keys be equal but different objects?
+    Yes (if .equals() returns true)
+
+❓ What happens if hashCode changes?
+    Map may lose the entry (very important bug!)
+```
