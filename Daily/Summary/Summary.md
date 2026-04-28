@@ -174,9 +174,8 @@ An array is a fixed-size data structure that stores elements of the same type in
 🧠 One-Line Interview Answer
 “Array is a fixed-size, index-based data structure stored in contiguous memory, providing O(1) access but O(n) insertion and deletion, and is best used when size is known and fast access is needed.”
 ```
-
+# ArrayList
 ```
-- ArrayList
 ArrayList is a dynamic array from the Java Collection Framework that can grow and shrink automatically, and stores elements in ordered form.
 
 🔹 Key Points to Mention
@@ -209,6 +208,7 @@ ArrayList is a dynamic array from the Java Collection Framework that can grow an
 🧠 One-Line Interview Answer
 “ArrayList is a resizable array in Java that provides dynamic sizing with O(1) access and amortized O(1) insertion, but has O(n) cost for insertions and deletions due to element shifting.”
 ``` 
+# LIST
 ```
 🔹 What is List?
     Part of Java Collections Framework
@@ -318,4 +318,158 @@ ArrayList is a dynamic array from the Java Collection Framework that can grow an
     O → Ordered
     D → Duplicates allowed
     I → Indexed
+```
+# Generics
+```
+🔹 Java Generics – Complete Q&A
+1. What are Generics in Java?
+    Generics allow you to write type-safe and reusable code by parameterizing types.
+    List<String> list = new ArrayList<>();
+    Instead of Object, you specify the type (String), avoiding casting.
+
+2. Why were Generics introduced?
+    Type safety (compile-time checking)
+    Eliminates explicit casting
+    Code reusability
+    Fewer runtime errors
+
+3. What is a Generic Class?
+    A class with a type parameter.
+    class Box<T> {
+        T value;
+        void set(T value) { this.value = value; }
+        T get() { return value; }
+    }
+
+4. What is a Generic Method?
+    public <T> void print(T data) {
+        System.out.println(data);
+    }
+
+5. What is Type Erasure?
+    Java removes generic type info at runtime.
+    List<String> → List
+    So generics exist only at compile time.
+
+6. Can we use primitives in Generics?
+    ❌ No
+    ✔ Use wrapper classes
+    List<int> ❌
+    List<Integer> ✔
+
+7. What is a Bounded Type Parameter?
+    <T extends Number>
+    Restricts type to subclasses of Number.
+
+8. What are Wildcards in Generics?
+    Unbounded
+        List<?> list;
+    Upper Bounded
+        List<? extends Number>
+    Lower Bounded
+        List<? super Integer>
+
+9. Difference: extends vs super
+    Keyword	Meaning
+    ? extends T	Read-only (covariant)
+    ? super T	Write-safe (contravariant)
+
+10. What is PECS Rule?
+    👉 Producer Extends, Consumer Super
+    Use extends when reading
+    Use super when writing
+
+11. Can we create arrays of generic types?
+    new T[10] ❌
+    Because of type erasure.
+
+12. Can Generics be used with static members?
+    class Test<T> {
+        static T data; ❌
+    }
+    Static members cannot use class-level type parameter.
+
+13. What is a Raw Type?
+    List list = new ArrayList(); // raw type
+    Avoid it—no type safety.
+
+14. What is Generic Interface?
+    interface Container<T> {
+        void add(T item);
+    }
+
+15. Can Generics be used in Exceptions?
+    ❌ No
+    class MyException<T> extends Exception ❌
+
+16. What is Type Inference?
+    List<String> list = new ArrayList<>();
+    Compiler infers type automatically.
+
+17. What is Diamond Operator?
+    new ArrayList<>()
+    Introduced in Java 7 to reduce redundancy.
+
+18. Can we overload methods using Generics?
+    void print(List<String> list)
+    void print(List<Integer> list) ❌
+    Not allowed due to type erasure.
+
+19. What is Bridge Method?
+    Compiler-generated method to maintain polymorphism after type erasure.
+
+20. Can Generics work with inheritance?
+    List<Object> list = new ArrayList<String>(); ❌
+    Generics are invariant.
+
+21. What is Generic Constructor?
+    class Test {
+        <T> Test(T value) {
+            System.out.println(value);
+        }
+    }
+
+22. What is Recursive Type Bound?
+    <T extends Comparable<T>>
+    Used in sorting and comparisons.
+
+23. Can we cast generic types?
+    List<?> list = new ArrayList<String>();
+    List<String> strList = (List<String>) list; // unsafe
+
+24. What are Advantages of Generics?
+    Compile-time safety
+    Cleaner code
+    Reusability
+    No casting
+
+25. What are Limitations?
+    No primitives
+    No runtime type info
+    Cannot create generic arrays
+    Cannot use in static context
+
+26. What is Heap Pollution?
+    When a variable of a parameterized type refers to an object not of that type.
+
+27. What is @SafeVarargs?
+    Suppresses warnings for unsafe varargs usage.
+
+28. Can we instantiate type parameter?
+    new T() ❌
+    Not allowed.
+
+29. Can Generics extend multiple bounds?
+    <T extends Number & Comparable>
+    ✔ First class, then interfaces
+
+30. Real-world Example
+    Map<String, Integer> marks = new HashMap<>();
+
+🔹 Quick Interview Summary
+Generics = compile-time type safety
+Implemented using type erasure
+Use wildcards for flexibility
+Follow PECS rule
+No primitives, no runtime type info
 ```
