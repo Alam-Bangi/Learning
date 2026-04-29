@@ -1257,3 +1257,191 @@ Search	        O(1) avg	O(log n)
 If you remember just one thing:
     Generics don’t exist at runtime—they are only a safety net during compilation.
 ```
+# Functional Programming
+```
+1. Q: Is Java Streams actually functional programming?
+Answer: 
+    Not fully. It only imitates functional programming.
+    Streams are:
+    Lazy (functional idea)
+    Declarative (functional style)
+    BUT internally still use mutation, loops, and side effects
+👉 Truth:
+    Java Streams are “functional-inspired imperative code in disguise.”
+
+2. Q: Why do streams sometimes perform worse than loops?
+Answer:
+    Because streams add overhead:
+    Object creation for pipeline stages
+    Lambda calls (virtual dispatch)
+    Iterator abstraction
+    Boxing/unboxing
+👉 Reality check:
+    For simple loops, for is often faster than stream().
+
+3. Q: Why do people say “don’t overuse streams”?
+Answer:
+    Because readability breaks after 2–3 chained operations.
+    Bad example:
+    list.stream().filter().map().sorted().peek().map().collect()
+👉 Hidden truth:
+    Streams are easy to write, but hard to debug and maintain.
+
+4. Q: Are lambdas truly “functions”?
+Answer:
+    No.
+    They are:
+        Objects implementing functional interfaces
+        Stored as instances, not raw functions
+    👉 Hidden truth:
+        Java lambdas are syntactic sugar for anonymous classes + invokedynamic tricks.
+
+5. Q: What is the biggest FP misconception in Java?
+Answer:
+    People think:
+        “No loops = functional programming”
+        Wrong.
+    True FP is about:
+        Immutability
+        Pure functions
+        No side effects
+        Java does NOT enforce any of this.
+
+6. Q: Why is peek() dangerous in streams?
+Answer:
+    Because it encourages side effects.
+    stream.peek(System.out::println)
+    👉 Hidden truth:
+    peek() is meant for debugging, not logic—but people misuse it to mutate state.
+
+7. Q: Why is Optional controversial?
+Answer:
+    It was introduced to avoid null checks, but:
+        Problems:
+        Not serializable
+        Encourages over-engineering
+        Misused in fields instead of return types
+    👉 Truth:
+        Optional is a “band-aid for null handling”, not a full FP solution.
+
+8. Q: Why do Java lambdas sometimes feel slower than expected?
+Answer:
+    Because of:
+        Lambda capture (heap allocation in some cases)
+        JVM warm-up dependency
+        Type inference overhead
+    👉 Hidden truth:
+        JVM optimizations only kick in after runtime profiling (JIT magic).
+
+9. Q: Why is functional programming in Java “impure”?
+Answer:
+    Because Java allows:
+        Mutable objects inside streams
+        Side effects in lambdas
+        Shared state modification
+    Example:
+        List<Integer> list = new ArrayList<>();
+        list.stream().forEach(list::add); // dangerous side effect
+    👉 Truth:
+        Java cannot enforce immutability → FP is optional, not guaranteed.
+
+10. Q: What is the hidden cost of parallel streams?
+Answer:
+    Parallel streams are often slower for real apps.
+    Why:
+        Thread splitting overhead
+        ForkJoinPool contention
+        Context switching
+        Non-thread-safe operations risk
+    👉 Reality:
+        Parallel streams only help in CPU-heavy, large datasets—not normal business apps.
+
+11. Q: Why do functional programmers avoid Java?
+Answer:
+    Because Java lacks:
+        Pattern matching (fully mature)
+        True immutability enforcement
+        Persistent data structures
+        Pure function guarantees
+    👉 Truth:
+        Java is “functional-friendly”, not “functional-native”.
+
+12. Q: Why is debugging streams harder?
+Answer:
+    Because:
+        No step-by-step visibility
+        Pipeline execution is lazy
+        Stack traces are abstracted
+    👉 Hidden truth:
+        Streams trade debuggability for conciseness.
+
+13. Q: Why do interviews love streams if real-world use is limited?
+Answer:
+    Because:
+        Easy to test knowledge
+        Looks modern
+        Reduces code length in answers
+    👉 Reality:
+        Most production systems still use loops + hybrid FP.
+
+14. Q: What is the biggest mistake beginners make in FP Java?
+Answer:
+        Trying to force everything into streams.
+    Example mistake:
+        Using streams for simple assignments
+        Overusing map/filter chains
+        Ignoring readability
+    👉 Truth:
+        “Functional code should feel simple, not clever.”
+
+15. Q: What is the hidden JVM advantage behind FP in Java?
+Answer:
+    Java benefits from:
+        JIT optimization
+        Lambda caching
+        Method reference optimization
+        Escape analysis
+    👉 Hidden truth:
+        Modern JVM makes FP-style code faster than old Java if used correctly.
+
+16. Q: Why is immutability not default in Java?
+Answer:
+    Because Java prioritizes:
+    Backward compatibility
+    Performance control
+    Developer flexibility
+👉 Truth:
+    Java trusts developers too much to enforce safety automatically.
+
+17. Q: What is the real purpose of functional programming in Java?
+Answer:
+    Not to replace OOP.
+But to:
+    Reduce boilerplate
+    Improve data transformation pipelines
+    Enable cleaner concurrency models
+👉 Hidden truth:
+    FP in Java is a tool, not a paradigm shift.
+
+18. Q: When should you NOT use functional programming in Java?
+Answer:
+    Avoid FP when:
+        Logic is simple (use loop)
+        Debugging matters more than conciseness
+        Performance-critical micro-optimizations are needed
+        Multiple side effects exist
+
+19. Q: What is the most underrated FP feature in Java?
+Answer:
+    Method references:
+        ClassName::methodName
+    👉 Why underrated:
+        Cleaner than lambdas
+        Easier for JVM optimization
+        More readable in pipelines
+
+20. Final truth nobody says:
+    👉 Functional programming in Java is not about writing “functional code.”
+It is about:
+    “Writing cleaner transformations while still living inside an imperative ecosystem.”
+```

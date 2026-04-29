@@ -473,3 +473,141 @@ Use wildcards for flexibility
 Follow PECS rule
 No primitives, no runtime type info
 ```
+# Functional Programming
+```
+1. What is functional programming in Java?
+    Functional programming is a style where you treat computation as the evaluation of functions and avoid changing state and mutable data.
+    In Java, FP is mainly supported through:
+        Lambdas
+        Streams API
+        Functional interfaces (Function, Predicate, Consumer, etc.)
+
+2. Is Java a functional programming language?
+    Not purely. Java is multi-paradigm:
+    Object-oriented (primary)
+    Functional (since Java 8)
+    FP in Java is supported, not the default style.
+
+3. What are functional interfaces?
+    A functional interface has exactly one abstract method.
+    Examples:
+        Runnable
+        Callable
+        Comparator<T>
+        Function<T,R>
+        Predicate<T>
+    Example:
+        @FunctionalInterface
+        interface MyFunc {
+            int operate(int a, int b);
+        }
+
+4. What is a lambda expression in Java?
+    A lambda is a short way to represent an anonymous function.
+    Example:
+    (int a, int b) -> a + b
+    Used for functional interfaces:
+    MyFunc add = (a, b) -> a + b;
+    System.out.println(add.operate(2, 3)); // 5
+
+5. What is the difference between anonymous class and lambda?
+Features	        Anonymous Class	    Lambda
+Syntax	            Verbose	            Short
+this reference	    New object	        Same enclosing object
+Performance	        Slightly heavier	Lighter
+
+6. What are streams in Java?
+    Streams allow functional-style operations on collections.
+    Example:
+    List<Integer> nums = List.of(1, 2, 3, 4);
+    nums.stream()
+        .filter(n -> n % 2 == 0)
+        .map(n -> n * n)
+        .forEach(System.out::println);
+
+7. Intermediate vs terminal operations in streams?
+    Intermediate (lazy):
+    filter()
+    map()
+    sorted()
+    Terminal (final execution):
+    forEach()
+    collect()
+    reduce()
+
+8. What is map in streams?
+    Transforms each element.
+    List<String> names = List.of("a", "b");
+    names.stream()
+        .map(String::toUpperCase)
+        .forEach(System.out::println);
+
+9. What is filter in streams?
+    Removes elements based on condition.
+    nums.stream()
+        .filter(n -> n > 2)
+        .forEach(System.out::println);
+
+10. What is reduce in Java streams?
+    Combines elements into a single result.
+    int sum = nums.stream()
+                .reduce(0, (a, b) -> a + b);
+
+11. What is a Predicate in Java?
+    A functional interface that returns a boolean.
+    Predicate<Integer> isEven = x -> x % 2 == 0;
+    Used in filtering:
+    nums.stream().filter(isEven);
+
+12. What is Function<T,R>?
+    Represents a function that takes input and returns output.
+    Function<Integer, String> convert = x -> "Number: " + x;
+
+13. What is Consumer in Java?
+    Consumes input but returns nothing.
+    Consumer<String> print = s -> System.out.println(s);
+
+14. What is Supplier?
+    Produces a value without input.
+    Supplier<Double> random = () -> Math.random();
+
+15. What is method reference?
+    Shortcut for lambda expressions.
+    Types:
+    System.out::println
+    String::toUpperCase
+    Equivalent to:
+    x -> System.out.println(x)
+
+16. What are benefits of functional programming in Java?
+    Less boilerplate code
+    Easier parallel processing
+    Better readability (once familiar)
+    Reduced side effects
+
+17. What are disadvantages?
+    Hard for beginners
+    Debugging streams can be tricky
+    Overuse may reduce readability
+
+18. Is Java functional programming pure?
+    No. Java allows:
+    Mutable state
+    Side effects
+    OOP structures
+    So it is impure functional programming.
+
+19. Why streams are considered functional?
+    Because they:
+    Avoid modifying original data
+    Use declarative style
+    Support chaining operations
+
+20. Example combining FP concepts
+    List<Integer> nums = List.of(1, 2, 3, 4, 5);
+    int result = nums.stream()
+        .filter(n -> n % 2 == 1)
+        .map(n -> n * n)
+        .reduce(0, Integer::sum);
+    System.out.println(result);
+```
