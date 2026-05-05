@@ -1445,3 +1445,175 @@ Answer:
 It is about:
     “Writing cleaner transformations while still living inside an imperative ecosystem.”
 ```
+# Threads
+```
+🔹 1. What is a Thread in Java?
+    A thread is the smallest unit of execution within a program. Java allows multithreading, meaning multiple threads can run concurrently to improve performance.
+
+🔹 2. What is Multithreading?
+    Multithreading is a process of executing multiple threads simultaneously to maximize CPU utilization.
+
+🔹 3. How to Create a Thread in Java?
+✔️ Method 1: Extending Thread class
+    class MyThread extends Thread {
+        public void run() {
+            System.out.println("Thread running");
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            MyThread t = new MyThread();
+            t.start();
+        }
+    }
+
+✔️ Method 2: Implementing Runnable
+    class MyRunnable implements Runnable {
+        public void run() {
+            System.out.println("Thread running");
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Thread t = new Thread(new MyRunnable());
+            t.start();
+        }
+    }
+
+🔹 4. Difference Between start() and run()
+start()	                run()
+Creates new thread	    Normal method call
+Executes concurrently	Executes sequentially
+
+🔹 5. Thread Lifecycle
+    New 
+        - When thread is created but not told to start.
+    Runnable 
+        - When task is waiting cause other task is being printed in parallel.
+    Running
+        - When a thread has started but not yet completed. Can also say when its value is being printed.
+    Blocked/Waiting 
+        - When you're waiting for some external service or for other threads to provide data.
+    Terminated 
+        - When its executed completely.
+
+🔹 6. Important Thread Methods
+✔️ Basic Methods
+Method	    Description
+start()	    Starts thread
+run()	    Contains code
+sleep(ms)	Pause thread
+join()	    Wait for thread
+yield()	    Pause & give chance to others
+isAlive()	Check if alive
+    ✔️ Example:
+    Thread t = new Thread(() -> {
+        System.out.println("Running");
+    });
+
+    t.start();
+    t.join();
+
+🔹 7. What is Thread Priority?
+    Range: 1 (MIN) to 10 (MAX)
+    Default: 5
+    t.setPriority(Thread.MAX_PRIORITY);
+
+🔹 8. What is Synchronization?
+    Used to control access to shared resources.
+    synchronized void print() {
+        System.out.println("Safe thread");
+    }
+
+🔹 9. What is a Deadlock?
+    A situation where two threads wait for each other indefinitely.
+
+🔹 10. What is sleep()?
+    Pauses thread for given time.
+    Thread.sleep(1000);
+
+🔹 11. What is join()?
+    Waits for a thread to finish.
+
+🔹 12. What is yield()?
+    Suggests the scheduler to switch threads.
+
+🔹 13. Difference Between Runnable and Thread
+Runnable	                        Thread
+Interface	                        Class
+Better for multiple inheritance	    Cannot extend other class
+More flexible	                    Less flexible
+
+🔹 14. What is Thread Safety?
+Ensuring shared data is accessed safely.
+
+🔹 15. What is volatile Keyword?
+    Ensures variable is read from main memory, not cache.
+    volatile int count;
+
+🔹 16. What is Inter-Thread Communication?
+    Using:
+        wait()
+        notify()
+        notifyAll()
+
+🔹 17. Example of wait() and notify()
+    synchronized(obj) {
+        obj.wait();
+        obj.notify();
+    }
+
+🔹 18. What is a Daemon Thread?
+    Background thread that runs until main thread finishes.
+    t.setDaemon(true);
+
+🔹 19. What is Thread Pool?
+    Manages multiple threads efficiently using Executors.
+    ExecutorService ex = Executors.newFixedThreadPool(5);
+
+🔹 20. What is Executor Framework?
+    Provides thread management.
+
+🔹 21. Callable vs Runnable
+Callable	        Runnable
+Returns value	    No return
+Throws exception	Cannot throw
+
+🔹 22. What is synchronized Block?
+    synchronized(this) {
+        // critical section
+    }
+
+🔹 23. What is ReentrantLock?
+    Advanced locking mechanism.
+
+🔹 24. What is Starvation?
+    Thread not getting CPU time.
+
+🔹 25. What is Livelock?
+    Threads active but not progressing.
+
+🔹 26. What is Context Switching?
+    CPU switching between threads.
+
+🔹 27. What is Race Condition?
+    Multiple threads accessing shared data causing inconsistency.
+
+🔹 28. What is interrupt()?
+    Stops a thread gracefully.
+
+🔹 29. Difference Between Process & Thread
+Process	        Thread
+Heavyweight	    Lightweight
+Own memory	    Shared memory
+
+🔹 30. What is ForkJoinPool?
+    Used for parallel processing.
+
+🔥 Interview Tips
+    Prefer Runnable over Thread
+    Use ExecutorService in real-world apps
+    Always handle synchronization carefully
+```
