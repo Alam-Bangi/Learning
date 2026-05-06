@@ -1617,3 +1617,145 @@ Own memory	    Shared memory
     Use ExecutorService in real-world apps
     Always handle synchronization carefully
 ```
+# Executor Service
+```
+🔹 What is ExecutorService in Java?
+    ExecutorService is part of the java.util.concurrent package. It provides a framework for managing and controlling threads efficiently without manually creating and managing them.
+
+🔹 Why use ExecutorService?
+    Avoid manual thread management
+    Reuse threads (thread pooling)
+    Improve performance and scalability
+    Simplify concurrent programming
+
+🔹 How is it different from Thread class?
+Thread	                    ExecutorService
+Manually create threads	    Uses thread pool
+No reuse	                Reuses threads
+Hard to manage	            Easy lifecycle management
+Limited scalability	        High scalability
+
+🔹 How to create ExecutorService?
+Using the factory class Executors:
+    ExecutorService executor = Executors.newFixedThreadPool(5);
+Other options:
+    Executors.newSingleThreadExecutor();
+    Executors.newCachedThreadPool();
+    Executors.newScheduledThreadPool(3);
+
+🔹 What are common types of thread pools?
+1. Fixed Thread Pool
+    Fixed number of threads
+    Good for steady workloads
+2. Cached Thread Pool
+    Creates threads as needed
+    Reuses idle threads
+    Good for short-lived tasks
+3. Single Thread Executor
+    Only one thread
+    Ensures sequential execution
+4. Scheduled Thread Pool
+    For delayed and periodic tasks
+
+🔹 What is submit() vs execute()?
+Method	    Description
+execute()	Runs Runnable, no return
+submit()	Returns Future
+Example:
+    Future<Integer> result = executor.submit(() -> 10 + 20);
+
+🔹 What is Future?
+    Represents result of async computation
+    Methods:
+    get() → waits for result
+    isDone()
+    cancel()
+
+🔹 What is Callable?
+    Similar to Runnable
+    Can return value
+    Can throw exception
+    Callable<Integer> task = () -> 5 * 5;
+
+🔹 What is shutdown() vs shutdownNow()?
+Method	        Behavior
+shutdown()	    Stops accepting new tasks
+shutdownNow()	Attempts to stop all tasks immediately
+
+🔹 What is invokeAll()?
+    Executes a collection of tasks
+    Returns list of Futures
+    List<Future<Integer>> results = executor.invokeAll(tasks);
+
+🔹 What is invokeAny()?
+    Executes multiple tasks
+    Returns result of first completed task
+
+🔹 What is ScheduledExecutorService?
+    Extends ExecutorService to support:
+    Delayed execution
+    Periodic execution
+Example:
+    ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(2);
+    scheduler.schedule(() -> System.out.println("Run"), 5, TimeUnit.SECONDS);
+
+🔹 What is ThreadPoolExecutor?
+    Core implementation of ExecutorService
+    Gives full control over:
+    Core pool size
+    Max pool size
+    Queue type
+    Rejection policy
+
+🔹 What is RejectedExecutionHandler?
+    Defines behavior when:
+    Task cannot be accepted
+    Policies:
+    AbortPolicy (default)
+    CallerRunsPolicy
+    DiscardPolicy
+    DiscardOldestPolicy
+
+🔹 What is ForkJoinPool?
+    Used for parallel processing
+    Works on divide-and-conquer
+    Example:
+    ForkJoinPool pool = new ForkJoinPool();
+
+🔹 What is the difference between Runnable and Callable?
+Runnable	    Callable
+No return	    Returns value
+No exception	Can throw exception
+
+🔹 Best practices
+    Always shutdown executor
+    Use fixed thread pool for stability
+    Avoid unbounded cached pool in production
+    Handle exceptions properly
+    Prefer Callable for result-oriented tasks
+
+🔹 Common interview questions
+
+Q1: What happens if you don’t shutdown ExecutorService?
+    → JVM may not terminate.
+
+Q2: Can we reuse ExecutorService?
+    → Yes, until shutdown.
+
+Q3: Difference between submit() and invokeAll()?
+    → submit → single task
+    → invokeAll → multiple tasks
+
+Q4: How to handle exceptions in ExecutorService?
+    → Use Future.get() or custom ThreadFactory
+
+Q5: What is blocking queue in thread pool?
+    → Stores tasks before execution
+
+🔹 Simple Example
+    ExecutorService executor = Executors.newFixedThreadPool(2);
+    executor.submit(() -> {
+        System.out.println("Task running");
+    });
+    executor.shutdown();
+```

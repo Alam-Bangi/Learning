@@ -1,0 +1,76 @@
+import java.util.*;
+import java.util.concurrent.*;
+
+public class TicketBooking {
+
+    public static void main(String[] args) {
+
+        TicketBookingSystem seats = new TicketBookingSystem(10);
+
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        executor.submit(new Runnable() {
+            @Override
+            public void run() {
+                seats.bookSeats("Alam", Arrays.asList(4));
+                seats.bookSeats("Alam", Arrays.asList(1, 2, 3));
+                seats.bookSeats("Bob", Arrays.asList(3, 4));
+                seats.bookSeats("Charlie", Arrays.asList(5, 6));
+                seats.bookSeats("David", Arrays.asList(7, 8, 9, 10));
+                seats.bookSeats("Eve", Arrays.asList(2, 5));
+            }
+        });
+
+        // executor.submit(() -> seats.bookSeats("Alam", Arrays.asList(1, 2, 3)));
+        // executor.submit(() -> seats.bookSeats("Bob", Arrays.asList(3, 4)));
+        // executor.submit(() -> seats.bookSeats("Charlie", Arrays.asList(5, 6)));
+        // executor.submit(() -> seats.bookSeats("David", Arrays.asList(7, 8, 9, 10)));
+        // executor.submit(() -> seats.bookSeats("Eve", Arrays.asList(2, 5)));
+        // executor.submit(() -> seats.bookSeats("Alam", Arrays.asList(4)));
+
+        executor.shutdown();
+    }
+}
+
+class TicketBookingSystem {
+
+    private final Set<Integer> availableSeats;
+
+    public TicketBookingSystem(int totalSeats) {
+        availableSeats = new HashSet<>();
+        for (int i = 1; i <= totalSeats; i++) {
+            availableSeats.add(i);
+        }
+    }
+
+    public synchronized boolean bookSeats(String user, List<Integer> requestedSeats) {
+
+        System.out.println(user + " trying to book seats: " + requestedSeats);
+
+        if (requestedSeats == null || requestedSeats.isEmpty()) {
+            System.out.println(user + " provided invalid seat list");
+            return false;
+        }
+
+        if (availableSeats.containsAll(requestedSeats)) {
+
+            for (int seat : requestedSeats) {
+                availableSeats.remove(seat);
+            }
+
+            System.out.println(user + " successfully booked: " + requestedSeats);
+            printRemainingSeats();
+            return true;
+
+        } else {
+            System.out.println(user + " failed. Some seats not available.");
+            printRemainingSeats();
+            return false;
+        }
+    }
+
+    private void printRemainingSeats() {
+        System.out.println("Remaining seats: " + availableSeats);
+        System.out.println("------------------------------------------------");
+    }
+}
