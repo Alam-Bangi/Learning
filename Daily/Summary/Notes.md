@@ -1759,3 +1759,326 @@ Q5: What is blocking queue in thread pool?
     });
     executor.shutdown();
 ```
+# Exception Handling
+```
+1. What is Exception Handling in Java?
+    Exception handling is a mechanism to handle runtime errors so the normal flow of the program can continue.
+    Example:
+    try {
+        int a = 10 / 0;
+    } catch (ArithmeticException e) {
+        System.out.println("Cannot divide by zero");
+    }
+
+2. What is an Exception?
+    An exception is an unwanted or unexpected event that occurs during program execution.
+    Examples:
+    Divide by zero
+    File not found
+    Array index out of bounds
+
+3. What is the difference between Error and Exception?
+Error	                    Exception
+Serious problem	            Can be handled
+Happens at JVM level	    Happens in application
+Example: OutOfMemoryError	Example: IOException
+
+4. What is the hierarchy of Exceptions in Java?
+    Object
+    └── Throwable
+        ├── Error
+        └── Exception
+                ├── Checked Exception
+                └── Runtime Exception
+
+5. What are Checked Exceptions?
+    Exceptions checked at compile time.
+    Examples:
+        IOException
+        SQLException
+    Example:
+        FileReader fr = new FileReader("abc.txt");
+
+6. What are Unchecked Exceptions?
+    Exceptions checked at runtime.
+    Examples:
+    ArithmeticException
+    NullPointerException
+    ArrayIndexOutOfBoundsException
+
+7. Difference between Checked and Unchecked Exceptions
+Checked	                    Unchecked
+Checked at compile time	    Checked at runtime
+Must handle	                Optional to handle
+Subclass of Exception	    Subclass of RuntimeException
+
+8. What is Throwable class?
+    Throwable is the parent class of all errors and exceptions.
+
+9. What are the keywords used in Exception Handling?
+    try
+    catch
+    finally
+    throw
+    throws
+
+10. What is try block?
+    Code that may generate exception is written inside try.
+
+    try {
+        int x = 5 / 0;
+    }
+
+11. What is catch block?
+    Used to handle exception.
+    catch(ArithmeticException e) {
+        System.out.println(e);
+    }
+
+12. Can we use try without catch?
+    Yes, with finally.
+    try {
+        int a = 10;
+    } finally {
+        System.out.println("Finally block");
+    }
+
+13. Can we use try without finally?
+    Yes.
+
+14. Can we use multiple catch blocks?
+    Yes.
+    try {
+        
+    } catch(IOException e) {
+
+    } catch(Exception e) {
+
+    }
+
+15. What is finally block?
+    Always executes whether exception occurs or not.
+    finally {
+        System.out.println("Cleanup code");
+    }
+
+16. When finally block does not execute?
+    System.exit(0)
+    JVM crash
+
+17. What is throw keyword?
+    Used to explicitly throw exception.
+    throw new ArithmeticException("Error");
+
+18. What is throws keyword?
+    Declares exceptions.
+    void readFile() throws IOException {
+    }
+
+19. Difference between throw and throws
+throw	                    throws
+Used to throw exception	    Used to declare exception
+Inside method	            In method signature
+
+20. What is custom exception?
+    User-defined exception.
+    Example:
+    class InvalidAgeException extends Exception {
+        InvalidAgeException(String msg) {
+            super(msg);
+        }
+    }
+
+21. How to create custom exception?
+    class MyException extends Exception {
+        MyException(String s) {
+            super(s);
+        }
+    }
+
+22. What is exception propagation?
+    Exception passed from one method to another.
+    void m1() {
+        m2();
+    }
+
+23. Can checked exception be propagated?
+    Yes, using throws.
+
+24. Can unchecked exception be propagated?
+    Yes, automatically.
+
+25. What is stack trace?
+    Sequence of method calls when exception occurs.
+    e.printStackTrace();
+
+26. What is nested try block?
+    try block inside another try block.
+    try {
+        try {
+
+        } catch(Exception e) {
+
+        }
+    } catch(Exception e) {
+
+    }
+
+27. What is multi-catch block in Java?
+    Single catch handles multiple exceptions.
+    catch(IOException | SQLException e) {
+    }
+
+28. What is try-with-resources?
+    Automatically closes resources.
+    try(FileReader fr = new FileReader("a.txt")) {
+    }
+
+29. Which interface is required for try-with-resources?
+    AutoCloseable
+
+30. What happens if exception is not handled?
+    Program terminates abnormally.
+
+31. Difference between final, finally, and finalize
+final	                finally	            finalize
+Keyword	                Block	            Method
+Prevent modification	Executes always	    Called before GC
+
+32. What is NullPointerException?
+    Occurs when accessing null object.
+    String s = null;
+    System.out.println(s.length());
+
+33. What is ArithmeticException?
+    Occurs during arithmetic error.
+    int a = 10 / 0;
+
+34. What is ArrayIndexOutOfBoundsException?
+    Invalid array index access.
+    int a[] = {1,2};
+    System.out.println(a[5]);
+
+35. What is NumberFormatException?
+    Invalid string to number conversion.
+    Integer.parseInt("abc");
+
+36. What is ClassCastException?
+    Invalid type casting.
+    Object obj = "Hello";
+    Integer i = (Integer)obj;
+
+37. What is IllegalArgumentException?
+    Method receives illegal argument.
+
+38. What is IOException?
+    Input/output operation failure.
+
+39. What is FileNotFoundException?
+    File does not exist.
+
+40. What is SQLException?
+    Database-related exception.
+
+41. Can we catch multiple exceptions together?
+    Yes.
+    catch(IOException | SQLException e)
+
+42. What is difference between Exception and RuntimeException?
+Exception	RuntimeException
+Checked	    Unchecked
+
+43. Can we override method with throws clause?
+    Yes, but:
+    Child class cannot throw broader checked exception.
+
+44. What is rethrowing exception?
+    Throwing caught exception again.
+    catch(Exception e) {
+        throw e;
+    }
+
+45. What is user-defined checked exception?
+    Custom exception extending Exception.
+
+46. What is user-defined unchecked exception?
+    Custom exception extending RuntimeException.
+
+47. What is the use of printStackTrace()?
+    Prints complete exception details.
+
+48. What is getMessage()?
+    Returns exception message.
+    e.getMessage();
+
+49. What is getCause()?
+    Returns cause of exception.
+
+50. Best practices for Exception Handling
+    Catch specific exceptions
+    Avoid empty catch blocks
+    Use finally for cleanup
+    Use try-with-resources
+    Create meaningful custom exceptions
+    Never use exception for normal flow
+
+Common Interview Programs
+
+1. Divide by Zero Handling
+    public class Test {
+        public static void main(String[] args) {
+            try {
+                int a = 10 / 0;
+            } catch (ArithmeticException e) {
+                System.out.println("Division by zero");
+            }
+        }
+    }
+
+2. Custom Exception Example
+    class InvalidAgeException extends Exception {
+        InvalidAgeException(String msg) {
+            super(msg);
+        }
+    }
+
+    public class Demo {
+        static void checkAge(int age) throws InvalidAgeException {
+            if(age < 18)
+                throw new InvalidAgeException("Not eligible");
+        }
+
+        public static void main(String[] args) {
+            try {
+                checkAge(15);
+            } catch(Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
+3. Try-With-Resources Example
+    import java.io.*;
+
+    class Demo {
+        public static void main(String[] args) {
+            try(FileReader fr = new FileReader("a.txt")) {
+                System.out.println("File opened");
+            } catch(IOException e) {
+                System.out.println(e);
+            }
+        }
+    }
+
+Important Interview Questions
+    Difference between checked and unchecked exception?
+    Difference between throw and throws?
+    Can finally block skip execution?
+    Why multiple catch blocks are used?
+    What is custom exception?
+    What is exception propagation?
+    Explain try-with-resources.
+    Difference between Error and Exception?
+    What is stack trace?
+    Why RuntimeException is unchecked?
+```
