@@ -2082,3 +2082,327 @@ Important Interview Questions
     What is stack trace?
     Why RuntimeException is unchecked?
 ```
+# Files and Directories
+```
+1. What is a File in Java?
+    A file is a collection of data stored on disk.
+    Java provides classes to create, read, write, delete, and manage files.
+    Main package:
+    import java.io.*;
+
+2. What is a Directory?
+    A directory (folder) is a container used to store files and subdirectories.
+
+3. Which class is used for file handling in Java?
+    The most commonly used class is:
+    File
+    Located in:
+    java.io.File
+
+4. How to create a File object?
+    import java.io.File;
+    class Main {
+        public static void main(String[] args) {
+            File f = new File("test.txt");
+        }
+    }
+
+5. How to create a new file in Java?
+    import java.io.*;
+
+    class Main {
+        public static void main(String[] args) throws IOException {
+            File f = new File("test.txt");
+
+            if (f.createNewFile()) {
+                System.out.println("File created");
+            } else {
+                System.out.println("File already exists");
+            }
+        }
+    }
+
+6. How to check whether a file exists?
+    File f = new File("test.txt");
+    if(f.exists()) {
+        System.out.println("Exists");
+    }
+
+7. How to get file name?
+    System.out.println(f.getName());
+
+8. How to get file path?
+    System.out.println(f.getPath());
+
+9. How to get absolute path?
+    System.out.println(f.getAbsolutePath());
+
+10. How to check if file is readable?
+    System.out.println(f.canRead());
+
+11. How to check if file is writable?
+    System.out.println(f.canWrite());
+
+12. How to check file size?
+    System.out.println(f.length());
+
+13. How to delete a file?
+    if(f.delete()) {
+        System.out.println("Deleted");
+    }
+
+14. How to create a directory?
+    File dir = new File("MyFolder");
+    if(dir.mkdir()) {
+    System.out.println("Directory created");
+    }
+
+15. Difference between mkdir() and mkdirs()?
+Method	    Meaning
+mkdir()	    Creates single directory
+mkdirs()	Creates parent + child directories
+    Example:
+    dir.mkdirs();
+
+16. How to check whether it is a file or directory?
+    f.isFile();
+    f.isDirectory();
+
+17. How to list files in a directory?
+    File dir = new File(".");
+    String[] files = dir.list();
+    for(String s : files) {
+        System.out.println(s);
+    }
+
+18. How to list files with File objects?
+    File[] files = dir.listFiles();
+    for(File x : files) {
+        System.out.println(x.getName());
+    }
+
+19. How to rename a file?
+    File oldFile = new File("old.txt");
+    File newFile = new File("new.txt");
+    oldFile.renameTo(newFile);
+
+20. How to write data into a file?
+    Using FileWriter:
+    import java.io.*;
+    class Main {
+        public static void main(String[] args) throws Exception {
+            FileWriter fw = new FileWriter("test.txt");
+            fw.write("Hello Java");
+            fw.close();
+        }
+    }
+
+21. How to append data into a file?
+    FileWriter fw = new FileWriter("test.txt", true);
+    fw.write("New Data");
+    fw.close();
+
+22. How to read data from file?
+    Using FileReader:
+    FileReader fr = new FileReader("test.txt");
+    int ch;
+    while((ch = fr.read()) != -1) {
+        System.out.print((char)ch);
+    }
+    fr.close();
+
+23. What is BufferedReader?
+    It reads text efficiently.
+    BufferedReader br = new BufferedReader(new FileReader("test.txt"));
+    String line;
+    while((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+    br.close();
+
+24. What is BufferedWriter?
+    Used for efficient writing.
+    BufferedWriter bw = new BufferedWriter(new FileWriter("test.txt"));
+    bw.write("Hello");
+    bw.close();
+
+25. What is PrintWriter?
+    Used to write formatted data.
+    PrintWriter pw = new PrintWriter("test.txt");
+    pw.println("Hello");
+    pw.close();
+
+26. What is FileInputStream?
+    Used to read binary data.
+    FileInputStream fis = new FileInputStream("a.jpg");
+
+27. What is FileOutputStream?
+    Used to write binary data.
+    FileOutputStream fos = new FileOutputStream("a.jpg");
+
+28. Difference between Character Stream and Byte Stream?
+Character Stream	Byte Stream
+Text data	        Binary data
+FileReader	        FileInputStream
+FileWriter	        FileOutputStream
+
+29. What is serialization?
+    Saving object state into file.
+    implements Serializable
+
+30. What is deserialization?
+    Reading object back from file.
+
+31. Example of serialization
+    import java.io.*;
+
+    class Student implements Serializable {
+        int id = 1;
+    }
+    class Main {
+        public static void main(String[] args) throws Exception {
+            Student s = new Student();
+            ObjectOutputStream oos =
+                new ObjectOutputStream(
+                    new FileOutputStream("data.txt"));
+            oos.writeObject(s);
+            oos.close();
+        }
+    }
+
+32. Example of deserialization
+    ObjectInputStream ois =
+        new ObjectInputStream(
+            new FileInputStream("data.txt"));
+
+    Student s = (Student) ois.readObject();
+    ois.close();
+
+33. What is RandomAccessFile?
+    Used to read/write at any position.
+    RandomAccessFile raf =
+        new RandomAccessFile("test.txt", "rw");
+
+34. What is NIO in Java?
+    NIO = New Input Output
+    Package:
+    java.nio
+    Provides faster file operations.
+
+35. How to create file using NIO?
+    import java.nio.file.*;
+    Path path = Paths.get("abc.txt");
+    Files.createFile(path);
+
+36. How to read file using NIO?
+    String data = Files.readString(path);
+    System.out.println(data);
+
+37. How to write using NIO?
+    Files.writeString(path, "Hello");
+
+38. How to copy a file?
+    Files.copy(source, target);
+
+39. How to move a file?
+    Files.move(source, target);
+
+40. How to delete file using NIO?
+    Files.delete(path);
+
+41. Difference between IO and NIO?
+IO	            NIO
+Stream based	Buffer based
+Slower	        Faster
+Blocking	    Non-blocking
+
+42. What is path in Java?
+    Represents file location.
+    Path p = Paths.get("a.txt");
+
+43. How to get current directory?
+    System.getProperty("user.dir");
+
+44. How to check hidden file?
+    f.isHidden();
+
+45. How to get last modified time?
+    f.lastModified();
+
+46. How to create temporary file?
+    File temp = File.createTempFile("abc", ".txt");
+
+47. How to create read-only file?
+    f.setReadOnly();
+
+48. How to count files in directory?
+    File dir = new File(".");
+    System.out.println(dir.listFiles().length);
+
+49. What exception occurs in file handling?
+    Most common:
+    IOException
+
+50. What is try-with-resources?
+    Automatically closes resources.
+    try(FileReader fr = new FileReader("a.txt")) {
+
+    }
+
+Important Interview Questions
+
+Q1. Difference between FileReader and BufferedReader?
+FileReader	                    BufferedReader
+Reads character by character	Reads line by line
+Slower	                        Faster
+
+Q2. Difference between FileInputStream and FileReader?
+    FileInputStream	FileReader
+    Binary data	Text data
+
+Q3. Why use Buffered streams?
+    To improve performance.
+
+Q4. What is the use of flush()?
+    Forces data to write immediately.
+    bw.flush();
+
+Q5. Why close files?
+    To free system resources and avoid memory leaks.
+
+Short Notes
+
+File Class Methods
+Method	            Purpose
+createNewFile()	    Create file
+delete()	        Delete file
+exists()	        Check existence
+mkdir()	            Create directory
+list()	            List names
+length()	        File size
+
+Mini Program: Copy File
+    import java.io.*;
+
+    class Main {
+        public static void main(String[] args) throws Exception {
+
+            FileInputStream fis =
+                new FileInputStream("a.txt");
+
+            FileOutputStream fos =
+                new FileOutputStream("b.txt");
+
+            int data;
+
+            while((data = fis.read()) != -1) {
+                fos.write(data);
+            }
+
+            fis.close();
+            fos.close();
+
+            System.out.println("Copied");
+        }
+    }
+```
