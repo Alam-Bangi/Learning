@@ -3539,3 +3539,275 @@ ConcurrentLinkedQueue	Non-blocking queues
 81. Interview one-line definition
     Concurrent collections are thread-safe, high-performance collection classes designed for scalable multithreaded applications.
 ```
+# Enum
+```
+1. What is an enum in Java?
+    An enum is a special Java type used to define a fixed set of constants.
+    enum Day {
+        MONDAY, TUESDAY, WEDNESDAY
+    }
+
+2. Why use enum instead of constants?
+    Advantages
+        Type safety
+        Readability
+        Prevent invalid values
+        Can contain methods, constructors, fields
+    Bad Practice
+        public static final int RED = 1;
+    Better
+        enum Color {
+            RED, GREEN, BLUE
+        }
+
+3. How to create and use an enum?
+    enum Direction {
+        NORTH, SOUTH, EAST, WEST
+    }
+    public class Main {
+        public static void main(String[] args) {
+            Direction d = Direction.NORTH;
+            System.out.println(d);
+        }
+    }
+
+4. Can enums have methods?
+    Yes.
+    enum Operation {
+        ADD;
+        public void message() {
+            System.out.println("Addition");
+        }
+    }
+
+5. Can enums have constructors?
+    Yes, but constructors are always private.
+    enum Size {
+        SMALL(28), MEDIUM(32), LARGE(36);
+        int value;
+        Size(int value) {
+            this.value = value;
+        }
+    }
+
+6. Can enums have variables/fields?
+    Yes.
+    enum Laptop {
+        HP(50000), DELL(60000);
+        int price;
+        Laptop(int p) {
+            price = p;
+        }
+    }
+
+7. Can enums implement interfaces?
+    Yes.
+    interface Test {
+        void show();
+    }
+    enum Demo implements Test {
+        A;
+        public void show() {
+            System.out.println("Hello");
+        }
+    }
+
+8. Can enums extend classes?
+    No.
+    Because every enum already extends:
+        java.lang.Enum
+        Java does not support multiple inheritance for classes.
+
+9. Important built-in enum methods
+    values()
+        Returns all constants.
+        for (Day d : Day.values()) {
+            System.out.println(d);
+        }
+    ordinal()
+        Returns index position.
+        System.out.println(Day.MONDAY.ordinal());
+    valueOf()
+        Converts string to enum.
+        Day d = Day.valueOf("MONDAY");
+    name()
+        Returns constant name.
+        System.out.println(Day.MONDAY.name());
+
+10. Can we use enum in switch?
+    Yes.
+    enum Day {
+        MONDAY, TUESDAY
+    }
+    switch(day) {
+        case MONDAY:
+            System.out.println("Start");
+            break;
+    }
+
+11. Enum with abstract methods
+    enum Shape {
+        CIRCLE {
+            void draw() {
+                System.out.println("Circle");
+            }
+        };
+
+        abstract void draw();
+    }
+
+12. Can enum be singleton?
+    Yes. Enum is best way to create Singleton.
+    enum Singleton {
+        INSTANCE;
+
+        public void show() {
+            System.out.println("Singleton");
+        }
+    }
+    Usage:
+    Singleton.INSTANCE.show();
+
+13. Internal working of enum
+    Java internally converts enum into a class.
+Example:
+    enum Color {
+        RED, BLUE
+    }
+Internally similar to:
+    final class Color extends Enum<Color> {
+        public static final Color RED = new Color();
+        public static final Color BLUE = new Color();
+    }
+
+14. Can enum be instantiated using new?
+    No.
+    Color c = new Color(); // ERROR
+
+15. Can enum contain main() method?
+    Yes.
+    enum Test {
+        A;
+
+        public static void main(String[] args) {
+            System.out.println("Hello");
+        }
+    }
+
+16. Enum vs Class
+Feature	            Enum	        Class
+Fixed constants	    Yes	            No
+Constructors	    Private only	Any
+Object creation	    Controlled	    Open
+Extends class	    No	            Yes
+
+17. Enum vs final static constants
+Enum	                Constants
+Type safe	            Not type safe
+Namespace safe	        Global pollution
+Better readability	    Less readable
+
+18. Real-world examples of enum
+    Days
+    enum Day {
+        MONDAY, TUESDAY
+    }
+    Status
+    enum Status {
+        PENDING, SUCCESS, FAILED
+    }
+    Directions
+    enum Direction {
+        EAST, WEST
+    }
+
+Frequently Asked Interview Questions
+
+Q1. What are enums in Java?
+    A special data type representing fixed constants.
+
+Q2. Can enum have constructors?
+    Yes, private constructors only.
+
+Q3. Can enum implement interface?
+    Yes.
+
+Q4. Can enum extend another class?
+    No.
+
+Q5. Why enum constructors are private?
+    To prevent object creation from outside.
+
+Q6. Which class is superclass of all enums?
+    java.lang.Enum
+
+Q7. Can enum be abstract?
+    No, but can contain abstract methods.
+
+Q8. Can enum override methods?
+    Yes.
+    enum Test {
+        A {
+            void show() {
+                System.out.println("A");
+            }
+        };
+
+        void show() {}
+    }
+
+Q9. Are enums thread-safe?
+    Yes, because constants are static and final.
+
+Q10. Best use case of enum?
+    Fixed set of constants like:
+    Days
+    Months
+    Status
+    Roles
+    Directions
+
+Advanced Enum Example
+    enum Currency {
+        USD("$"),
+        INR("₹"),
+        EUR("€");
+
+        private String symbol;
+
+        Currency(String symbol) {
+            this.symbol = symbol;
+        }
+
+        public String getSymbol() {
+            return symbol;
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            for (Currency c : Currency.values()) {
+                System.out.println(c + " " + c.getSymbol());
+            }
+        }
+    }
+
+Summary
+    Enum Features
+        Fixed constants
+        Type-safe
+    Can have:
+        methods
+        constructors
+        variables
+        interfaces
+        abstract methods
+    Important Methods
+        values()
+        ordinal()
+        valueOf()
+        name()
+    Restrictions
+        Cannot extend classes
+        Cannot create objects using new
+```
