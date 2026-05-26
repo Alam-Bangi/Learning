@@ -10,7 +10,7 @@
 
 - Some video Link
 - ❌ Not Complete / Not Understood.
-- ✅ Completed / Understood
+- ✔ Completed / Understood
 - 🔄 InProgress / Learning
 
 
