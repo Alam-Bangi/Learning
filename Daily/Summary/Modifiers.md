@@ -310,6 +310,7 @@ interface Flyable {
 }
 ```
 ## Can You Explain Other Useful Modifiers in Java With Simple Examples?
+```
 Modifier	  Purpose	                               Example	                            Simple Use Case
 volatile	  Each thread can cache variables in its   private volatile int count;          Shared variable in a multi-threaded program
               own CPU core or registers. So, there 
