@@ -126,3 +126,30 @@ Q: What is Spring Container?
 Answer:
     "Spring Container is the core of the Spring Framework that creates, configures, injects dependencies into, and manages the complete lifecycle of beans using Dependency Injection and Inversion of Control (IoC)."
 ```
+## JavaBean vs POJO vs SpringBean
+```
+Feature	             POJO	                      JavaBean	                      Spring Bean
+Full Form	         Plain Old Java Object	      JavaBean	                      Spring-managed Bean
+Definition           Any ordinary Java class not  Specialized POJO that follows   Any object managed by the Spring 
+                     bound to special frameworks  JavaBean conventions            IoC container
+                     or restrictions
+Default Constructor  No                           Yes (public no-arg)             Usually recommended, but not always 
+Required                                                                          required
+Private Fields       Optional                     Typically yes                   Optional
+Getters/Setters      Not required                 Required for properties         Not required, but commonly used
+Serializable         Not required                 Traditionally should            Not required
+                                                  implement Serializable
+Framework Dependency None                         JavaBean specification          Spring Framework
+Object creation      Using new keyword            Using new keyword               Created and managed by Spring container
+Lifecycle Management Developer-managed            Developer-managed               Spring-managed
+Dependency Injection No built-in support          No built-in support             Supports dependency injection
+Scope Support        No                           No                              Singleton, Prototype, Request,
+                                                                                  Session, etc.
+Example Annotation   None                         None                           @Component, @Service, @Repository, @Bean
+
+Quick Interview Answer
+Term	        One-line Definition
+POJO	        Any simple Java object with no special restrictions.
+JavaBean	    A POJO that follows JavaBean conventions (no-arg constructor, getters/setters, etc.).
+Spring Bean	    Any object whose lifecycle is managed by the Spring container.
+```
