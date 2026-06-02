@@ -31,7 +31,7 @@
         - (717)	Step 09 - Exploring Spring Framework With Java - Section 2 - Review 
             - Revised all annotations and its uses in Spring Framework
         - (718)	Section Quiz
-            - [Quiz](https://github/Alam-Bangi/Learning/blob/main/Daily/June/02-June-2026/(718)quiz.md)
+            - [Quiz](https://github.com/Alam-Bangi/Learning/blob/main/Daily/June/02-June-2026/(718)quiz.md)
 
 
 ### Videos
