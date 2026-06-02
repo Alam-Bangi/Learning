@@ -153,3 +153,15 @@ POJO	        Any simple Java object with no special restrictions.
 JavaBean	    A POJO that follows JavaBean conventions (no-arg constructor, getters/setters, etc.).
 Spring Bean	    Any object whose lifecycle is managed by the Spring container.
 ```
+## @Component vs @Bean
+```
+Heading             @Component                                  @Bean
+Where?              Can be used on any Java class               Typically used on methods in Spring Configuration classes
+Ease of use         Very easy. Just add an annotation.          You write all the code.
+Autowiring          Yes- Field, Setter or Constructor Injection Yes - method call or method parameters
+Who creates beans?  Spring Framework                            You write bean creation code
+RecommendedFor      Instantiating Beans for Your Own            1:Custom Business Logic
+                    Application Code: @Component                2: Instantiating Beans for 3rd-party
+                                                                libraries: @Bean
+```
+## 
