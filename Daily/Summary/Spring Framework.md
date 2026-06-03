@@ -164,4 +164,36 @@ RecommendedFor      Instantiating Beans for Your Own            1:Custom Busines
                     Application Code: @Component                2: Instantiating Beans for 3rd-party
                                                                 libraries: @Bean
 ```
+## Lazy Initialization vs Eager Initialization
+```
+Heading             Lazy Initialization                             Eager Initialization
+Initializing time   Bean initialized when it is first made use of   Bean initialized at startup of the application
+                    in the application
+
+Default             NOT Default                                     Default
+
+Code Snippet        @Lazy OR @Lazy(value=true)                      @Lazy(value=false) OR (Absence of @Lazy)
+
+What happens if     
+there are errors    Errors will result in runtime exceptions        Errors will prevent application from starting up
+in initializing?
+
+Usage               Rarely used                                     Very frequently used
+
+Memory Consumption  Less (until bean is initialized)                All beans are initialized at startup
+
+Recommended Scene   Beans very rarely used in your app              Most of your beans
+```
+## Prototype vs Singleton Bean Scope
+```
+Heading             Prototype                                       Singleton
+Instances           Possibly Many per Spring IOC Container          One per Spring IOC Container
+Beans               New bean instance created every time            Same bean instance reused
+                    bean is referred to
+Default             NOT Default                                     Default
+Code Snippet        @Scope(value=ConfigurableBeanFactory            @Scope(value=ConfigurableBeanFactory.SCOPE_SINGLETON)
+                                        .SCOPE_PROTOTYPE)           OR Default
+Usage               Rarely used                                     Very frequently used
+Recommended Scene   Stateful beans                                  Stateless beans
+```
 ## 
