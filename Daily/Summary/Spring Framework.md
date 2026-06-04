@@ -1,4 +1,48 @@
-# Spring Container
+## Important Spring Annotations
+```
+Annotation          Description 
+@Configuration      Indicates that a class declares one or more `@Bean` methods and may be processed by the Spring container to
+                        generate bean definitions.
+@ComponentScan      Defines specific packages to scan for components. If specific packages are not defined, scanning will occur 
+                        from the package of the class that declares this annotation.
+@Bean               Indicates that a method produces a bean to be managed by the Spring container.
+@Component          Indicates that an annotated class is a "component".
+@Service            Specialization of `@Component` indicating that an annotated class contains business logic.
+@Controller         Specialization of `@Component` indicating that an annotated class is a "Controller" (e.g., a web controller). 
+                        Used to define controllers in web applications and REST APIs.
+@Repository         Specialization of `@Component` indicating that an annotated class is used to retrieve and/or manipulate data in 
+                        a database.
+@Primary            Indicates that a bean should be given preference when multiple candidates are qualified to autowire a 
+                        single-valued dependency.
+@Qualifier          Used on a field or parameter as a qualifier for candidate beans when autowiring.
+@Lazy               Indicates that bean has to be lazily initialized. Absence of `@Lazy` annotation will lead to eager
+                        initialization.
+@Scope(                     Defines a bean to be a prototype — a new instance will be created every time 
+ConfigurableBeanFactory         you refer to the bean. The default scope is singleton — one instance per IoC container.
+.SCOPE_PROTOTYPE)
+
+@PostConstruct      Identifies the method that will be executed after dependency injection is completed, typically used for bean
+                        initialization.
+@PreDestroy         Identifies the method that will receive a callback notification before the bean is removed by the container. 
+                        Typically used to release resources held by the bean.
+@Named              Jakarta Contexts and Dependency Injection (CDI) annotation similar to Spring's @Component.
+@Inject             Jakarta Contexts and Dependency Injection (CDI) annotation similar to Spring's @Autowired.
+```
+## Important Spring Concepts
+```
+Concept                     Description 
+Dependency Injection (DI)   Identifies beans, their dependencies, and wires them together. Provides IoC (Inversion of Control).
+Constructor Injection       Dependencies are provided when the bean is created through its constructor.
+Setter Injection            Dependencies are injected by calling setter methods on the bean.
+Field Injection             Dependencies are injected directly into fields using reflection, without a constructor or setter.
+IoC Container               Spring container that manages beans and their lifecycle.
+Bean Factory                The basic Spring IoC container responsible for creating and managing beans.
+Application Context         An advanced Spring IoC container that provides enterprise features such as internationalization (i18n), 
+                                event propagation, and integration with Spring AOP.
+Spring Beans                Objects that are created, managed, and maintained by the Spring container.
+Autowiring                  The process of automatically resolving and injecting dependencies into Spring beans.
+```
+## Spring Container
 ```
 1. What is a Spring Container?
 Answer:
@@ -196,4 +240,15 @@ Code Snippet        @Scope(value=ConfigurableBeanFactory            @Scope(value
 Usage               Rarely used                                     Very frequently used
 Recommended Scene   Stateful beans                                  Stateless beans
 ```
-## 
+## Annotations vs XML Configuration
+```
+| Heading                  | Annotations                                                         | XML Configuration            |
+| ------------------------ | ------------------------------------------------------------------- | ---------------------------- |
+| Ease of use              | Very Easy (defined close to source - class, method and/or variable) | Cumbersome                   |
+| Short and concise        | Yes                                                                 | No                           |
+| Clean POJOs              | No. POJOs are polluted with Spring Annotations                      | Yes. No change in Java code. |
+| Easy to Maintain         | Yes                                                                 | No                           |
+| Usage Frequency          | Almost all recent projects                                          | Rarely                       |
+| Recommendation           | Either of them is fine BUT be consistent                            | Do NOT mix both              |
+| Debugging difficulty     | Hard                                                                | Medium                       |
+```
