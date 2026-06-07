@@ -271,3 +271,12 @@ Spring Boot (Spring Project): Build PRODUCTION-READY apps QUICKLY
     Logging and Error Handling
     Profiles and Configuration Properties
 ```
+# JUNIT
+```
+- @Test checks if code runs as needed.
+- If multiple tests doesnt follow order.
+- @BeforeEach runs once before every test.
+- @AfterEach runs once after every test.
+- @BeforeAll runs once at the start. // Must always be STATIC
+- @AfterAll runs once all tests are done executing. // Must always be STATIC
+```
