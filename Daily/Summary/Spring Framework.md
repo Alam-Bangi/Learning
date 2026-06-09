@@ -275,8 +275,24 @@ Spring Boot (Spring Project): Build PRODUCTION-READY apps QUICKLY
 ```
 - @Test checks if code runs as needed.
 - If multiple tests doesnt follow order.
+
 - @BeforeEach runs once before every test.
+
 - @AfterEach runs once after every test.
+
 - @BeforeAll runs once at the start. // Must always be STATIC
+
 - @AfterAll runs once all tests are done executing. // Must always be STATIC
+```
+# JPA
+```
+@Entity: Marks a Java class as a persistent database entity, meaning each instance corresponds to a row in a relational table.
+
+@Id: Designates a specific field as the primary key that uniquely identifies each entity instance in the database.
+
+@Column: Customizes the mapping between a class field and its specific database column, allowing you to define constraints like name, length, and nullability.
+
+@PersistentContext annotation injects an EntityManager into a bean, allowing it to interact with the underlying database session and manage the lifecycle of entity instances.
+
+@TRansactional ensures that all database operations within a method are grouped into a single unit of work.
 ```
