@@ -1,44 +1,95 @@
 ## Important Spring Annotations
+
+1. Configuration & Core Container
+    - @Configuration: Marks a class as a source of Spring Bean definitions. Use with @Bean.
+    - @Bean: Tells a method to instantiate, configure, and return a new object managed by Spring. Use inside @Configuration.
+    - @Component: Marks a generic class as a Spring-managed component so it gets auto-detected. Use for your custom classes.
+    - @ComponentScan: Tells Spring where to search for components, configurations, and services. Use on your main application class.
+    - @Scope: Defines the lifecycle scope of a bean (e.g., Singleton, Prototype). Use with @Component or @Bean.
+    - @Lazy: Delays the creation of a bean until it is first requested. Use with @Component or @Bean to improve startup time.
+    - @ConfigurationProperties: Binds externalized configuration (like properties from application.yml) to a strongly-typed Java class. Use on configuration classes.
+2. Dependency Injection
+    - @Autowired: Injects dependencies automatically by matching data types. Use on constructors, setters, or fields.
+    - @Qualifier: Narrows the dependency to a specific bean name when multiple beans of the same type exist. Use alongside @Autowired.
+    - @Primary: Gives a bean higher preference when multiple beans of the same type are candidates for autowiring. Use on @Component or @Bean.
+    - @Named: A standard JSR-330 annotation similar to @Component for automatic bean discovery. Use as an alternative to @Component if aiming for framework-agnostic code.
+    - @Inject: A standard JSR-330 annotation for dependency injection. Use as an alternative to @Autowired.
+3. Bean Lifecycle & Stereotypes
+    - @PostConstruct: Marks a method to be executed exactly once immediately after dependency injection is complete. Use on any initialization method.
+    - @PreDestroy: Marks a method to be executed just before the bean is removed from the container. Use for resource cleanup.
+    - @Service: Specialization of @Component that indicates business logic. Use on service-layer classes.
+    - @Repository: Specialization of @Component that indicates data access and translates database exceptions. Use on DAO/Repository classes.
+    - @RestController: Combines @Controller and @ResponseBody, indicating that the class handles web requests and returns JSON directly. Use for building REST APIs.
+    - @RequestMapping: Maps HTTP requests to handler methods or classes. Use to specify root endpoints.
+4. HTTP & Web Endpoints (Spring MVC)
+    - @GetMapping: A shortcut for @RequestMapping(method = RequestMethod.GET). Use on methods to handle HTTP GET requests.
+    - @PostMapping: A shortcut for @RequestMapping(method = RequestMethod.POST). Use on methods to handle HTTP POST requests.
+    - @PutMapping: A shortcut for @RequestMapping(method = RequestMethod.PUT). Use on methods to handle HTTP PUT requests.
+    - @DeleteMapping: A shortcut for @RequestMapping(method = RequestMethod.DELETE). Use on methods to handle HTTP DELETE requests.
+5. Database & ORM (JPA/Hibernate)
+    - @Entity: Specifies that the class is an entity mapped to a database table. Use on model/POJO classes.
+    - @Id: Specifies the primary key of an entity. Use on the field acting as the primary key.
+    - @GeneratedValue: Provides the specification of primary key generation strategies (e.g., AUTO, IDENTITY). Use with @Id.
+6. Testing (JUnit 5)
+    - @BeforeAll: Marks a method that must run exactly once before any tests in the current class. Use in test classes.
+    - @BeforeEach: Marks a method that must run before each individual test in the class. Use in test classes.
+    - @AfterAll: Marks a method that must run exactly once after all tests in the class execute. Use in test classes.
+    - @AfterEach: Marks a method that must run after each individual test in the class. Use in test classes.
 ```
 Annotation          Description 
-@Configuration      Indicates that a class declares one or more `@Bean` methods and may be processed by the Spring container to
-                        generate bean definitions.
-@ComponentScan      Defines specific packages to scan for components. If specific packages are not defined, scanning will occur 
-                        from the package of the class that declares this annotation.
+@Configuration      Indicates that a class declares one or more `@Bean` methods and may be processed by the Spring 
+                    container to generate bean definitions. 
+                        
+@ComponentScan      Defines specific packages to scan for components. If specific packages are not defined, scanning 
+                    will occur from the package of the class that declares this annotation.  
+                        
 @Bean               Indicates that a method produces a bean to be managed by the Spring container.
+
 @Component          Indicates that an annotated class is a "component".
+
 @Service            Specialization of `@Component` indicating that an annotated class contains business logic.
-@Controller         Specialization of `@Component` indicating that an annotated class is a "Controller" (e.g., a web controller). 
-                        Used to define controllers in web applications and REST APIs.
-@Repository         Specialization of `@Component` indicating that an annotated class is used to retrieve and/or manipulate data in 
-                        a database.
-@Primary            Indicates that a bean should be given preference when multiple candidates are qualified to autowire a 
-                        single-valued dependency.
+
+@Controller         Specialization `@Component`- indicating that an annotated class is "Controller" (e.g.web 
+                    controller). Used to define controllers in web applications and REST APIs.
+
+@Repository         Specialization of `@Component` indicating that an annotated class is used to retrieve and/or 
+                    manipulate data in a database.
+
+@Primary            Indicates that a bean should be given preference when multiple candidates are qualified to autowire 
+                    a single-valued dependency.
+
 @Qualifier          Used on a field or parameter as a qualifier for candidate beans when autowiring.
+
 @Lazy               Indicates that bean has to be lazily initialized. Absence of `@Lazy` annotation will lead to eager
-                        initialization.
+                    initialization.
+
 @Scope(                     Defines a bean to be a prototype — a new instance will be created every time 
 ConfigurableBeanFactory         you refer to the bean. The default scope is singleton — one instance per IoC container.
 .SCOPE_PROTOTYPE)
 
-@PostConstruct      Identifies the method that will be executed after dependency injection is completed, typically used for bean
-                        initialization.
-@PreDestroy         Identifies the method that will receive a callback notification before the bean is removed by the container. 
-                        Typically used to release resources held by the bean.
+@PostConstruct      Identifies the method that will be executed after dependency injection is completed, typically used 
+                    for bean initialization.
+
+@PreDestroy         Identifies the method that will receive a callback notification before the bean is removed by the 
+                    container. Typically used to release resources held by the bean.
+
 @Named              Jakarta Contexts and Dependency Injection (CDI) annotation similar to Spring's @Component.
+
 @Inject             Jakarta Contexts and Dependency Injection (CDI) annotation similar to Spring's @Autowired.
 ```
 ## Important Spring Concepts
 ```
 Concept                     Description 
-Dependency Injection (DI)   Identifies beans, their dependencies, and wires them together. Provides IoC (Inversion of Control).
+Dependency Injection (DI)   Identifies beans, their dependencies, and wires them together. Provides IoC (Inversion of 
+                                Control).
 Constructor Injection       Dependencies are provided when the bean is created through its constructor.
 Setter Injection            Dependencies are injected by calling setter methods on the bean.
-Field Injection             Dependencies are injected directly into fields using reflection, without a constructor or setter.
+Field Injection             Dependencies are injected directly into fields using reflection, without a constructor or 
+                                setter.
 IoC Container               Spring container that manages beans and their lifecycle.
 Bean Factory                The basic Spring IoC container responsible for creating and managing beans.
-Application Context         An advanced Spring IoC container that provides enterprise features such as internationalization (i18n), 
-                                event propagation, and integration with Spring AOP.
+Application Context         An advanced Spring IoC container that provides enterprise features such as 
+                                internationalization (i18n), event propagation, and integration with Spring AOP.
 Spring Beans                Objects that are created, managed, and maintained by the Spring container.
 Autowiring                  The process of automatically resolving and injecting dependencies into Spring beans.
 ```
