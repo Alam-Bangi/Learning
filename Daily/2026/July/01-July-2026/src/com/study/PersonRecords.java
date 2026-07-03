@@ -12,6 +12,7 @@ class PersonRecords {
     public List<Person> searchRecord(String searchName) {
 
         this.personList= fileManagement.get();
+        this.searchPersonsList.clear();
         for (Person person : personList) {
             if (person.fileWrite().toLowerCase().contains(searchName.toLowerCase())) {
                 searchPersonsList.add(person);
@@ -32,17 +33,16 @@ class PersonRecords {
         return personList;
     }
 
-    public void delete(String searchName) {
+    public boolean delete(String searchName) {
         this.personList = fileManagement.get();
 
         for (int i = 0; i < personList.size(); i++) {
             if (personList.get(i).getName().equalsIgnoreCase(searchName)) {
                 personList.remove(i);
                 fileManagement.save(personList);
-                System.out.println("Record deleted successfully.");
-                return;
+                return true;
             }
         }
-        System.out.println("Record not found.");
+        return false;
     }
 }

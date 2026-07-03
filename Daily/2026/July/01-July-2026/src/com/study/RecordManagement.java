@@ -39,7 +39,7 @@ class RecordManagement {
                     break;
                 case 4:
                     searchName = inputData.search();
-                    personRecords.delete(searchName);
+                    inputData.displayDeletion(personRecords.delete(searchName));
                     break;
                 case 5:
                     System.out.println("Thank You!");

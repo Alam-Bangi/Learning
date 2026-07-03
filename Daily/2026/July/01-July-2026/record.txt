@@ -1,2 +1,2 @@
 Alam | 1234567890 | Pune | 24, Camp, Pune, Maharashtra, 42
-Amaan | 9876543210 | Pune | 402, Salunkhe Vihar, Pune, Maharshtra, 48
+Amaan | 9876543210 | Pune | 402, Salisbury park, Pune, Maharashtra, 411048

@@ -74,4 +74,16 @@ public class InputData {
             System.out.println(person);
         }
     }
+
+    public void displayDeletion(boolean delete) {
+//        if(delete == false) {
+//            System.out.println("No record found");
+//        } else {
+//            System.out.println("Record deleted successfully");
+//        }
+//        String result = delete ? "Record deleted successfully" : "No record found" ;
+//        System.out.println(result);
+
+        System.out.println((delete) ? "Record deleted successfully" : "No record found");
+    }
 }
