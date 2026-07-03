@@ -1,4 +1,4 @@
-# 02-July-2026
+# 03-July-2026
 
 ## First Half
 - Practising Java.
@@ -8,7 +8,7 @@
 
 ### Assignment
 - Building Library Management System.
-- Refer [Person Records Management](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/July/03-July)
+- Refer [Library Management System](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/July/03-July)
 
 ### Doubts
 
