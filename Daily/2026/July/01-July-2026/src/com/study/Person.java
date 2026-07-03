@@ -76,7 +76,7 @@ public class Person {
         sb.append(name).append(separator)
                 .append(contactNumber).append(separator)
                 .append(birthLocation).append(separator)
-                .append(address).append("\n");
+                .append(address);
         return sb.toString();
     }
 

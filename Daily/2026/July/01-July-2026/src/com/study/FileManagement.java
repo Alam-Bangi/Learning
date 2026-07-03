@@ -78,5 +78,23 @@ public class FileManagement {
         return persons;
     }
 
+    public void save(List<Person> persons) {
+        try {
+            List<String> data = new ArrayList<>();
 
+            for (Person person : persons) {
+                data.add(person.fileWrite());
+            }
+
+            Files.write(
+                    Paths.get(fileName),
+                    data,
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.TRUNCATE_EXISTING
+            );
+
+        } catch (IOException e) {
+            System.out.println("Error saving file.");
+        }
+    }
 }

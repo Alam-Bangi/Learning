@@ -31,4 +31,18 @@ class PersonRecords {
         this.personList = this.fileManagement.get();
         return personList;
     }
+
+    public void delete(String searchName) {
+        this.personList = fileManagement.get();
+
+        for (int i = 0; i < personList.size(); i++) {
+            if (personList.get(i).getName().equalsIgnoreCase(searchName)) {
+                personList.remove(i);
+                fileManagement.save(personList);
+                System.out.println("Record deleted successfully.");
+                return;
+            }
+        }
+        System.out.println("Record not found.");
+    }
 }
