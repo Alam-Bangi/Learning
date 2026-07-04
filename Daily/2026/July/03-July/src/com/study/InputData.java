@@ -40,7 +40,7 @@ public class InputData {
     public void displayBook(List<Book> books){
         for (Book book: books){
             System.out.println(book);
+            System.out.println();
         }
     }
-
 }

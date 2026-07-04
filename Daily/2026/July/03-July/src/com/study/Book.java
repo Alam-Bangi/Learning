@@ -42,7 +42,7 @@ public class Book {
         StringBuilder sb = new StringBuilder();
         sb.append("Name: ").append(name).append("\n")
                 .append("Author: ").append(author).append("\n")
-                .append("Publication: ").append(publication).append("\n");
+                .append("Publication: ").append(publication);
         return sb.toString();
     }
 

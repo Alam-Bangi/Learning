@@ -34,7 +34,6 @@ public class BookStorage {
             if (books.get(i).getName().equalsIgnoreCase(searchName)) {
                 books.remove(i);
                 fileManagement.save(books);
-                System.out.println("Record deleted successfully.");
                 return;
             }
         }

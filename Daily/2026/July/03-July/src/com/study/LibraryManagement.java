@@ -40,6 +40,7 @@ public class LibraryManagement {
                 case 4:
                     searchName = inputData.search();
                     bookStorage.delete(searchName);
+                    break;
                 case 5:
                     System.out.println("Thank you!");
                     break;

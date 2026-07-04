@@ -1,10 +1,10 @@
 package com.study;
 
+import com.study.fileoperation.FileLearn;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,52 +50,30 @@ public class FileManagement {
     }
 
     public void add(Book book) {
-        try{
-            Files.write(Paths.get(fileName),
-                    book.fileWrite().getBytes(),
-                    StandardOpenOption.CREATE,
-                    StandardOpenOption.APPEND
-            );
-        } catch (IOException e) {
-            System.out.println("Error writing in file");
-        }
+        FileLearn.createFile(fileName);
+        FileLearn.appendToFile(fileName, book.fileWrite());
     }
 
     public List<Book> get() {
+
         List<Book> books = new ArrayList<>();
-        if(this.validateData()) {
-            Path filePath = Paths.get(fileName);
-            try {
-                List<String> rawData = Files.readAllLines(filePath);
-                for(String data :rawData){
-                    String[] attributes = data.split(REGEX);
-                    Book book = new Book(attributes[0],attributes[1],attributes[2]);
-                    books.add(book);
-                }
-            }catch (Exception e) {
-                System.out.println(e);
-            }
+
+        List<String> lines = FileLearn.readLines(fileName);
+
+        for(String line : lines){
+            String[] data = line.split(REGEX);
+            books.add(new Book(data[0], data[1], data[2]));
         }
+
         return books;
     }
 
     public void save(List<Book> books) {
-        try {
-            List<String> data = new ArrayList<>();
+        StringBuilder builder = new StringBuilder();
 
-            for (Book book : books) {
-                data.add(book.fileWrite());
-            }
-
-            Files.write(
-                    Paths.get(fileName),
-                    data,
-                    StandardOpenOption.CREATE,
-                    StandardOpenOption.TRUNCATE_EXISTING
-            );
-
-        } catch (IOException e) {
-            System.out.println("Error saving file.");
+        for(Book book : books){
+            builder.append(book.fileWrite());
         }
+        FileLearn.writeFile(fileName, builder.toString());
     }
 }
