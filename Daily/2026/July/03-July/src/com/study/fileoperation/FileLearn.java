@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class FileLearn {
  /*  to do
@@ -22,19 +23,27 @@ public class FileLearn {
  */
      public static void main(String[] args) {
 //         createFile("example.txt");
-//         writeFile("example.txt", "AMAAN");
+//         writeFile("example.txt", "Amaan S");
 //         writeFileWithoutTruncate("example.txt", "ALAM");
-//         appendToFile("example.txt", " BANGI");
 //         updateFileContent("example.txt", "ALAMN", "ALAM");
 //         clearFileContent("example.txt");
 //         writeFile("example.txt", "AMAAN");
-//         appendToFile("example.txt", "\nALAM BANGI");
-//         readFile("example.txt");
+//         appendToFile("example.txt", "\nAlam B");
+//         appendToFile("example.txt", "\nAbrar M");
+//         appendToFile("example.txt", "\nAbid M");
+//         addToSpecificLine("example.txt", "Abrar");
+//         updateFileContent("example.txt", "BANGI", "");
+//         readLines("example.txt");
 //         deleteFile("example.txt");
+//         writeFile("ex.txt", "ABC");
+//         writeFiles("ex.txt", "ABC");
+//         deleteLine("example.txt", "Abid M");
+//         deleteLine("example.txt", "Alam B");
+         primeNumber();
      }
 
-    public static void createFile(String filePath) {
-        Path path = Paths.get(filePath);
+    public static void createFile(String fileName) {
+        Path path = Paths.get(fileName);
         try {
             if (!Files.exists(path)) {
                 Files.createFile(path);
@@ -59,7 +68,7 @@ public class FileLearn {
         }
     }
 
-    
+
     public static void writeFileWithoutTruncate(String filePath, String textContent) {
         Path path = Paths.get(filePath);
         try {
@@ -74,11 +83,11 @@ public class FileLearn {
         }
     }
 
-    public static void appendToFile(String filePath, String textToAppend) {
+    public static void appendToFile(String filePath, String text) {
         Path path = Paths.get(filePath);
         try {
             // APPEND forces Java to write at the end of the file
-            Files.writeString(path, textToAppend, StandardCharsets.UTF_8,
+            Files.writeString(path, text, StandardCharsets.UTF_8,
                     StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 //            System.out.println("Data appended successfully.");
         } catch (IOException e) {
@@ -119,7 +128,6 @@ public class FileLearn {
         }
     }
 
-
     public static List<String> readLines(String filePath) {
         try {
             return Files.readAllLines(Paths.get(filePath));
@@ -155,5 +163,63 @@ public class FileLearn {
         }
         Files.write(path, lines);
         System.out.println("Line updated by text match");
+    }
+
+    public static void addToSpecificIndex(String filePath, String newText, int targetLineNumber) {
+        Path path = Paths.get(filePath);
+        try {
+            List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+            if (targetLineNumber >= 0 && targetLineNumber <= lines.size()) {
+                lines.add(targetLineNumber, newText);
+            } else {
+                System.out.println("Line number out of bounds. Appending to the end.");
+                lines.add(newText);
+            }
+            Files.write(path, lines, StandardCharsets.UTF_8);
+            System.out.println("Line inserted successfully!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void writeFiles(String filePath, String textContent) {
+        Path path = Paths.get(filePath);
+        try {
+            // TRUNCATE_EXISTING clears old data; CREATE makes the file if it is missing
+            Files.writeString(path, textContent, StandardCharsets.UTF_8,
+                    StandardOpenOption.CREATE_NEW, StandardOpenOption.TRUNCATE_EXISTING);
+//            System.out.println("Data written successfully (overwrote old content).");
+        } catch (IOException e) {
+            System.err.println("alam Error writing to file: " + e.getMessage());
+        }
+    }
+
+    public static void primeNumber() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+        sc.nextLine();
+        boolean isDivisible = false;
+
+        for(int i = 2; i < number; i++) {
+            if(number % i == 0) {
+                isDivisible = true;
+            }
+        }
+        if(!isDivisible) {
+            System.out.println("Number is prime");
+        } else {
+            System.out.println("Not a prime number");
+        }
+     }
+
+    public static void deleteLine(String filePath, String name) {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(filePath));
+            lines.removeIf(line -> line.toLowerCase().contains(name.toLowerCase()));
+            Files.write(Paths.get(filePath), lines);
+        } catch (IOException e) {
+            System.out.println("Error " + e.getMessage());
+        }
     }
 }

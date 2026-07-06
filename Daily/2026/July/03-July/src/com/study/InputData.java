@@ -43,4 +43,11 @@ public class InputData {
             System.out.println();
         }
     }
+
+    public int getLineNumber() {
+        System.out.print("Enter Line Number: ");
+        int lineNumber = sc.nextInt();
+        sc.nextLine();
+        return lineNumber;
+    }
 }

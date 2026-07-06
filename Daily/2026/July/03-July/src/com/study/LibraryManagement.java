@@ -14,11 +14,12 @@ public class LibraryManagement {
         do {
             System.out.println("-----------------------------------");
             System.out.println("Welcome to Library Management");
-            System.out.println("1. Add Book");
-            System.out.println("2. Search Book");
-            System.out.println("3. Display All Books");
-            System.out.println("4. Delete Book");
-            System.out.println("5. Exit");
+            System.out.println("1. Add book");
+            System.out.println("2. Search book");
+            System.out.println("3. Display all books");
+            System.out.println("4. Delete book");
+            System.out.println("5. Add book at specific index");
+            System.out.println("6. Exit");
             System.out.println("-----------------------------------");
 
             System.out.println("Enter your choice: ");
@@ -42,12 +43,16 @@ public class LibraryManagement {
                     bookStorage.delete(searchName);
                     break;
                 case 5:
+                    int line = inputData.getLineNumber();
+                    bookStorage.addAtSpecificIndex(inputData.getInput(), line);
+                    break;
+                case 6:
                     System.out.println("Thank you!");
                     break;
                 default:
                     System.out.println("Invalid choice");
                     break;
             }
-        } while (choice!= 5);
+        } while (choice!= 6);
     }
 }
