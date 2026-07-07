@@ -1,5 +1,2 @@
-OOPS | MNO | LKJ
-mjdiu | sdvca | asdvf
-DSA | XYZ | PQR
-iuabf | sQWDE | AF	
-boisufdb | bjads | nbcx
+Java | PQR | Hi-Tech
+DSA | Arun | Tech

@@ -107,7 +107,6 @@ public class FileLearn {
             if (content.contains(targetWord)) {
                 String updatedContent = content.replace(targetWord, replacementWord);
                 Files.writeString(path, updatedContent, StandardCharsets.UTF_8, StandardOpenOption.TRUNCATE_EXISTING);
-//                System.out.println("File content updated successfully.");
             } else {
                 System.out.println("Target phrase not found. No updates made.");
             }

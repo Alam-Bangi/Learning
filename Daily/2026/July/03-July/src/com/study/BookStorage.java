@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class BookStorage {
-
     List<Book> books = new ArrayList<>();
     private List<Book> searchBook = new ArrayList<>();
     FileManagement fileManagement = new FileManagement();
@@ -16,10 +15,8 @@ public class BookStorage {
             this.books = fileManagement.get();
         }
     }
-
     public List<Book> search(String searchName) {
         this.books = fileManagement.get();
-
         this.searchBook.clear();
         for(Book book : books) {
             if(book.getName().equalsIgnoreCase(searchName)) {
@@ -28,37 +25,37 @@ public class BookStorage {
         }
         return searchBook;
     }
-
     public void delete(String searchName) {
         List<Book> bookList = search(searchName);
-        if(!bookList.isEmpty()) {
-            for(Book book: bookList) {
+        if (!bookList.isEmpty()) {
+            for (Book book : bookList) {
                 fileManagement.deleteLine(book.fileWrite());
             }
         }
-//        this.books = fileManagement.get();
-//        for (int i = 0; i < books.size(); i++) {
-//            if (books.get(i).getName().equalsIgnoreCase(searchName)) {
-//                books.remove(i);
-//                fileManagement.save(books);
-//                return;
-//            }
-//        }
-//        System.out.println("Record not found.");
     }
-
     public List<Book> get() {
         this.books = fileManagement.get();
         return books;
     }
-
     public void addAtSpecificIndex(Book book, int lineNumber) {
         fileManagement.addToSpecificIndex(book, lineNumber);
         this.books = fileManagement.get();
     }
-
     public void clearFile() {
         fileManagement.clearFile();
+    }
+    public void update(String searchName, String replacement) {
+        List<Book> bookList = new ArrayList<>();
+        for( Book book : books) {
+            if(book.fileWrite().contains(searchName)) {
+                bookList.add(book);
+            }
+        }
+        if (!bookList.isEmpty()) {
+            for (Book book : bookList) {
+                fileManagement.update(searchName, replacement);
+            }
+        }
     }
 }
 

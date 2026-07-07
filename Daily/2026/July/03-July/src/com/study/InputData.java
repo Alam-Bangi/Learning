@@ -20,13 +20,11 @@ public class InputData {
 
         return new Book(name, authorName, publication);
     }
-
     public String search() {
-        System.out.println("Enter name to search: ");
+        System.out.println("Enter name: ");
         String searchName = sc.nextLine();
         return searchName;
     }
-
     public void displaySearchBook(List<Book> searchBook) {
         if(searchBook.isEmpty()) {
             System.out.println("No Records Found");
@@ -36,18 +34,25 @@ public class InputData {
             }
         }
     }
-
     public void displayBook(List<Book> books){
         for (Book book: books){
             System.out.println(book);
             System.out.println();
         }
     }
-
     public int getLineNumber() {
         System.out.print("Enter Line Number: ");
         int lineNumber = sc.nextInt();
         sc.nextLine();
         return lineNumber;
+    }
+    public int getOption() {
+        System.out.println("Select what you want to update: ");
+        System.out.println("1. Name");
+        System.out.println("2. Author");
+        System.out.println("3. Publication");
+        int option = sc.nextInt();
+        sc.nextLine();
+        return option;
     }
 }

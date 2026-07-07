@@ -1,15 +1,11 @@
 package com.study;
 
-import java.time.LocalDate;
-
 public class Book {
-
     String name;
     String author;
     String publication;
 
     public Book() {
-
     }
     public Book(String name, String author, String publication) {
         this.name = name;
@@ -45,7 +41,6 @@ public class Book {
                 .append("Publication: ").append(publication);
         return sb.toString();
     }
-
     public String fileWrite() {
         StringBuilder fw = new StringBuilder();
         fw.append(name).append(" | ")
