@@ -7,7 +7,7 @@
 
 
 ### Assignment
-- Practising
+- Practising Basics and Logics.
 
 ### Doubts
 
