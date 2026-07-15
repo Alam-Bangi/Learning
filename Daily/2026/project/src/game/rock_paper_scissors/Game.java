@@ -7,9 +7,18 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         String[] choices = { "Rock", "Paper", "Scissors" };
         System.out.println("Welcome to Rock-Paper-Scissors Game!!");
-
-        System.out.println("Enter your choice (Rock, Paper,Scissors): ");
-        String userChoice = sc.nextLine();
+        System.out.println("1. Rock");
+        System.out.println("2. Paper");
+        System.out.println("3. Scissors");
+        System.out.print("Enter your choice (1-3): ");
+        int userInput = sc.nextInt();
+        sc.nextLine();
+        while(userInput < 1 || userInput > 3) {
+            System.out.println("Invalid choice!! \nEnter your choice(1-3): ");
+            userInput = sc.nextInt();
+        }
+        String userChoice = choices[userInput-1];
+        System.out.println("You chose: " + userChoice);
 
         int computerChoice = (int) (Math.random() * choices.length);
         System.out.println("Computer chose: " + choices[computerChoice]);
