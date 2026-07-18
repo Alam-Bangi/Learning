@@ -1,9 +1,16 @@
 package game.rock_paper_scissors;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
+        final List<Integer> integerList = new ArrayList<>();
+//        integerList = Collections.singletonList(1);
+        integerList.add(1);
+        System.out.println(integerList);
         Scanner sc = new Scanner(System.in);
         String[] choices = { "Rock", "Paper", "Scissors" };
         System.out.println("Welcome to Rock-Paper-Scissors Game!!");
