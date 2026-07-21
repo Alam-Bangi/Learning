@@ -10,5 +10,8 @@ class TreeMapRevision {
         persons.put(new Person("Zaid"),1);
         persons.put(new Person("Alam"),2);
         System.out.println(persons);
+        int x;
+        System.out.println(x);
+        int x;
     }
 }
