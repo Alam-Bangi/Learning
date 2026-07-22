@@ -10,7 +10,7 @@
 
 
 ### Assignment
-- Notes for Methods, Loops.
+- Notes for Methods, Loops, Class, Object, Encapsulation.
 
 ### Doubts
 
