@@ -11,7 +11,7 @@ class TreeMapRevision {
         persons.put(new Person("Alam"),2);
         System.out.println(persons);
         int x;
-        System.out.println(x);
-        int x;
+//        System.out.println(x);
+//        int x;
     }
 }
