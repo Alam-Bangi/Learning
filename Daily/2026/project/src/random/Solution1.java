@@ -8,14 +8,14 @@ package random;
 
 public class Solution1 {
     public static void main(String[] args) {
-        String no1 = "3333311111111111";
-        String no2 = "44422222221111";
-//        String no1 = "11";
-//        String no2 = "1";
+//        String no1 = "3333311111111111";
+//        String no2 = "44422222221111";
+        String no1 = "99";
+        String no2 = "99";
         StringBuilder ans = new StringBuilder();
 
         int maxSize = no1.length() > no2.length() ? no1.length() : no2.length();
-        System.out.println("max" + maxSize);
+        System.out.println("max " + maxSize);
         int pointer = 1;
         int carry = 0;
         while(pointer <= maxSize) {
@@ -36,6 +36,9 @@ public class Solution1 {
             }
             ans.append(sum % 10);
             pointer++;
+        }
+        if(carry > 0) {
+            ans.append(carry);
         }
         System.out.println(ans.reverse().toString());
     }
