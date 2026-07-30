@@ -20,7 +20,7 @@ interface AdvancedArithmetic{
     int divisor_sum(int n);
 }
 //Write your code here
-class MyCalculator implements AdvancedArithmetic {
+class MyCalculator1 implements AdvancedArithmetic {
     int sum = 0;
     public int divisor_sum(int n) {
         for(int i = 1; i <=n; i++) {
@@ -34,7 +34,7 @@ class MyCalculator implements AdvancedArithmetic {
 
 class Interface{
     public static void main(String []args){
-        MyCalculatorr my_calculator = new MyCalculatorr();
+        MyCalculator1 my_calculator = new MyCalculator1();
         System.out.print("I implemented: ");
         ImplementedInterfaceNames(my_calculator);
         Scanner sc = new Scanner(System.in);
