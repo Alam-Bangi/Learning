@@ -23,6 +23,10 @@
 ### Links
 - [Random] (https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/random)
     - Fibonacci
+    - GCD
+    - LCM
+    - Anagram
+    - Sum of digits
 
 - [Java Course (Udemy)](https://www.udemy.com/course/java-programming-tutorial-for-beginners )
 
