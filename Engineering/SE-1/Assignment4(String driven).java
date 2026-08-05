@@ -7,11 +7,11 @@ D 300, D 300, W 200, D 100 Then, the output should be: 500
 
 import java.util.Scanner;
 
-class Assignment4 {
+class Assignment4S { //String driven
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        BankAccount account;
+        BankAccountt account;
 
         System.out.println("\n------------------------------");
         System.out.println("Welcome to Bank Account Management System");
@@ -22,10 +22,10 @@ class Assignment4 {
 
         switch (choice) {
             case 1:
-                account = new SavingsAccount();
+                account = new SavingsAccountt();
                 break;
             case 2:
-                account = new CurrentAccount();
+                account = new CurrentAccountt();
                 break;
             default:
                 System.out.println("Invalid choice.");
@@ -57,7 +57,7 @@ class Assignment4 {
     }
 }
 
-abstract class BankAccount {
+abstract class BankAccountt {
     Scanner scanner = new Scanner(System.in);
 
     double balance;
@@ -101,7 +101,7 @@ abstract class BankAccount {
 
 }
 
-class SavingsAccount extends BankAccount {
+class SavingsAccountt extends BankAccountt {
     public void depositAmount(double amount) {
         while (validateAmount(amount)) {
             System.out.println("Enter valid amount (Cannot be negative): ");
@@ -151,9 +151,9 @@ class SavingsAccount extends BankAccount {
     }
 }
 
-class CurrentAccount extends BankAccount {
+class CurrentAccountt extends BankAccountt {
 
-    public CurrentAccount() {
+    public CurrentAccountt() {
         this.balance = 1000;
     }
 

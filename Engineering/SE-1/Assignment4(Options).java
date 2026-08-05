@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 class Assignment4 {
     static Scanner sc = new Scanner(System.in);
-    static BankAccount account;
+    static BankAccountt account;
 
     public static void main(String[] args) {
 
@@ -42,10 +42,10 @@ class Assignment4 {
 
         switch (choice) {
             case 1:
-                account = new SavingsAccount();
+                account = new SavingsAccountt();
                 break;
             case 2:
-                account = new CurrentAccount();
+                account = new CurrentAccountt();
                 break;
         }
         switch (selected) {
@@ -182,7 +182,7 @@ abstract class BankAccount {
     }
 }
 
-class SavingsAccount extends BankAccount {
+class SavingsAccountt extends BankAccountt {
     public void depositAmount(double amount) {
         while (validateAmount(amount)) {
             System.out.println("Enter valid amount (Cannot be negative): ");
@@ -234,9 +234,9 @@ class SavingsAccount extends BankAccount {
     }
 }
 
-class CurrentAccount extends BankAccount {
+class CurrentAccountt extends BankAccountt {
 
-    public CurrentAccount() {
+    public CurrentAccountt() {
         this.balance = 1000;
     }
 

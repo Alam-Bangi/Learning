@@ -11,7 +11,7 @@ class Assignment4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        BankAccount account;
+        BankAccountt account;
 
         System.out.println("\n------------------------------");
         System.out.println("Welcome to Bank Account Management System");
@@ -22,10 +22,10 @@ class Assignment4 {
 
         switch (choice) {
             case 1:
-                account = new SavingsAccount();
+                account = new SavingsAccountt();
                 break;
             case 2:
-                account = new CurrentAccount();
+                account = new CurrentAccountt();
                 break;
             default:
                 System.out.println("Invalid choice.");
@@ -84,7 +84,7 @@ abstract class BankAccount {
     }
 }
 
-class SavingsAccount extends BankAccount {
+class SavingsAccountt extends BankAccountt {
     public void depositAmount(double amount) {
         while (validateAmount(amount)) {
             System.out.println("Enter valid amount (Cannot be negative): ");
@@ -108,8 +108,8 @@ class SavingsAccount extends BankAccount {
     }
 }
 
-class CurrentAccount extends BankAccount {
-    public CurrentAccount() {
+class CurrentAccountt extends BankAccountt {
+    public CurrentAccountt() {
         this.balance = 1000;
     }
 
