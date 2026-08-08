@@ -15,7 +15,7 @@ public class IpAddress {
         String ipAddress5 = "I.Am.not.ip";
         String ipAddress6 = "999.255.255.255";
 
-        InetAddress inetAddress = new IpAddress();
+//        InetAddress inetAddress = new IpAddress();
         isValidIpAddress(ipAddress1);
         isValidIpAddress(ipAddress2);
         isValidIpAddress(ipAddress3);
