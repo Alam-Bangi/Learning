@@ -1,0 +1,21 @@
+*.class
+
+# Log files
+*.log
+
+# Package Files (if you build jars/wars manually)
+*.jar
+*.war
+*.ear
+*.nar
+
+# Build tool directories (Maven & Gradle)
+target/
+.gradle/
+build/
+
+# =========================================================================
+# 4. Operating System Files
+# =========================================================================
+.DS_Store
+Thumbs.db
