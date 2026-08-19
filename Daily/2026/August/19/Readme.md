@@ -23,6 +23,11 @@
 ## Second Half
 - Difference between Procedural Language and Object Oriented Language.
 
+- Learned about Constructor and Destructor in C++.
+
+- Solved Hackerrank Can You Access?
+
+
 ### Videos
 
 
@@ -37,3 +42,6 @@
 
 - [tryouts](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/tryouts)
     - Exception_Handling.
+
+- [Hackerrank](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerrank)
+    - CanYouAccess.
