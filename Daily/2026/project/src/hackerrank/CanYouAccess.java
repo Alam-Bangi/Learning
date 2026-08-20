@@ -26,6 +26,7 @@ public class CanYouAccess {
             Object o;// Must be used to hold the reference of the instance of the class Solution.Inner.Private
             Inner inner = new Inner();
             Inner.Private p = inner.new Private();
+//            Inner.Private p = new Inner().new Private(); // Can also be done using this syntax
             System.out.println(num + " is " + p.powerof2(num));
             o = p;
             System.out.println("An instance of class: " + o.getClass().getCanonicalName() + " has been created");
