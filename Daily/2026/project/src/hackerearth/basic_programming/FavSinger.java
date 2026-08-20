@@ -39,7 +39,7 @@ In this example
 Songs of singer 1 and 2 appear 2 times(which is max) in this playlist
 Therefore the answer is 2
  */
-package hackerearth.favouritesinger;
+package hackerearth.basic_programming;
 
 import java.util.*;
 public class FavSinger {

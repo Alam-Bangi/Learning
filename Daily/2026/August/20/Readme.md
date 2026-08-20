@@ -9,18 +9,24 @@
 ### Assignment
 - Tryout for Files & Directories.
 
-### Doubts
+### Doubts 
 
 
 ### Links
 - [Java Course (Udemy)](https://www.udemy.com/course/java-programming-tutorial-for-beginners)
 
-- [tryouts](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/tryouts)
+- [Tryouts](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/tryouts)
     - Files & Directories.
 
 ---
 ## Second Half
+- Solved HackerEarth question.
+    - Zoos.
+    - Divisibility.
 
+- Reviewed everything covered during the day.
+    - Files & Directories.
+    - HackerEarth Zoos & Divisibility.
 
 ### Videos
 
@@ -32,3 +38,6 @@
 
 
 ### Links
+- [HackerEarth](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerearth)
+    - Zoos.
+    - Divisibility.
