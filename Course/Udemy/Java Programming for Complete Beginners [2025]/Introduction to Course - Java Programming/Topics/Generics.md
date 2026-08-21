@@ -62,6 +62,15 @@ Generics work with reference types, so we use wrapper classes such as `Integer`,
 
 **Interview tip:** Don't start with type erasure, wildcards, or PECS unless asked. Start with **“generics provide compile-time type safety and reusable code”**, then demonstrate it with `List<String>`. That sounds much clearer and more confident.
 ---
+| Generic Concept        | Example              | Meaning                          |
+|------------------------|----------------------|----------------------------------|
+| Generic class          | `Box<T>`             | Class works with any type       |
+| Generic method         | `<T> void print(T x)` | Method works with any type      |
+| Bounded type           | `<T extends Number>` | T must be Number or subclass    |
+| Unbounded wildcard     | `<?>`                | Any type                        |
+| Upper-bounded wildcard | `<? extends Number>` | Number or its subclasses       |
+| Lower-bounded wildcard | `<? super Integer>`  | Integer or its superclasses     |
+| Generic collection     | `List<String>`       | Collection restricted to String |
 ---
 In Java, **generics** allow you to write classes, interfaces, and methods that work with different data types while providing **compile-time type safety**.
 
