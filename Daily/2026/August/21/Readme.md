@@ -20,7 +20,13 @@
 
 ---
 ## Second Half
+- Solved HackerEarth questions
+    - Split Houses.
+    - Toggle String.
 
+- Reviewed everything covered during the day.
+    - Generics.
+    - HackerEarth Split Houses, Toggle String.
 
 ### Videos
 
@@ -32,3 +38,6 @@
 
 
 ### Links
+- [HackerEarth](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerearth)
+    - Split Houses.
+    - Toggle String.
