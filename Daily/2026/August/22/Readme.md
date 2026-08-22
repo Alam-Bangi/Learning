@@ -3,6 +3,7 @@
 ## First Half
 - Solved HackerEarth question
     - Find Product.
+    - Palindrome String.
 
 ### Videos
 
@@ -22,7 +23,12 @@
 
 ---
 ## Second Half
+- Solved HackerEarth question
+    - Palindrome String.
 
+- Reviewed everything covered during the day & last 2 days.
+    - Generics , Files & Directories.
+    - HackerEarth Palindrome String, Find Product.
 
 ### Videos
 
@@ -34,3 +40,5 @@
 
 
 ### Links
+- [HackerEarth](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerearth)
+    - Palindrome String.
