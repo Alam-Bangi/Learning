@@ -24,7 +24,8 @@
 
 ---
 ## Second Half
-
+- HackerEarth 
+    - Life, Universe, Everything.
 
 ### Videos
 
@@ -36,4 +37,5 @@
 
 
 ### Links
-
+- [HackerEarth](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerearth)
+    - Life, Universe, Everything.
