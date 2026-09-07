@@ -42,7 +42,7 @@ cb
 
  smallest suffix will be b.
  */
-package hackerearth;
+package hackerearth.codemonk;
 
 import java.util.*;
 

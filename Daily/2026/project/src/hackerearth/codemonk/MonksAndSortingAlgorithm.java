@@ -1,6 +1,8 @@
 /*
 Monk and Sorting Algorithm
-
+100 points
+1s time
+256MB memory
 Monk recently taught Fredo about sorting. Now, he wants to check whether he understood the concept or not. So, he gave him the following algorithm and asked to implement it:
 
 Assumptions:
@@ -31,21 +33,16 @@ Output:
 You need to print the new array in each step of the algorithm.
 
 Constraints:
-
 ; A[] is the input array
 Size of integers (number of digits in integer) in A may not be same.
 
 Note
-
-
 Use Fast I/O
 Examples
 Input
-
 3
 213456789 167890 123456789
 Output
-
 213456789 123456789 167890
 167890 123456789 213456789
 Explanation
@@ -64,13 +61,12 @@ This becomes the new array.
 
 The array now is [167890, 123456789, 213456789].
 So, as the 3rd chunk would have no digits for any integer, so weights of all integers will be 0 and the algorithm would stop.
- */
-package hackerearth;
+*/
+package hackerearth.codemonk;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
-public class MonkAndSortingAlgorithm {
+public class MonksAndSortingAlgorithm {
     public static void main(String args[] ) throws Exception {
         Scanner sc = new Scanner(System.in);
 
@@ -81,9 +77,13 @@ public class MonkAndSortingAlgorithm {
         }
         sc.close();
 
-        Arrays.sort(numbers, (a, b) -> Integer.compare(a, b));
-        for (Integer no : numbers) {
+        Arrays.sort(numbers, (a, b) -> Integer.compare(a % 100000, b % 100000));
+        for(Integer no : numbers) {
             System.out.print(no + " ");
         }
+//        System.out.println();
+//        for(int j = n-1; j >=0; j--) {
+//            System.out.print(numbers[j] + " ");
+//        }
     }
 }

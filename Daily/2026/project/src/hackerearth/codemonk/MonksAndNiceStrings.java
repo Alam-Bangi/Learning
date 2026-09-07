@@ -44,7 +44,7 @@ Number of strings having index less than 2 which are less than "c": ("a") = 1
 Number of strings having index less than 3 which are less than "d": ("a", "c") = 2
 Number of strings having index less than 4 which are less than "b": ("a") = 1
 */
-package hackerearth;
+package hackerearth.codemonk;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package hackerearth;
+package hackerearth.codemonk;
 
 import java.util.*;
 
