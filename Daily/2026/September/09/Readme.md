@@ -3,6 +3,14 @@
 ## First Half
 - Learning Spring Framework.
 
+- Learned about :
+    - @Configuration
+    - @Bean
+    - @Primary
+    - @Qualifier
+    - @Component
+    - @ComponentScan
+
 ### Videos
 
 
