@@ -20,7 +20,7 @@
 ### Links
 - [Java Course (Udemy)](https://www.udemy.com/course/java-programming-tutorial-for-beginners)
 
-- [Spring-Boot](https://github.com/Alam-Bangi/Spring-Boot/tree/main/learning/src/main/java/com/learning/examples)
+- [Spring-Boot](https://github.com/Alam-Bangi/Spring-Boot/tree/main/learning/src/main/java/com/learning)
 
 - [HackerEarth](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/hackerearth)
     - Palindrome Split.
