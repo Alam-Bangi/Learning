@@ -12,7 +12,7 @@ public class FpLearning {
         Scanner sc = new Scanner(System.in);
 
         List<Integer> numbers =
-                Arrays.asList(10, 20, 30, 40, 50, 50, 60);
+                Arrays.asList(70, 20, 30, 40, 50, 50, 60);
 
         List<List<Integer>> nestedNumbers = Arrays.asList(
                 Arrays.asList(1, 2, 3),
@@ -55,19 +55,19 @@ public class FpLearning {
         IntStream.range(1,13).forEach(e -> System.out.print(e + " "));
 
         System.out.println("\n\nPeek");
-        Arrays.stream(no)
+        numbers.stream()
                 .filter(n -> n > 20)
                 .peek(n -> System.out.println("After filter: " + n))
                 .map(n -> n * 2)
                 .forEach(n -> System.out.println("Final: " + n));
 
         System.out.println("\ndropWhile()");
-        Arrays.stream(no)
-                .dropWhile(n -> n < 40)
+        numbers.stream()
+                .dropWhile(n -> n == 40)
                 .forEach(System.out::println);
 
         System.out.println("\ntakeWhile()");
-        Arrays.stream(no)
+        numbers.stream()
                 .takeWhile(n -> n < 40)
                 .forEach(System.out::println);
 
@@ -142,7 +142,7 @@ public class FpLearning {
 
         System.out.println("\nallMatch()");
         boolean allPositive = numbers.stream()
-                .allMatch(n -> n > 0);
+                .allMatch(n -> n > 40);
         System.out.println(allPositive);
 
 
