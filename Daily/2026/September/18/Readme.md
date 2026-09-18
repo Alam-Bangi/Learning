@@ -26,7 +26,8 @@
 
 ---
 ## Second Half
-
+- HackerEarth
+    - Special Number.
 
 ### Videos
 
@@ -38,4 +39,5 @@
 
 
 ### Links
-
+- HackerEarth
+    - [Special Number](https://github.com/Alam-Bangi/competitive-programming/tree/main/HackerEarth/special-number-a0cda359)
