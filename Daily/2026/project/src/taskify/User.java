@@ -63,7 +63,7 @@ public class User {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("User : ").append(name).append(", Email: ").append(email).append("\n").append(tasks);
+        sb.append("User : ").append(name).append(", Email: ").append(email);
         return sb.toString();
     }
 }
