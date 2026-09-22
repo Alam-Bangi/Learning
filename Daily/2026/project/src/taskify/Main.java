@@ -5,13 +5,25 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static List<User> allUsers = new ArrayList<>();
-    private static Scanner sc = new Scanner(System.in);
+    List<User> allUsers = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+
+    private List<User> defaultUsers = new ArrayList<>();
+
+    public Main() {
+        this.defaultUsers = List.of(new User("Alam","ab12@gmail.com"),new User("Aman", "cd0@gmail.com"));
+        for(User user : defaultUsers) {
+            user.addTask(new Task("Default", "Tasks"));
+        }
+    }
 
     public static void main(String[] args) {
+        Main defaultValues = new Main();
+        Main main = new Main();
         int choice;
         do {
             System.out.println("\n========== TASK MANAGER MENU ==========");
+            System.out.println("0. Implement All");
             System.out.println("1. Register New User");
             System.out.println("2. Add Task to User");
             System.out.println("3. Update Task Description");
@@ -19,39 +31,50 @@ public class Main {
             System.out.println("5. Remove Task");
             System.out.println("6. Display All Users and Their Tasks");
             System.out.println("7. Find User by Email (View Name & Tasks)");
-            System.out.println("8. Exit");
-            System.out.print("Enter your choice (1-8): ");
+            System.out.println("8. List all users");
+            System.out.println("9. Exit");
+            System.out.print("Enter your choice (0-9): ");
 
             while (!sc.hasNextInt()) {
-                System.out.print("Invalid input. Please enter a number (1-8): ");
+                System.out.print("Invalid input. Please enter a number (0-9): ");
                 sc.next();
             }
             choice = sc.nextInt();
             sc.nextLine();
 
             switch (choice) {
+                case 0:
+                    defaultValues.displayAllUsers();
+                    defaultValues.removeTaskFromDefaultUser();
+                    defaultValues.updateDefaultTaskDesc("ab12@gmail.com", "Spring");
+                    defaultValues.updateDefaultTaskStatus("cd0@gmail.com");
+                    defaultValues.removeTaskFromDefaultUser();
+                    break;
                 case 1:
-                    registerUser();
+                    main.registerUser();
                     break;
                 case 2:
-                    addTaskToUser();
+                    main.addTaskToUser();
                     break;
                 case 3:
-                    updateTaskDesc();
+                    main.updateTaskDesc();
                     break;
                 case 4:
-                    updateTaskStatus();
+                    main.updateTaskStatus();
                     break;
                 case 5:
-                    removeTaskFromUser();
+                    main.removeTaskFromUser();
                     break;
                 case 6:
-                    displayAllUsers();
+                    main.displayAllUsers();
                     break;
                 case 7:
-                    findUserByEmail();
+                    main.findUserByEmail();
                     break;
                 case 8:
+                    main.listAllUsers();
+                    break;
+                case 9:
                     System.out.println("Exiting program. Goodbye!");
                     break;
                 default:
@@ -62,7 +85,7 @@ public class Main {
         sc.close();
     }
 
-    private static void registerUser() {
+    private void registerUser() {
         System.out.print("Enter User Name: ");
         String name = sc.nextLine();
         System.out.print("Enter User Email: ");
@@ -77,7 +100,7 @@ public class Main {
         System.out.println("User registered successfully!");
     }
 
-    private static void addTaskToUser() {
+    private void addTaskToUser() {
         User user = getUser();
         if (user == null) return;
 
@@ -90,7 +113,7 @@ public class Main {
         System.out.println("Task added successfully to " + user.getName() + "!");
     }
 
-    private static void updateTaskDesc() {
+    private void updateTaskDesc() {
         User user = getUser();
         if (user == null) return;
 
@@ -106,7 +129,17 @@ public class Main {
         }
     }
 
-    private static void updateTaskStatus() {
+    private void updateDefaultTaskDesc(String mail, String newDesc) {
+        User user = getUser(mail);
+        String taskName = "Default";
+        if (user.updateTaskDescription(taskName, newDesc)) {
+            System.out.println("Task description updated successfully!");
+        } else {
+            System.out.println("Task not found!");
+        }
+    }
+
+    private void updateTaskStatus() {
         User user = getUser();
         if (user == null) return;
 
@@ -128,7 +161,20 @@ public class Main {
         }
     }
 
-    private static void removeTaskFromUser() {
+    private void updateDefaultTaskStatus(String mail) {
+        User user = getUser(mail);
+
+        String taskName = "Default";
+        boolean isCompleted = true;
+
+        if (user.updateTaskCompletion(taskName, isCompleted)) {
+            System.out.println("Task completion status updated!");
+        } else {
+            System.out.println("Task not found!");
+        }
+    }
+
+    private void removeTaskFromUser() {
         User user = getUser();
         if (user == null) return;
 
@@ -142,7 +188,26 @@ public class Main {
         }
     }
 
-    private static void displayAllUsers() {
+    private void removeTaskFromDefaultUser() {
+        User user = getUser("ab12@gmail.com");
+        String taskName = "Study";
+
+        if (user.removeTask(taskName)) {
+            System.out.println("Task removed successfully!");
+        } else {
+            System.out.println("Task not found!");
+        }
+    }
+
+    private User getUser(String mail) {
+        for(User u : defaultUsers) {
+            if(u.getEmail().equals(mail))
+                return u;
+        }
+        return null;
+    }
+
+    private void displayAllUsers() {
         if (allUsers.isEmpty()) {
             System.out.println("\nNo users registered in the system yet.");
             return;
@@ -154,7 +219,7 @@ public class Main {
         }
     }
 
-    private static void findUserByEmail() {
+    private void findUserByEmail() {
         User user = getUser();
         if (user != null) {
             System.out.println("\n========== USER FOUND ==========");
@@ -162,7 +227,7 @@ public class Main {
         }
     }
 
-    private static User getUserByEmail(String email) {
+    private User getUserByEmail(String email) {
         for (User user : allUsers) {
             if (user.getEmail().equalsIgnoreCase(email)) {
                 return user;
@@ -171,7 +236,7 @@ public class Main {
         return null;
     }
 
-    private static User getUser() {
+    private User getUser() {
         if (allUsers.isEmpty()) {
             System.out.println("No users available. Please register a user first.");
             return null;
@@ -185,7 +250,7 @@ public class Main {
         return user;
     }
 
-    private static void printUserDetails(User user) {
+    private void printUserDetails(User user) {
         System.out.println("User Name: " + user.getName());
         System.out.println("Email: " + user.getEmail());
         System.out.println("Tasks:");
@@ -196,5 +261,15 @@ public class Main {
                 System.out.println(" - " + task);
             }
         }
+    }
+
+    private void listAllUsers() {
+        if(allUsers.isEmpty()) {
+            System.out.println("No users registered!!");
+        }
+        for (User u : allUsers) {
+            System.out.println(u);
+        }
+
     }
 }

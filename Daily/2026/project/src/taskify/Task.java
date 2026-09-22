@@ -34,6 +34,6 @@ public class Task {
     @Override
     public String toString() {
         String status = isCompleted ? "Completed" : "Pending";
-        return "Task Name: " + name + " | Description: " + description + " | Status: " + status + "]";
+        return "Task Name: " + name + " | Description: " + description + " | Status: " + status;
     }
 }

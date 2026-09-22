@@ -8,6 +8,12 @@ public class User {
     private String email;
     private List<Task> tasks;
 
+    public User() {
+        this.name = "name";
+        this.email = "email";
+        this.tasks = new ArrayList<>();
+    }
+
     public User(String name, String email) {
         this.name = name;
         this.email = email;
@@ -52,5 +58,12 @@ public class User {
 
     public List<Task> getTasks() {
         return tasks;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("User : ").append(name).append(", Email: ").append(email).append("\n").append(tasks);
+        return sb.toString();
     }
 }
