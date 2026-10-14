@@ -4,6 +4,7 @@
 - HackerEarth
     - Maximun Border.
 
+- Install XAMPP for SQL and database. 
 
 ### Videos
 
