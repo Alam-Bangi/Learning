@@ -4,6 +4,7 @@
 - HackerEarth
     - Bubble Sort.
 
+- Install MySQL JDBC connector and use it.
 
 ### Videos
 
