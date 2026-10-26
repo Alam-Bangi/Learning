@@ -17,6 +17,21 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "runs = " + runs;
+        StringBuilder result = new StringBuilder();
+        result.append("Runs = ").append(runs);
+
+        if (nb) {
+            result.append(", No-ball");
+        }
+        if (wide) {
+            result.append(", Wide");
+        }
+        if (lb) {
+            result.append(", Leg-bye");
+        }
+        if (out) {
+            result.append(", Wicket");
+        }
+        return result.toString();
     }
 }
