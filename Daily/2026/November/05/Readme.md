@@ -4,6 +4,8 @@
 - HackerEarth
     - Case conversion.
 
+- Update Taskify code to delete tasks automatically if we delete user.
+
 ### Videos
 
 
