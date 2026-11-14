@@ -1,7 +1,6 @@
 package tryouts.contactmanagement;
 
 public class Contact {
-
     private String name;
     private String phone;
 

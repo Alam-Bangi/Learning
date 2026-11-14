@@ -1,7 +1,6 @@
 package tryouts.contactmanagement;
 
 public class ContactValidator {
-
     public static boolean isValidName(String name) {
         return name != null && !name.trim().isEmpty();
     }

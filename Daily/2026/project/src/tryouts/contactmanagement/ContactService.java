@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ContactService {
-
     private HashMap<String, Contact> contacts = new HashMap<>();
 
     private boolean phoneExists(String phone, String excludeKey) {

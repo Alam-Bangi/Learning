@@ -4,6 +4,8 @@
 - HackerEarth
     - Supernatural.
 
+- Create Contact Management using HashMap.
+
 ### Videos
 
 
@@ -17,6 +19,7 @@
 - HackerEarth
     - [Supernatural](https://github.com/Alam-Bangi/competitive-programming/tree/main/HackerEarth/supernatural-cac54bc7)
 
+- [Contact Management](https://github.com/Alam-Bangi/Learning/tree/main/Daily/2026/project/src/tryouts/contactmanagement)
 
 ---
 ## Second Half
