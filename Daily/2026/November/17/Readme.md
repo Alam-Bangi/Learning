@@ -1,8 +1,8 @@
-# 14-November-2026
+# 17-November-2026
 
 ## First Half
 - HackerEarth
-    - Rain Sound.
+    - The Dice.
 
 
 ### Videos
@@ -16,7 +16,7 @@
 
 ### Links
 - HackerEarth
-    - [Rain Sound](https://github.com/Alam-Bangi/competitive-programming/tree/main/HackerEarth/rain-41f57695)
+    - [The Dice](https://github.com/Alam-Bangi/competitive-programming/tree/main/HackerEarth/the-dice-d4dc5b11)
 
 
 ---
