@@ -1,4 +1,4 @@
-package tryouts.thread.multi_threading;
+package tryouts.multi_threading;
 
 class PaymentTask extends Thread {
     @Override

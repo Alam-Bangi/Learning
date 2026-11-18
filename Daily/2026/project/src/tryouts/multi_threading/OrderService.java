@@ -1,4 +1,4 @@
-package tryouts.thread.multi_threading;
+package tryouts.multi_threading;
 
 class KitchenOrder implements Runnable {
     private final int orderId;

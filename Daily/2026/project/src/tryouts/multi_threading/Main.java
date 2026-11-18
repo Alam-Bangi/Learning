@@ -1,4 +1,4 @@
-package tryouts.thread.multi_threading;
+package tryouts.multi_threading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
